@@ -1,0 +1,734 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;
+	font-weight:normal;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	color:#1F3763;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<h1>Inclusive Design and Prototyping from Start to Finish: Setting a Place at
+the Table </h1>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Intro</h2>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 1</h3>
+
+<p class=MsoNormal>Good morning and welcome everyone. My name is Jack Nicolai,
+I am an Accessibility Product Manager at Adobe. I’m glad to see everyone here
+at this early hour. I had an 8am slot last year as well. I’m not much of a
+morning person, so I’m not sure whether this timeslot is punishment or a
+reward, but at least they invited me back to speak to all of you.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I started working on this presentation because I wanted to
+talk about the design process through a different lens. My talk last year was
+pretty technical. It focused on very practical steps to document accessibility
+requirements in user stories, design specs and test cases.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 2</h3>
+
+<p class=MsoNormal>This year, while I do want to talk about Inclusive Design, I
+also want to talk about cooking and how when we invite people into our homes,
+we can best set a place for them at the table.  For me, cooking is a passion.
+I’m able to express myself in a number of different ways. From choosing
+recipes, planning menus, to hosting groups of friends for dinner, there are
+many parallels between what we need to do to deliver a wonderful experience to
+our guests and the design process needed to creative inclusive, ability-focused
+user experiences.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>My hope is that you will come away with new points of
+connection between how to care for the people who you welcome into your home
+and how you design software in order that in both cases you are taking steps to
+set a place for them at the table where they can partake in the things that you
+have created, be nourished by them and be inspired to do the same thing. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 3</h3>
+
+<p class=MsoNormal>To do this, we must start with hospitality. Better Crocker’s
+Guide to Easy Entertaining notes that the dictionary defines hospitality as
+“being disposed to entertain with generous kindness.” It then sets out to teach
+the reader…</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How to be “disposed” by being ready in detail and in spirit.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How to “entertain” yourself as well as others.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How to be “generous” by providing delicious and suitable food.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>How to serve it “with kindness” so that guests are not dismayed
+by a do-it-herself hostess who deserts them for her kitchen. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Now, the book was published in 1959 so some of the language
+is little dated.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 4</h3>
+
+<p class=MsoNormal>Chefs are inclusive designers. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>I don’t know about you, but I have a group of friends with a
+variety of foods allergies and preferences. Some are vegan. Some are gluten
+free. One just doesn’t like berries and fresh cuts tomatoes. Another friend is
+allergic to anything in the nightshade family. Honestly, I have to look up the
+list of what is included in the nightshade family every time I’m cooking for
+this friend. Additional considerations include age, mobility, and even the ability
+to chew certain foods, whether you are young or old. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A part of knowing how to set a place for someone at your
+table is to get to know their needs and preferences.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 5</h3>
+
+<p class=MsoNormal>Next, we must decide who can attend. Who’s in and who’s out?
+The size of one’s home usually dictates how many people we can entertain. When
+designing software, it is rare that we are creating a product that is intended
+to only be used by a small number of people, so we can’t be selective about who
+shows up.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 6</h3>
+
+<p class=MsoNormal>Kat Holmes, Founder of Mismatch.design and Director of User
+Experience at Google recently published a book called <i>Mismatch: how
+inclusion shapes design</i>. In it, she explores what it really means to be
+inclusive.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 7</h3>
+
+<p class=MsoNormal>She describes inclusion using the image of a circle, a
+boundary. In it are the things that are effectively included, with the word
+“IN” in large capital letters inside the circle. Surrounding this circle are
+the five instance of the word “OUT” to represent how some things are shut in
+and others are shut out.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 8</h3>
+
+<p class=MsoNormal>She goes on to provide a definition of Inclusive Design from
+her time at Microsoft. Inclusive Design is a methodology that enables and draws
+on the full range of human diversity. Most importantly, this means including
+and learning from people with a range of perspectives. (I would amend that to
+include a range of abilities.)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 9</h3>
+
+<p class=MsoNormal>She goes on to describe how we must break the original model
+of inclusion when inclusion results in shutting others out. In this version of
+the earlier image, the circle now contains as series gaps around the
+circumference, representing the breakdown of barriers towards inclusion.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 10</h3>
+
+<p class=MsoNormal>As we plan our meal, we should consider how guests will
+partake in the meal we prepare. What utensils should be placed at the table? Do
+they fit the needs of the food and your guest? Are they the right ones for the
+job?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 11</h3>
+
+<p class=MsoNormal>From the beginning our hands have been our utensils. Picking
+up and placing food into our mouths. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 12</h3>
+
+<p class=MsoNormal>Over time different tools have been adopted. Here we have a
+pair of chopsticks. The decision to use one utensil or another may be influenced
+by culture or the nature of the food you’re eating or simply someone’s
+preference. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 13</h3>
+
+<p class=MsoNormal>The use of some tools, such as a fork, knife and spoon have
+become so ingrained as to be thought of as ubiquitous and suitable for all
+purposes.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 14</h3>
+
+<p class=MsoNormal>Some matches seem to immediately make sense. In this
+example, we see a sushi role and pair of chopsticks.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 15</h3>
+
+<p class=MsoNormal>We could just as easily put down the chopsticks and use our
+hands.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 16</h3>
+
+<p class=MsoNormal>Sometimes we provide our guests with utensils that aren’t
+exactly a mismatch, as in this example of a sushi role and a fork, but that
+don’t quite feel like the right solution…</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 17</h3>
+
+<p class=MsoNormal>And may create unnecessary friction as in this this case
+with a sushi role and a butter knife.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 18</h3>
+
+<p class=MsoNormal>Sometimes a mismatch clear. When given a bowl of creamy soup
+you don’t expect to be handed a butter knife.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 19</h3>
+
+<p class=MsoNormal>That same bowl may be used to serve something different,
+such as rice, in which case chopsticks make more sense.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 20</h3>
+
+<p class=MsoNormal>For more complex interactions, more than one utensil may be
+required. Here we have an example of a lovely young girl who appears to be
+exuberantly enjoying a bowl of ramen. Notice that she is using two utensils, a
+pair of chopsticks to pick up the noodles and a spoon to ladle up the broth.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>{PAUSE}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Sometimes we try to come up with a universal solution to
+solve complex problems, but that don’t quite work as expected.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 21</h3>
+
+<p class=MsoNormal>For example, there is the spork, probably one of the most
+derided utensils, both a fork and a spoon or rather, neither a fork nor a
+spoon. Have you ever tried to use one? They tines don’t to pick up food well and
+the spoon portion doesn’t hold much soup. While this utensil was well
+intentioned the outcome is less useful.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>You might suggest, that this problem can solved with a
+utensil the guest already has.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 22</h3>
+
+<p class=MsoNormal>Here we see a bowl and two hands. I could pick up the bowl
+of ramen tip it towards me to slurp up all of the delicious ingredients.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 23</h3>
+
+<p class=MsoNormal>We must though keep in mind that guests have a variety of
+shapes, sizes and abilities. Image alt text: A young girl with no arms, eating
+a cob of corn with her feet.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>{PAUSE}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 24</h3>
+
+<p class=MsoNormal>For years, most of my dinner parties featured dishes I had
+never cooked before. I was inspired to try something new and wanted to share it
+with my friends. I thought I was so cool. Can you imagine what might have gone
+wrong?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>It is through preparation that we can avoid pitfalls when
+presenting an audience with something new.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 25</h3>
+
+<p class=MsoNormal>Merriam-Webster defines mise en place as “a culinary process
+in which ingredients are prepared and organized before cooking”. “The purpose
+of mise en place is to allow the chef to cook in the most efficient way without
+having to stop. While it won’t prevent you from drying out a roast, burning a
+batch of cookies or deflating a soufflé, it will make you a better cook by
+changing the way you work though preparing a meal from inception to clean-up
+(Mise en Place). Pictured are set of ingredients prepared to assemble in an
+enchilada casserole recipe. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>By mastering certain basics like knife skills and “mise en
+place”, you built up a level of confidence that so that you can take on more
+challenging cuisine.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In a similar way, designers must build up foundational
+skills so that we are better equipped to take on the more complex user
+experience challenges.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 26</h3>
+
+<p class=MsoNormal>Using quality ingredients in your designs means using design
+systems, UI component libraries, UX design patterns and tools that have already
+been designed inclusively. At Adobe, we have applied Inclusive Design thinking
+to our own Spectrum Design System in order that every designer that uses it,
+can have confidence that they will deliver a more inclusive experience. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 27</h3>
+
+<p class=MsoNormal>I’ve interviewed designers and accessibility professionals
+from a variety of software companies and frankly none of them had a great story
+to tell. Most of them are in a similar place. They are putting checks in place
+in various states of the design, development and test processes. How do we get
+it right?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Let’s take a look at one example where I think we are headed
+in the right direction.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 28</h3>
+
+<p class=MsoNormal>Incorporating Social Factors</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>A study conducted at the University of Washington called,
+Incorporating Social Factors in Accessible Design by Kristen Shinohara, Jacob
+O. Wobbrock, and Wanda Pratt was conducted to test the idea that new challenges
+are presented when using technology in a social context.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Ultimately, they found beneficial outcomes when disabled and
+nondisabled users were grouped together with a designer working on a solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 29</h3>
+
+<p class=MsoNormal>During the study designers used a tool called Methods Cards
+like the one we see pictured here. They are intended to be used alongside users
+in the design process rather than in lieu of, like Personas. The scenarios were
+drawn from prior research where participants with disabilities revealed some
+version of these events in studies. </p>
+
+<p class=MsoNormal>This one is titled, NON-USE. Each card has two sides and is
+broken up into four sections, Scenario, Consider, Design + Reflect, and Ask
+Users.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Let’s step through this card.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Scenario</b></p>
+
+<p class=MsoNormal>People may choose not to use technology in some social
+situations because they feel uncomfortable, such as when worrying that others
+will notice hearing aids, or when feeling rude that a talking watch announces
+every hour.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Consider</b></p>
+
+<p class=MsoNormal>What are social situations (i.e., a party, at work) where
+technology use is unappealing or inappropriate?</p>
+
+<p class=MsoNormal>To what extent does discomfort in technology use depend on
+the type of technology, i.e., accessible options, like hearing aids vs. a
+smartphone?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Design + Reflect</b></p>
+
+<p class=MsoNormal>How might your design be inappropriate or unappealing to use
+when around others.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b>Ask Users</b></p>
+
+<p class=MsoNormal>When do you feel un/comfortable using technology?</p>
+
+<p class=MsoNormal>When do you choose not to use technology?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>A link to more information about this study and the Method
+cards is provided at the end of this deck.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>{PAUSE}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>If we want our dinner guests to truly feel welcome, we must
+consider how the guests will interact with one another. How might their
+behavior and experience be affected by those around them?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 30</h3>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>One of the challenges Top Chef competitors must face is to
+take a dish normally prepared in a traditional way and deliver in a completely
+new way. Take for example a challenge to prepare Beef Bourguignon, a beef stew
+braised in red wine and beef stock, flavored with carrots, onions, garlic, and a
+bouquet garni. The challenge is to serve this dish as a meal you can eat on the
+go with your hands. Do you make into a taco? Do you wrap it in a pita? Perhaps
+instead, you devise a way to prepare the dish such that the diner can decide
+how they wish the dish to be served?</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 31</h3>
+
+<p class=MsoNormal>Jacob Wobbrock, who is a Professor of&nbsp;<a
+href="http://old.sigchi.org/cdg/cdg2.html"><b>human-computer interaction (HCI)</b></a>&nbsp;in
+the&nbsp;<a href="http://ischool.uw.edu/"><b>Information School</b></a><b><u> </u></b>at
+the University of Washington, where he also directs the&nbsp;<a
+href="http://depts.washington.edu/madlab/"><b>Mobile &amp; Accessible Design
+Lab</b></a>. He talks about a concept called Ability-based Design. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Ability-based design is “A design approach in which the
+human abilities required to operate an interactive system are questioned, and
+systems are made operable by and adaptable to alternative abilities.”</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>From his point of view, “Everyone has abilities, some people
+have more than others. We need to design for people with abilities of all
+types.”</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 32</h3>
+
+<p class=MsoNormal>Adaptive Software</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>At Adobe, we have begun building applications like Lightroom
+that centralize business logic and user data in the cloud, which enables us to
+bring the same features to various surfaces, customizing the UI to best fit
+each surface and ideally each user.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Using Artificial Intelligence and Machine Learning to build
+software which adapts to the abilities of the user.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The user interface is separated from the business logic so that
+new interfaces can be crafted when presented with new abilities. The software
+would learn how to adapt to the new interface.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 33</h3>
+
+<p class=MsoNormal>We know we’ve set the table when…</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>ability (not disability) drives success for creatives in the
+workforce.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>companies big and small employ designers representing a range of
+abilities.</p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in'><span
+style='font-family:"Arial",sans-serif'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>We validate our designs throughout the design process, with users
+of various abilities, incorporating social factors (because we don’t design
+alone).</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 34</h3>
+
+<p class=MsoNormal>{PAUSE}</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 35</h3>
+
+<p class=MsoNormal>When we view our users as guests… it becomes easier to
+imagine setting a place for them at the table. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 36</h3>
+
+<p class=MsoNormal>How will you set the table? </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 37</h3>
+
+<p class=MsoNormal>Thank you. Bon Appetit.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 38</h3>
+
+<p class=MsoNormal>I have included my <a href="mailto:nicolai@adobe.com">email
+address</a> on this slide, nicolai@adobe.com. Please feel free to reach out to
+me after the conference. I will be posting the deck at the bit.ly link provided
+on this slide, bit.ly/sapt-csun-2019, before the end of the conference.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 39</h3>
+
+<p class=MsoNormal>References:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>General Mills, Inc. <i>Betty Crocker’s Guide to Easy Entertaining</i>,
+Golden Press, 1959, pp. 7.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Holmes, Kat. <i>Mismatch: how inclusion shapes design</i>, The
+MIT Press, 2018, pp. 36-37, </p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>“Mise en Place: Cook Like a Pro”, D'Artagnan, D'Artagnan, <a
+href="https://www.dartagnan.com/mise-en-place-cook-like-a-professional.html">https://www.dartagnan.com/mise-en-place-cook-like-a-professional.html</a>.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Shinohara, K., Wobbrock, J.O. and Pratt, W. (2018). <a
+href="https://faculty.washington.edu/wobbrock/pubs/assets-18.02.pdf">Incorporating
+social factors in accessible design.</a> Proceedings of the ACM SIGACCESS
+Conference on Computers and Accessibility (ASSETS '18). Galway, Ireland
+(October 22-24, 2018). New York: ACM Press, pp. 149-160.</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-.25in'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Wobbrock, J.O. (2017), <a href="https://vimeo.com/218330703">Ability-Based
+Design: Elevating ability over disability in accessible computing</a>, 2017 ACM
+SIGCHI, Social Impact Award, Denver, CO.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Slide 40</h3>
+
+<p class=MsoNormal>Learn more about <a href="http://www.kristenshinohara.com/">Kristen
+Shinohara</a> and <a
+href="https://docs.google.com/forms/d/e/1FAIpQLScr4MUebEt2doR3iQpeHmbHKqM4EhmleV_KT-WfYGFxtxpEMw/viewform?usp=sf_link">sign
+up to be notified when Kristen's Methods Cards become available</a>.</p>
+
+<p class=MsoNormal>Learn more about Jacob O. Wobbrock on his <a
+href="https://faculty.washington.edu/wobbrock/">UW faculty website</a>.</p>
+
+</div>
+
+</body>
+
+</html>

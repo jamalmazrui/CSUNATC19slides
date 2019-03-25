@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Accessible Excel Spreadsheets for Screen Reader Users </title>
+</head>
+
+<body>
+<div role="main">
+<h1>Accessible Excel Spreadsheets for Screen Reader Users</h1>
+<p>34th CSUN Assistive Technology Conference
+	March 15, 2019</p>
+	<p>Jinhee Choo, University of Illinois at Urbana-Champaign
+</p>
+<h2>Background Information </h2>
+<h3>Presentation Outline</h3>
+<ul>
+	<li>Background Context</li>
+	<li>7 Steps to Check Excel Accessibility</li>
+	<li>ePub Sample </li>
+	<li>Q&A</li>
+</ul>	
+
+<h3>iMBA & iMSA at Univ of Illinois</h3>
+<ul><li>eLearning Office in the Gies College of Business, the University of Illinois at Urbana-Champaign</li>
+<li>Support for online & blended courses: Instructional Designers, Media Producers, QA Staff </li>
+<li>Fully online graduate degree program: iMBA and iMSA</li>
+<li>LMS: Blackboard and Coursera (~60 MOOCs)</li>
+</ul>
+
+<h3>Disability in MOOC (1/2)</h3>
+<p>On-Campus Students with disabilities</p>
+<ul>
+	<li><a href="http://www.disability.illinois.edu/" title="Univ of Illinois Disability Resources & Educational Services" target="new">Disability Resources & Educational Services</a></li>
+	<li>One screen reader user enrolled in the iMBA program</li>
+	<li>Accessibility Task Force in eLearning Office: eLearning staff, accessibility experts/consultants, academic advisor, DRES correspondent</li>
+</ul>
+
+<h3>Disability in MOOC (2/2)</h3>
+<ul>
+	<li>Document conversion: syllabus, assignment, and quiz questions - MS word, ppt, and pdf</li>
+	<li>LMS check with screen readers</li>
+	<li>Video lectures: captions and extended visual descriptions</li>
+</ul>
+
+<h3>Accessible Lecture Video Transcript</h3>
+<p>caption, ppt, visual description</p>
+<p>HTML/ePub</p>
+
+<h3>Statistics for Management Decision Making</h3>
+<ul>
+	<li>Module 1: Introduction and Summarizing Data</li>
+	<li>Module 2: Descriptive Statistics and Probability Distributions</li>
+	<li>Module 3: Sampling and Central Limit Theorem</li>
+	<li>Module 4: Inference</li>
+	<li>Module 5: Hypothesis Testing</li>
+	<li>Module 6: Statistical Inference Based on Two Samples</li>
+	<li>Module 7: Simple Linear Regression</li>
+	<li>Module 8: Multiple Linear Regression</li>
+</ul>
+
+<h2>Accessible Excel?</h2>
+<ul>
+	<li>Courses handling a lot of data in Excel in the Gies College of Business</li>
+	<li>limited resources available on Excel accessibility
+</li>
+	<li>Accessibility Excel tutorial: Test with screen reader (JAWS 2018), easy navigation, identification of data, & clear instruction on any related activities for screen reader users, no multiple versions </li>
+	
+</ul>
+
+<h2>7 Steps to Check Excel Accessibility</h2>
+<h3>Name Each Worksheet</h3>
+<p>Name is important</p>
+<ul>
+	<li>Name an object for easier navigation.</li>
+	<li>Give all sheet tabs, data table, charts/ images/ shapes/ SmartArt unique & meaningful names.</li>
+	<li>If one spreadsheet has multiple sets of data, one data table per spreadsheet is recommended.
+</li>
+</ul>
+
+<h3>Provide Help Text</h3>
+<p>Provide Help text in A1 and A2</p>
+<ul>
+	<li>A1: How to navigate the page with screen reader. Type “Press UP or DOWN ARROW in column A to read through the help text and descriptions.” </li>
+	<li>A2: What is the structure of the worksheet. Type number of tables and charts with their corresponding names and starting cells. Extra information, like data source, is also included here.</li>
+</ul>
+
+
+<p>Hide text</p>
+<ul>
+	<li>Note: After writing the text, reduce the cell size and change the text color to match the background color. With these changes, screen readers can recognize the help text that will benefit screen reader users, and sighted users won’t be disturbed by this additional information.</li>
+</ul>
+
+<h3>Column A Is Useful</h3>
+<p>Left alignment is important</p>
+<ul>
+	<li>Screen readers start reading the information in cell A1. Empty column A can confuse screen reader users as they might think the worksheet is empty. </li>
+	<li>Align all the tables and charts to the left, starting in column A.  </li>
+</ul>
+<p>When not to left align?</p>
+<ul>
+	<li>Exception: sometimes when students need to interact with the data, it is recommended not to left align the tables and/or charts. This can interfere with the development of the activity. </li>
+</ul>
+
+<h3>Table 1: Setup</h3>
+<p>Provide description for each table</p>
+<ul>
+	<li>ln A3, provide info about a table including table name, the range of this table, number of columns and rows. You can also include any extra information when needed.</li>
+	<li>For more than one table, use the row above each table to provide the description. </li>
+	<li>Match the description with the background color.</li>
+	<li>Example: The “Frequency” table ranges from A4 to E2196. It has 5 columns and 2191 rows. This table is generated from the previous complete data.
+</li>
+</ul>
+
+<p>Provide column headers</p>
+
+<ul>
+	<li>Screen reader will repeat the column header info as a guidance to read the table.</li>
+	<li>Insert a new row above the table and each header needs to be unique and meaningful.</li>	
+</ul>
+
+<p>No merged cells in the DATA part!</p>
+<ul>
+	<li>Select the merged cell, </li>
+	<li>go to Home tab and click “Merge & Center.”</li>
+	<li>right click, choose the “Format cells”, click the “Alignments”, uncheck the “Merge cells.”</li>
+</ul>
+
+<p>No empty cells in the DATA part! </p>
+<ul>
+	<li>Check empty cells and add “No data.”</li>
+	<li>Change the text color to match the background, so only a screen reader will read it.</li>
+</ul>
+
+<p></p>
+
+<h3>Table 2: Construction</h3>
+<p>Set table format</p>
+<ul>
+	<li>To ensure that a screen reader interprets your column headers as headers:
+Select the table. </li>
+	<li>Set it into “All Borders.”</li>
+	<li>In the Insert tab, choose Table to create table, and check “My table has headers” checkbox.
+Confirm the range is correct.</li>
+</ul>
+
+<p>Set table name in table format</p>
+<ul>
+	<li>Choose a unique valid name.</li>
+	<li>Space is not allowed here.</li>
+	<li>The name should begin with a letter or an underscore.</li>
+	<li>With multiple worksheets, name the same table as TableName_in_Worksheet_Name.</li>
+</ul>
+
+<p>Set table name in table format</p>
+<ul>
+	<li>Click the Table tab in the top menu and provide a valid name for the table.</li>
+	<li>Note: For a table with no headers, select the Header Row checkbox. Then, include a column name. </li>
+</ul>
+
+<p>What if Table format does not work?</p>
+<ul>
+	<li>To format a table manually, select the top-left cell of the table, which is the column header.</li>
+	<li>Go to Formulas tab and select Name Manager (Windows) or Define Names (Mac).</li>
+	<li>Add a name of the table. </li>
+</ul>
+
+<p>Set table style</p>
+<ul>
+	<li>Select any cell in the table.</li>
+	<li>In the Table tab, go to Design and select Table style (Windows) or Quick Style (Mac). </li>
+	<li>Choose a style with black and white color (e.g., “Table Style Medium 1.”)</li>
+</ul>
+
+<p>Provide alt text to tables</p>
+<ul>
+	<li>Right-click a table.</li>
+	<li>Select Table and choose the Alternative Text.</li>
+	<li>Type a description and a title. You can reuse the description for the table (e.g., A3).</li>
+</ul>
+
+<p> Add the ending</p>
+<ul>
+	<li>At the end of each table, add a cell with “End of table name table.”</li>
+	<li>At the end of the worksheet, add a cell with “End of worksheet.”</li>
+	<li>Make sure to match the text with the background color.</li>
+</ul>
+
+<h3>Provide Description for Graphs and Images</h3>
+<p>Provide a brief description of the object in the cell (column A).</p>
+<ul>
+	<li>Use one cell for one object to add the description.</li>
+	<li>Resize the row where you want to insert the object. </li>
+	<li>Change the text color to match the background. </li>
+	<li>Move the object into the cell.</li>
+</ul>
+
+<p>Add Alternative Text Description</p>
+<ul>
+	<li>Right-click an object to get to Size & Properties. </li>
+	<li>Add a title and description. You can reuse the description of the object.</li>
+	<li>Description guide: Diagramcenter.org (<a href="http://diagramcenter.org/specific-guidelines-e.html" title="Diagram Center Chart Guidelines" target="new">http://diagramcenter.org/specific-guidelines-e.html</a>)</li>
+</ul>
+
+<p>Visual Description Example 1: Bar graph</p>
+<p>The graph is a histogram that shows the average dollars spent on coffee per month. The horizontal x-axis shows dollars spent on coffee with bins ranging from 5 to 55 in increments of 5. The vertical y-axis shows the height of each bin, which represents frequency and ranges from 0 to 45 in increments of 5.  </p>
+
+<p>Visual Description Example 2: Scatter plot</p>
+<p>The graph is a scatter plot with no title listed. The horizontal x-axis shows height in centimeters ranging from 130 to 180 in increments of ten. The vertical y-axis shows weight in kilograms ranging from 30 to 90 in increments of ten. The graph contains approximately 100 points that seem to be evenly spread along a linear trend that goes from the lower left corner, where weight and height are small, to the upper right corner, where both quantities are large.</p>
+
+<h3>Hide or Delete Unused Information</h3>
+<p>Hide extra columns and rows</p>
+<p>Columns</p>
+<ul>
+	<li>Select the 1st column you want to hide.</li>
+	<li>Press Ctrl (Command) + shift + right arrow.</li>
+	<li>With your cursor hovering in the selected area, right-click and choose Hide.</li>
+</ul>
+<p>Rows</p>
+<ul>
+	<li>Select the 1st row you want to hide.</li>
+	<li>Press Ctrl (Command) + shift + down arrow.</li>
+	<li>With your cursor hovering in the selected area, right-click and choose Hide.</li>
+</ul>
+
+<p>What if you cannot hide rows and columns?</p>
+<ul>
+	<li>Check whether the selected region has any merged cells. Try unmerging them before hiding unused rows.</li>
+	<li>Try a different order of hiding columns and rows. </li>
+</ul>
+
+<p>Unhide extra rows and columns in case</p>
+<ul>
+	<li>Select the last visible column.</li>
+	<li>Hover to the right side of the right edge of the column header. Your cursor should turn into a double cursor with arrows.</li>
+	<li>Click and drag to the right, exposing the very last column.</li>
+	<li>Select the new, final column, right-click and choose Unhide.</li>
+</ul>
+
+<p>Delete any unused worksheets  </p>
+<ul>
+	<li>Right-click on the tab of the unused worksheet and choose Delete.</li>
+	<li>Note: Be careful! This CANNOT be undone.</li>
+</ul>
+
+<p>Extra notes</p>
+<ul>
+	<li>Comments in Excel - not allowed in the previous version of Excel</li>
+	<li>Hyperlinks - screen tips</li>
+	<li>Spell check</li>
+	<li>Excel Accessibility Checker</li>
+</ul>
+
+<H3>ePub Sample</h3>
+<p>MOOC students with disabilities are not required to disclose.</p>
+<ul>
+	<li>Scalability</li>
+	<li>Accessible Video Lecture Transcript: ePub to share</li>
+</ul>
+
+<h3>Questions and Answers</h3>
+<p>Contact: <a href="mailto:jchoo@illinois.edu">jchoo@illinois.edu</a></p>
+
+	</div>
+</body>
+</html>

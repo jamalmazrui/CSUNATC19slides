@@ -1,0 +1,632 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Semibold";
+	panose-1:2 11 7 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:"Segoe UI Semilight";
+	panose-1:2 11 4 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:28.0pt;
+	font-family:"Segoe UI Semilight",sans-serif;
+	color:black;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:51.75pt;
+	margin-bottom:.0001pt;
+	text-indent:-15.75pt;
+	text-autospace:none;
+	font-size:16.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:66.4pt;
+	margin-bottom:.0001pt;
+	text-indent:-14.25pt;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:80.65pt;
+	margin-bottom:.0001pt;
+	text-indent:-13.25pt;
+	text-autospace:none;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:201.95pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.35pt;
+	text-autospace:none;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:238.7pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.35pt;
+	text-autospace:none;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:275.4pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.35pt;
+	text-autospace:none;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:312.15pt;
+	margin-bottom:.0001pt;
+	text-indent:-18.35pt;
+	text-autospace:none;
+	font-size:20.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Calibri Light",sans-serif;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='text-justify-trim:punctuation'>
+
+<div class=WordSection1>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif'>What</span><span style='font-size:
+36.0pt;font-family:"Times New Roman",serif'>’</span><span style='font-size:
+36.0pt;font-family:"Segoe UI Semibold",sans-serif'>s New in Office 365</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'>Akshay Bakshi </span></b><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> </span><span style='font-size:18.0pt'>&nbsp;</span><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif'> </span><span
+style='font-size:18.0pt'>&nbsp;&nbsp;</span><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'> PM II, Office Mac, @AgentAkki</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:6.0pt'>&nbsp;&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'>Lorena Huang Liu</span></b><b><span
+style='font-size:18.0pt'>&nbsp;</span></b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'> PM, Office Online</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:6.0pt'>&nbsp;&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'>Jeffrey Kalvass </span></b><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> </span><span style='font-size:18.0pt'>&nbsp;</span><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif'> </span><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> Senior PM, Outlook Mac, @jeffreykalvass</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:6.0pt;
+font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'>Anita Mortaloni </span></b><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> </span><span style='font-size:18.0pt'>&nbsp;</span><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif'> Principal PM, O365
+A11y, @anitamortaloni</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:6.0pt;
+font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif'>Jeremy Spurlin</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif'> </span><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> </span><span style='font-size:18.0pt'>&nbsp;</span><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif'> </span><span
+style='font-size:18.0pt'>&nbsp;</span><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif'> Senior Software Engineer, Office Online</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:6.0pt;font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Microsoft
+Mission</span></h1>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:44.0pt;font-family:"Segoe UI Semilight",sans-serif;color:white'>Empower
+every person and every organization on the planet to achieve more</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:54.0pt;
+font-family:"Segoe UI Semilight",sans-serif;color:white'>Microsoft Mission</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:10.0pt;
+font-family:"Segoe UI Semibold",sans-serif'>Empowering People</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:44.0pt;
+font-family:"Segoe UI Semilight",sans-serif'>Every person. </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:44.0pt;
+font-family:"Segoe UI Semilight",sans-serif'>Empowered.</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:44.0pt;
+font-family:"Segoe UI Semilight",sans-serif'>In every context.</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:32.0pt;
+font-family:"Segoe UI Semibold",sans-serif'>With accessibility built into
+Office 365, we aim to ensure that</span><span style='font-size:32.0pt;
+font-family:"Times New Roman",serif'>…</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:24.0pt;
+font-family:"Segoe UI",sans-serif'>People with disabilities can easily create,
+consume and communicate from any device</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:24.0pt;
+font-family:"Segoe UI",sans-serif'>Everyone can easily create accessible
+content</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Create Confidently</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Simplified
+Ribbon, Icon Refresh</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Microsoft
+Search</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Excel
+Ideas </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Forms
+Design Intelligence </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Dictate</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Editor
+and Read Aloud</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI Semibold",sans-serif;
+color:#1A1A1A'>Creating confidently with the new Office Online Simplified
+Ribbon</span></h1>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI Semibold",sans-serif;
+color:#1A1A1A'>Creating confidently with the new Office Online Simplified
+Ribbon</span></h1>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Create Confidently</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Simplified
+Ribbon, Icon Refresh</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Microsoft
+Search</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Excel
+Ideas</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Forms
+Design Intelligence </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Dictate</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Editor
+and Read Aloud</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Collaborate
+Inclusively</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Accessibility
+Checker runs in background</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Prefer
+Accessible Content</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Automatic
+Alt-Text and Live Subtitles</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Recommend
+files from Office.com</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Accessible
+Templates</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Organize Efficiently</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>To-Do
+integration with Outlook</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Windows
+Sticky Notes</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Office
+Lens</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>OneNote,
+OneDrive, SharePoint</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif'>Consume Content Independently</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>Learning
+Tools / Immersive Reader</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Captioning
+in Stream</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Segoe UI",sans-serif'>Ease
+of Access Settings</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>Dark
+Mode Support</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>Outlook
+Calendar Navigation</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>Rotor
+Support </span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-family:"Segoe UI",sans-serif'>&nbsp;</span></b></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-family:"Segoe UI Semibold",sans-serif;color:#1A1A1A'>Office 365 is
+designed to meet global accessibility standards, conformance reported based on
+Trusted Tester inspections</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:36.0pt;font-family:"Segoe UI Semibold",sans-serif'>Learn more
+about Office 365 via Sessions</span><span style='font-size:36.0pt;font-family:
+"Times New Roman",serif'>…</span><span style='font-size:36.0pt;font-family:
+"Segoe UI Semibold",sans-serif'> </span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Wednesday 1:20pm </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Empower Inclusive Learning with <b>Microsoft 365 Education </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Wednesday</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'> <b>4:20pm
+</b>: Wow Your Audience with Engaging and Accessible Communication with <b>Office
+365 </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 8:00am: Microsoft
+Search</span></b><span style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;
+color:#1A1A1A'>: Enabling Everyone to Find What Matters </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 10:00am </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:<b> </b>Narrator
+201: More <b>productive email </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 11:00am </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: <b>Accessibility
+Insights</b>: Quickly find and fix accessibility issues </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 1:20pm </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+What's New in <b>Office 365 Accessibility </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 3:20pm </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Boost productivity with <b>Microsoft apps on iOS and Android </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday 8:00am </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Accessible <b>Design</b> and Development in <b>Microsoft Office </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday 11:00am</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'> : <b>Microsoft
+Team</b></span><b><span style='font-size:18.0pt;color:#1A1A1A'>’</span></b><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>s: </span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>The
+one place your team: needs for inclusive communications </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday 2:20pm </span></b><b><span
+style='font-size:18.0pt;color:#1A1A1A'>–</span></b><b><span style='font-size:
+18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'> 4pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: <b>Connecting
+with Microsoft (Open office hours) </b></span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:36.0pt;font-family:"Segoe UI Semibold",sans-serif'>Learn more
+about Office 365 at the Microsoft Booth!</span></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Wednesday 1:20pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Empower Inclusive Learning with <b>Microsoft 365 Education </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Wednesday 2:00pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: Wow
+with <b>PowerPoint</b>: Engage with inclusive communication with Office 365 </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Wednesday 4:30pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:<b> </b>Empower
+Inclusive Learning with <b>Microsoft 365 Education </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 1:30pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: Find
+what you</span><span style='font-size:18.0pt;color:#1A1A1A'>’</span><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>re
+looking for with <b>Microsoft Search </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 2:30pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: <b>Office
+for Mac</b>: Tips, tricks, and more</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 3:00pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Simplified Ribbon for <b>Office 365 </b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Thursday 4:30pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:
+Boost productivity with <b>Microsoft apps on iOS and Android</b></span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday 11:00am</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>:<b>
+Accessible Design </b>and Development in Microsoft Office </span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday 1:00pm</span></b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>: <b>Microsoft
+Teams - </b>The one place your team needs for inclusive communications</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><b><span style='font-size:18.0pt;
+font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:36.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Connecting
+with Microsoft </span><span style='font-size:36.0pt;font-family:"Times New Roman",serif;
+color:#1A1A1A'>“</span><span style='font-size:36.0pt;font-family:"Segoe UI",sans-serif;
+color:#1A1A1A'>open office hours</span><span style='font-size:36.0pt;
+font-family:"Times New Roman",serif;color:#1A1A1A'>”</span></h1>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Bring your device,
+feedback and questions!</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Friday
+2:20pm </span></b><b><span style='font-size:18.0pt;color:#1A1A1A'>–</span></b><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'> 4pm</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Connecting
+with Microsoft (Open office hours)</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Platinum
+7 </span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>&nbsp;</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Representatives
+include:</span></b></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Windows</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Narrator</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Office
+365</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Microsoft
+Search</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Single
+Line Ribbon</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Accessibility
+Insights</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>Office
+365 Online</span></h2>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:18.0pt;font-family:"Segoe UI",sans-serif;color:#1A1A1A'>and
+more!</span></h2>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#0D0D0D'>Want more
+information?</span></h1>
+
+<h1 style='margin-left:0in;text-indent:0in'><span style='font-size:36.0pt;
+font-family:"Segoe UI Semibold",sans-serif;color:#0D0D0D'>We want to hear from
+you.</span></h1>
+
+</div>
+
+</body>
+
+</html>

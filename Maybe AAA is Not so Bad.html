@@ -1,0 +1,434 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Maybe AAA is Not so Bad? | Gerard K. Cohen</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="plugin/accessibility/helper.css">
+    <style>
+
+        .reveal h1, .reveal h2, .reveal h3 {
+            /*text-shadow: 2px 2px 2px #000 !important;*/
+        }
+
+        .reveal a {
+            border-bottom: 2px solid currentColor;
+            /*color: #d4b89a;*/
+        }
+
+        .reveal a:hover {
+            border-bottom: 2px solid currentColor;
+            /*color: #957100;*/
+        }
+
+      .reveal h1 > small,
+      .reveal h2 > small,
+      .reveal h3 > small,
+      .reveal h4 > small {
+          display: block;
+          font-size: 0.5em;
+      }
+
+        .reveal a small {
+            vertical-align: middle;
+        }
+
+        .reveal .background {
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            padding: 1.25rem !important;
+        }
+
+        .reveal .visually-hidden {
+          border: 0;
+          clip: rect(1px 1px 1px 1px);
+          clip: rect(1px, 1px, 1px, 1px);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          white-space: nowrap;
+          width: 1px;
+        }
+    </style>
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+                <section>
+                <section data-background-video="images/sunset.mp4" data-background-video-loop="loop">
+                    <h1 class="background">Good Morning!</h1>
+                </section>
+                <section>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+
+                        <img src="images/A11ySquadLogo.png" alt="A11y Squad" style="width: 30%; border: none; box-shadow: none" />
+                        <div>
+                            <h2>Gerard K. Cohen</h2>
+                            <small>Lead Accessibility Strategist, AUx (Accessible User Experience) <br />
+                                Wells Fargo Digital Solutions for Business (DS4B)
+                            </small>
+
+                        </div>
+                    </div>
+
+
+                    <ul>
+                      <li><a href="mailto:ge%72%61r&#100;kc&#111;&#104;%65n%40&#103;m%61il&#46;%63%6f%6d">gerardkcohen@gmail.com</a></li>
+                      <li><a href="https://www.twitter.com/gerardkcohen">@gerardkcohen</a></li>
+                    </ul>
+                </section>
+                <section data-background-image="images/pluralsight.jpg" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat" data-background-color="#000">
+                                <div class="background fragment">
+                  <h2>Pluralsight:<small>Meeting Web Accessibility Guidelines</small></h2>
+
+                  <a href="http://bit.ly/2rkD0hk" aria-label="Meeting Web Accessibility Guidelines on Pluralsight - Shortened URL" target="_blank">http://bit.ly/2rkD0hk</a>
+
+                  <a href="http://bit.ly/2rkD0hk" aria-label="Meeting Web Accessibility Guidelines on Pluralsight" target="_blank"><small>https://www.pluralsight.com/courses/web-accessibility-meeting-guidelines</small></a>
+                </div>
+                </section>
+              </section>
+              <section>
+                <section data-background-image="images/sux.jpg" data-background-position="bottom" >
+                    <div class="visually-hidden">
+                        <p>When User Experience doesn't consider all users it should be called some user experience. yes, sux.</p>
+                    </div>
+                </section>
+                <section data-background-image="images/maybe.png" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat" data-background-color="#000">
+                    <h1 class="visually-hidden">Maybe AAA is not so bad?</h1>
+                <p class="background fragment" ><a href="http://bit.ly/2O5J6yv" aria-label="link to slides">http://bit.ly/2O5J6yv</a></p>
+
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section data-background-image="images/American_Automobile_Association_logo.svg.png"  data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
+                    <h1 class="visually-hidden">Not the american automobile association</h1>
+                </section>
+
+                <section data-background-image="images/because.gif" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
+                    <h2 class="fragment background">Accessibility is not a checklist!</h2>
+                </section>
+
+                <section data-background-image="images/because.gif" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
+                    <h2 class="background">Level AAA is too hard!</h2>
+                </section>
+
+                <section data-background-image="images/wcag-aaa-note.png" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
+                    <p class="visually-hidden">Note 2: It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content.</p>
+                </section>
+
+
+                <section data-background-image="images/drink.gif" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat" data-background-color="#000">
+                    <p class="visually-hidden">Have you had too much to drink?</p>
+                </section>
+
+
+                <section data-background-image="images/bad-guy.gif" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat" data-background-color="#000">
+                </section>
+
+              </section>
+              <section>
+                <section>
+                    <h1>Level AAA Stats</h1>
+                </section>
+                <section>
+                    <h1>35%</h1>
+                    <p>Percentage of AAA guidelines</p>
+                    <p>28 out of 78</p>
+                </section>
+                <section>
+                    <h1>POUR</h1>
+                    <ul>
+                        <li class="fragment" data-fragment-id="1">9 Perceivable (31%)</li>
+                        <li class="fragment" data-fragment-id="2">12 Operable (41%)</li>
+                        <li class="fragment" data-fragment-id="3">7 Understandable (41%)</li>
+                        <li class="fragment" data-fragment-id="4">0 Robust (0%)</li>
+                    </ul>
+                </section>
+              </section>
+
+              <section>
+                <section class="results">
+                    <h2>Results</h2>
+                    <aside class="notes">
+                        <p>Ok, so lets find out the results of our little test.</p>
+                    </aside>
+                </section>
+                <section class="overview">
+                    <h2>Level AAA is <u>reasonable</u> to accomplish!</h2>
+                    <ul><li>542 votes for reasonable</li><li>106 votes for impossible</li></ul>
+                </section>
+                <section data-background-image="images/frustrated.gif" data-background-size="contain" data-background-position="center" data-background-repeat="no-repeat">
+                    <h2 class="visually-hidden">Not what you expected?</h2>
+                    <aside class="notes">
+
+                        <p>Not what you expected?</p>
+                    </aside>
+                </section>
+                <section>
+                    <h2>1.2 Time-based Media</h2>
+                    <ul>
+                        <li>1.2.6 Sign Language (Prerecorded), <span id="1.2.6-yes">10</span> reasonable, <span id="1.2.6-no">12</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">1.2.7 Extended Audio Description (Prerecorded), <span id="1.2.7-yes">13</span> reasonable, <span id="1.2.7-no">9</span> impossible</li>
+                        <li class="fragment" data-fragment-index="2">1.2.8 Media Alternative (Prerecorded), <span id="1.2.8-yes">21</span> reasonable, <span id="1.2.8-no">0</span> impossible</li>
+                        <li class="fragment" data-fragment-index="3">1.2.9 Audio-only (Live), <span id="1.2.9-yes">19</span> reasonable, <span id="1.2.9-no">3</span> impossible</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>1.3 Adaptable</h2>
+                    <ul>
+                        <li>1.3.6 Identify Purpose, <span id="1.3.6-yes">21</span> reasonable, <span id="1.3.6-no">0</span> impossible</li>
+                    </ul>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+                <section>
+                    <h2>1.4 Distinguishable</h2>
+                    <ul>
+                        <li>1.4.6 Contrast (Enhanced), <span id="1.4.6-yes">8</span> reasonable, <span id="1.4.6-no">14</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">1.4.7 Low or No Background Audio, <span id="1.4.7-yes">22</span> reasonable, <span id="1.4.7-no">0</span> impossible</li>
+                        <li class="fragment" data-fragment-index="2">1.4.8 Visual Presentation, <span id="1.4.8-yes">21</span> reasonable, <span id="1.4.8-no">1</span> impossible</li>
+                        <li class="fragment" data-fragment-index="3">1.4.9 Images of Text (No Exception), <span id="1.4.9-yes">20</span> reasonable, <span id="1.4.9-no">2</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2.1 Keyboard Accessible</h2>
+                    <ul>
+                        <li>2.1.3 Keyboard (No Exception), <span id="2.1.3-yes">22</span> reasonable, <span id="2.1.3-no">0</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2.2 Enough Time</h2>
+                    <ul>
+                        <li>2.2.3 No Timing, <span id="2.2.3-yes">16</span> reasonable, <span id="2.2.3-no">5</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">2.2.4 Interruptions, <span id="2.2.4-yes">22</span> reasonable, <span id="2.2.4-no">1</span> impossible</li>
+                        <li class="fragment" data-fragment-index="2">2.2.5 Re-authenticating, <span id="2.2.5-yes">9</span> reasonable, <span id="2.2.5-no">12</span> impossible</li>
+                        <li class="fragment" data-fragment-index="3">2.2.6 Timeouts, <span id="2.2.6-yes">18</span> reasonable, <span id="2.2.6-no">4</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2.3 Seizures</h2>
+                    <ul>
+                        <li>2.3.2 Three Flashes, <span id="2.3.2-yes">22</span> reasonable, <span id="2.3.2-no">0</span> impossible</li>
+                        <li>2.3.3 Animation from Interactions, <span id="2.3.3-yes">21</span> reasonable, <span id="2.3.3-no">2</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2.4 Navigable</h2>
+                    <ul>
+                        <li>2.4.8 Location, <span id="2.4.8-yes">21</span> reasonable, <span id="2.4.8-no">2</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">2.4.9 Link Purpose (Link Only), <span id="2.4.9-yes">21</span> reasonable, <span id="2.4.9-no">1</span> impossible</li>
+                        <li class="fragment" data-fragment-index="2">2.4.10 Section Headings, <span id="2.4.10-yes">23</span> reasonable, <span id="2.4.10-no">0</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>2.5 Input Modalities</h2>
+                    <ul>
+                        <li>2.5.5 Target Size, <span id="2.5.5-yes">16</span> reasonable, <span id="2.5.5-no">6</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">2.5.6 Concurrent Input Mechanisms, <span id="2.5.6-yes">21</span> reasonable, <span id="2.5.6-no">2</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>3.1 Readable</h2>
+                    <ul>
+                        <li>3.1.3 Unusual Words, <span id="3.1.3-yes">16</span> reasonable, <span id="3.1.3-no">6</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">3.1.4 Abbreviations, <span id="3.1.4-yes">22</span> reasonable, <span id="3.1.4-no">1</span> impossible</li>
+                        <li class="fragment" data-fragment-index="2">3.1.5 Reading Level, <span id="3.1.5-yes">13</span> reasonable, <span id="3.1.5-no">10</span> impossible</li>
+                        <li class="fragment" data-fragment-index="3">3.1.6 Pronunciation, <span id="3.1.6-yes">17</span> reasonable, <span id="3.1.6-no">6</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>3.2 Predictable</h2>
+                    <ul>
+                        <li>3.2.5 Change on Request, <span id="3.2.5-yes">21</span> reasonable, <span id="3.2.5-no">2</span> impossible</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>3.3 Input Assistance</h2>
+                    <ul>
+                        <li>3.3.5 Help, <span id="3.3.5-yes">20</span> reasonable, <span id="3.3.5-no">2</span> impossible</li>
+                        <li class="fragment" data-fragment-index="1">3.3.6 Error Prevention (All), <span id="3.3.6-yes">19</span> reasonable, <span id="3.3.6-no">2</span> impossible</li>
+                    </ul>
+                </section>
+              </section>
+              <section>
+                <h2>Summary</h2>
+                <aside class="notes">
+                    <p>So we just went through each of the AAA guidelines, all 28 of them. Hopefully, your perception has changed a bit. You might be able to walk out of here and immediately say "My works is AAA compliant!" after seeing how most of these could be accomplished. More importantly, if you are not saying that to yourself, you have learned of some things that you can do to make the overall experience much better for your users.</p>
+                </aside>
+              </section>
+            <section>
+                <h2>Maybe AAA is not so bad?</h2>
+
+              <h3>Gerard K. Cohen <small>Lead Accessibility Strategist, Wells Fargo Digital Solutions for Business (DS4B)</small></h3>
+
+                <ul>
+                  <li><a href="mailto:ge%72%61r&#100;kc&#111;&#104;%65n%40&#103;m%61il&#46;%63%6f%6d">gerardkcohen@gmail.com</a></li>
+                  <li><a href="https://www.twitter.com/gerardkcohen">@gerardkcohen</a></li>
+                  <li>Slides: <a href="http://bit.ly/2O5J6yv" aria-label="link to slides">http://bit.ly/2O5J6yv</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <audio src="images/intro.mp3" id="intro"></audio>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+        dependencies: [{
+            src: 'plugin/accessibility/helper.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+
+    let intro = document.getElementById('intro');
+    let results = '';
+
+    Reveal.addEventListener('slidechanged', function(event) {
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+        if( window.self == window.top) {
+          if (event.currentSlide.classList.contains('intro')) {
+              intro.play();
+          } else {
+            intro.pause();
+          }
+
+        }
+    });
+    </script>
+</body>
+
+</html>
+

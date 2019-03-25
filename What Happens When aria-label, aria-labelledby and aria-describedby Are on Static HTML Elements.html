@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129158086-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129158086-1');
+</script>
+
+<meta charset="utf-8">
+<title>What happens when aria-label, aria-labelledby and aria-describedby are on static HTML elements?  - David MacDonald Web Accessibility Blog, testing, teaching, and
+	discussion</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords"
+	content="David MacDonald web accessibility Ottawa, Does Placeholder text AND aria-describedby work on a form field    - David MacDonald Web Accessibility Blog, testing, teaching, and discussion, WCAG 2.0 training, WCAG 2, universal-design, accessibility, WAI, assistive technology, Should WCAG.NEXT require all functionality operable with a mouse/pointer, consulting, canadapt, can-adapt solutions Inc." />
+<meta name="description"
+	content=" David MacDonald, CanAdapt offers WCAG Training, What happens when aria-label, aria-labelledby and aria-describedby are on static HTML elements?  For accessbility, testing, teaching, and discussion,  WCAG accessibility audits and accommodation of employees with disabilities.">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="shortcut icon" href="http://www.davidmacd.com/favicon.ico">
+<link rel="stylesheet" href="http://davidmacd.com/css/animate.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://www.davidmacd.com/css/styles.css">
+<link rel="stylesheet" href="http://www.davidmacd.com/css/menu.css">
+<style>
+.center-header {
+	text-align: center !important;
+}
+
+#main li {
+	margin: 0px 0;
+}
+
+#main ul.no-space li {
+	margin: 5px 0;
+}
+
+@media ( max-width : 990px) {
+	.width70home {
+		width: 70% !important;
+	}
+}
+
+blockquote.none {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-left: none;
+	font-size: 1em;
+}
+
+h2 {
+	color: rgba(115, 2, 4, 1.00);
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+.removetemplatestyle {
+	color: #000;
+	background-color: white;
+	border-top: none;
+	margin-left: 10px;
+}
+
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0 20px;
+}
+
+td, th {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.female {
+	background-color: #ffc;
+}
+
+#credit {
+	font-size: smaller;
+}
+
+.fail {
+	background-color: #F36
+}
+
+.warning {
+	background-color: yellow
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+	<!-- navigation section -->
+	<nav class="navbar navbar-fixed custom-navbar navbar-expand-lg py-0"
+		aria-label="Main Menu">
+		<div class="container navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header mr-auto">
+
+				<a href="http://www.davidmacd.com "
+					class="navbar-brand navbrand-link  nav-item py-0"><span class="logo"><span
+						style="color: #FF2424"> Can</span>Adapt</span> <span class="logo2">&nbsp;WCAG
+						training &amp; audits</span></a>
+
+			</div>
+			<button id="mainMenuButton" aria-haspopup="true"  class="btn menu-toggle py-0"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span> <span
+					aria-hidden="true"> <i class="fa fa-navicon"></i></span>
+			</button>
+			<div class="collapse navbar-collapse ml-auto"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item py-0"><a class="nav-link" href="http://www.davidmacd.com/index.html#home">HOME</a></li>
+					<li class="nav-item py-0"><a class="nav-link" href="http://davidmacd.com/wcag-web-accessibility-audit.html">AUDITS</a></li>
+					<li class="nav-item py-0"><a class="nav-link" href="http://www.davidmacd.com/web_accessibility_training_wcag_ottawa.html">COURSES</a></li>
+					<li class="nav-item py-0"><a class="nav-link" href="http://www.davidmacd.com/david_macdonald_bio.html">ABOUT</a></li>
+					<li class="nav-item py-0"><a class="nav-link" href="http://www.davidmacd.com/endorsements.html">ENDORSEMENTS</a></li>
+					<li class="nav-item py-0"><a class="nav-link" href="http://www.davidmacd.com/projects.html">PROJECTS</a></li>
+					<li class="dropdown nav-item ">
+						<button class="dropdown-toggle btn-block py-0" data-toggle="dropdown"
+							role="button" aria-haspopup="true" aria-expanded="false"
+							style="float: right">
+							MORE<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdownItem mx-auto" href="http://davidmacd.com/index-fr.html" lang="fr">FRANÇAIS</a></li>
+							<li><a class="dropdownItem mx-auto" href="http://www.davidmacd.com/wcag_theme_song.html">
+									<!--onBlur="getfocus()"-->WCAG SONG
+							</a></li>
+							<li><a class="dropdownItem mx-auto" href="http://www.davidmacd.com/blog/testing-blog.html">BLOG</a></li>
+							<li><a class="dropdownItem mx-auto" href="http://www.davidmacd.com/site-map.html">SITEMAP</a></li>
+							<li><a class="dropdownItem mx-auto" href="http://davidmacd.com/contact.html">CONTACT</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- home section -->
+	<section id="audit" class="bg-image-2 ">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-"></div>
+				<div class="col-md-6 col-sm-6  shadowheavy2">
+					<div class="section-title">
+						<h2 id="p100" class="heading bold  text-right"
+							style="padding-top: 20px; color: black; font-size: 2.5em">
+							<br> Web Accessibility Training<br> <span
+								style="font-size: 60%"> Toronto, Montreal, Ottawa and
+								worldwide via Webex <a
+								href="http://www.davidmacd.com/web_accessibility_training_wcag_ottawa.html"
+								class="btn btn-danger" aria-labelledby="p100"
+								style="text-shadow: none;">More </a>
+							</span>
+						</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- work section -->
+	<main>
+	<section id="content-section">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-9 col-md-9 col-sm-9">
+					<div class="section-title section-title-content">
+						<h1 class="content-h1">
+							What happens with aria-labelledby, aria-label and aria-describedby <br><span class="subheading"> on static HTML elements? </span>
+					  </h1>
+					</div>
+
+					<p>An interesting <a href="https://twitter.com/davidmacd/status/1040194227181780994">Twitter thread</a> sprung up from a Tweet about overriding elements with <code>aria-label </code> with a <a href="https://twitter.com/patrick_h_lauke/status/1041272243018522624">follow up thread with my colleagues.</a> 
+					I was asked to test the results of <code>aria-label</code> on static content. This is what is below, along with <code>aria-labelledby</code> and <code>aria-describedby</code>, as well as an examination of what is &quot;supposed to happen&quot; according to the Accessible Name computation.</p>
+					
+					<h2>Conclusion: TLDR </h2>
+					<p>Screen readers are all over the map on what they do when an  <code>aria-label</code>, <code>aria-labelledby</code>, and <code>aria-describedby</code>   on static content</p>
+						 <h2>Results</h2>
+				  <h3>Well supported elements</h3>
+						 <ul> <li>  <code>aria-label</code>, <code>aria-labelledby</code> and <code>aria-describedby</code> are  robustly supported for  <a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#interactive-content-0"> interactive content</a> elements such as <a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-a-element">links</a> and form controls including the many <a href="http://www.w3.org/html/wg/drafts/html/master/single-page.html#the-input-element"><code>input</code></a> types. They also work well on <code>div</code> and <code>span</code> elements with interactive roles such as <code>role=link</code>, <code>button</code>. By design, <code>aria-label</code> or <code>aria-labelledby</code>  replace any other label text inside the element.</li>
+
+<li>All three are OK on  <code>nav</code>  and <code>main</code> elements.</li>
+		      <li>They are OK on <code>div</code> elements <strong>IF</strong>  they have <code>role=navigation</code>, <code>search</code>, <code>main</code>, <code>img.</code></li>
+		      <li>They are OK on a <code>table</code> element (<em><strong>except</strong></em> ignored by VoiceOver on iOS).</li>
+		      <li><code>aria-describedby</code>  is OK on  <code>h1, h2, h3, h4, h5, h6</code> elements. </li>
+                  </ul>
+						 <h3>Other static elements with <code>aria-label</code>, <code>aria-labelledby</code> and <code>aria-describedby</code></h3>
+						 <p>NOTE: There are no appreciable differences in these tests across popular browsers,  platforms or in iframes. </p>
+			      <div class="table-responsive">
+					<table class="table table-striped table-bordered" >
+					<thead class="thead-dark">
+						<tr>
+							<th width="15%" scope="col">&nbsp;</th>
+							<th width="15%" scope="col">JAWS</th>
+							<th width="15%" scope="col">NVDA</th>
+							<th width="20%" scope="col">VoiceOver</th>
+							<th width="12%" scope="col">Talkback</th>
+						</tr>
+						</thead>
+						<tbody><tr>
+							<th scope="row"><code>aria-labelledby </code>
+							  <br>and<br>
+						    <code> aria-label</code></th>
+							<td ><p>Ok on <code>td</code>, <code>th</code></p>
+							  <p>Ignored on all  other static content <em><strong>except</strong></em> those listed above</p>
+					     </td>
+							<td ><p><code>h1, h2, h3, h4, h5, h6</code> are overridden. So are elements with <code>role=heading</code>.  </p>
+						    <p> <code>landmark</code> roles OK. </p>
+						    <p>Ignored on all other static content <em><strong>except</strong></em> those listed above</p></td>
+							<td><p><code>h1, h2, h3, h4, h5, h6</code> are overridden. So are elements with <code>role=heading</code>. User  can interact with heading to hear it, but its not easily discoverable. </p>
+                              <p> <code>landmark</code> roles OK. </p>
+                            <p>Other elements read aria-label with virtual cursor and then let user enter and read the contents.</p></td>
+							<td><p>All the static content is overridden except <code>ul</code> and <code>li</code>  which are ignored </p></td>
+						</tr>
+						<tr>
+							<th scope="row"><code>aria-describedby</code></th>
+							<td><p><strong><em>Well supported</em></strong> on static content</p></td>
+							<td ><p><code>h1, h2, h3, h4, h5, h6</code> are OK as are elements with <code>role=heading</code>. </p>
+						    <p>Ignored on  static content not listed above unless given an interactive role and <code>tabindex=0</code>, and then only if the users tabs to it (not arrows to it).</p></td>
+							<td><p>VO on MacOS is different from iOS<br>
+							</p>
+						    <p>VO on MacOS   is OK on most static content.</p>
+						    <p> VO on iOS only reads it if on <code>landmark</code> roles. </p></td>
+							<td><strong><em>Well supported</em></strong> on static content</td>
+						</tr></tbody>
+					</table></div>
+						 
+			     
+
+	 
+	<p> <code>aria-label</code>  and <code>aria-labelledby</code> have  similar behaviour in screen readers and the Accessibility API, but <code>aria-label</code> should be reserved for when there is no visible text on the page to reference or when keeping track of <code>id</code> values would be too difficult. </p>
+  
+		         
+				
+				  <h3>What happens when roles are added?</h3>
+		          <ul>
+						 <li>If the role is an interactive <code>role </code> (that can be clicked on such as button or link) or an image role the <code>aria-label</code> or <code>aria-labelledby</code> overrides the text</li>
+						  <li>If its a heading <code>role </code>, <code>aria-label</code> or <code>aria-labelledby</code> overrides it on NVDA, VoiceOver and Talkback. JAWS ignores the <code>aria-label</code> or <code>aria-labelledby</code>.</li>
+						 <li>If the <code>role </code> is a static role then <code>aria-label</code> will be ignored by all screen readers except Talkback which overrides the static content (except if its <code>listitem</code>  role, then its ignored).</li>
+		          </ul>
+		          <h2>
+					    What do the Specs 
+							say?
+				  </h2>
+					<p>The Accessible Name Computation spec provides a calculation of an accessible <a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-name">NAME</a>. 
+					
+					the definition says:
+				  <blockquote>
+						
+						The accessible name is the name of a user interface element. ...
+				  </blockquote>
+					So I tried to look up "user interface element", in the glossary. There is no definition for  "user interface element" in the <a href="https://www.w3.org/TR/wai-aria-1.1/"> ARIA spec</a>, the <a
+							href="https://www.w3.org/TR/html-aam-1.0/">Accessible Name Computation spec</a> or the <a href="https://www.w3.org/TR/html52/">   HTML 5.2</a>.	It	is	clear	that different assistive technologies are interpreting this differently. JAWS doesn't override headings with <code>aria-label</code>, which NVDA, VO on iOS and MacOS do. So these AT's are interpreting a heading as a user interface element. I filed a bug with the aria spec and will update this article with the results of that discussion.					</p>
+	              <p> I <a href="https://github.com/w3c/aria/issues/815">filed an issue </a> with the ARIA spec to define the term &quot;user interface elements&quot; (do they include static elements?) with the hope that it will help screen readers manufacturers know what to do.</p>
+				  <br> <br>
+		          <h2>Static text Element tests with aria-roles with aria-label, aria-labelledby and aria describedby				  </h2>
+		          <p>BEGIN TEST ========== </p>
+				  <h1 aria-label="test 1">This is an h1  with aria-label="test 1"</h1>
+					<h2 aria-label="test 2">h2  with aria-label="test 2"</h2>
+					<h3 aria-label="test 3">h3 with aria-label="test 3"</h3>
+					<h4 aria-label="test 4">h4 with aria-label="test 4"</h4>
+					<h5 aria-label="test 5">h5 with aria-label="test 5"</h5>
+					<h6 aria-label="test 6">h6 with aria-label="test 6"</h6>
+					
+					<p aria-label="test 8">p element with aria-label="test 8"</p>
+					<span aria-label="test 9">span element with aria-label="test 9"</span>
+					<div aria-label="test 10">
+					  div element with aria-label="test 10"
+					  
+					</div>
+					<fieldset><legend aria-label="Test 11">legend element with aria-label="Test 11". It is inside a fieldset element </legend></fieldset>
+					<ul>
+					  <li aria-label="Test 11">li with aria-label="Test 11". It is inside of a ul element </li></ul>
+					<ul aria-label="Test 11"><li>li element inside ul element. The ul has aria-label="Test 11"  </li></ul>
+					<footer   aria-label="test 20">footer element with aria-label="test 20"  </footer><br>
+						<header   aria-label="test 20">header element with aria-label="test 20"  </header>
+				  <nav aria-label="test 7">nav element  with aria-label="test 7"</nav><br>
+							<aside   aria-label="test 20">aside element with aria-label="test 20"  </aside>
+						<main   aria-label="test 20"> main element with aria-label="test 20" </main><br>
+						<section   aria-label="test 20"> section element with aria-label="test 20 </section><br>
+						
+						<table aria-label="test21"><tr><th>This is a  table with aria-label="test21" on table element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+						<table><tr><th aria-label="test22">This is a  table with aria-label="test22" on th element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+						<table><tr><th>This is a  table with aria-label="test23" on td element</th><th>header 2</th></tr>
+						<tr><td aria-label="test 23">td 1</td><td>td 2</td></tr></table>
+				
+				<br>
+						
+						<table ><tr><th>This is a  table with aria-label="test22" on 2nd row tr element</th><th>header 2</th></tr>
+						<tr aria-label="test22"><td>td 1</td><td>td 2</td></tr></table>
+				<br>
+				
+					=== aria-labelledby ===
+					 <h1 aria-labelledby="static-text">aria-labelledby="static-text" on an h1 referencing text below</h1>
+				  <h2 aria-labelledby="static-text">h2  with aria-labelledby="static-text" </h2>
+				  <h3 aria-labelledby="static-text">h3 with aria-labelledby="static-text"</h3>
+				  <h4 aria-labelledby="static-text">h4 with aria-labelledby="static-text" </h4>
+				  <h5 aria-labelledby="static-text">h5 with aria-labelledby="static-text" </h5>
+				  <h6 aria-labelledby="static-text">h6 with aria-labelledby="static-text" </h6>
+				  
+				  <p aria-labelledby="static-text">p element with aria-labelledby="static-text" </p>
+				  <span aria-labelledby="static-text">span element with aria-labelledby="static-text" </span>
+				  <div aria-labelledby="static-text">
+					  div element with aria-labelledby="static-text
+					  
+				  </div>
+					<fieldset><legend aria-labelledby="static-text">legend element with aria-labelledby="static-text" . It is inside a fieldset element </legend></fieldset>
+					<ul>
+					  <li aria-labelledby="static-text">li with aria-labelledby="static-text" . It is inside of a ul element </li></ul>
+					<ul><li aria-labelledby="static-text">li element inside ul element. The ul has aria-labelledby="static-text"   </li></ul>
+					<footer   aria-labelledby="static-text">footer element with aria-labelledby="static-text"  </footer><br>
+						<header   aria-labelledby="static-text">header element with aria-labelledby="static-text"  </header>
+							<aside  aria-labelledby="static-text">aside element with aria-labelledby="static-text"  </aside>
+						<main   aria-labelledby="static-text"> main element with aria-labelledby="static-text" </main><br>
+				  <nav aria-labelledby="static-text">nav element  with aria-labelledby="static-text" </nav><br>
+						<section   aria-labelledby="static-text"> section element with aria-labelledby="static-text" </section><br>
+						
+						<table aria-labelledby="static-text"><tr><th>This is a  table with aria-labelledby="static-text" on table element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+						<table><tr><th  aria-labelledby="static-text">This is a  table with aria-labelledby="static-text" on th element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+							<table><tr><th>This is a  table with aria-labelledby="static-text" on  td element</th><th>header 2</th></tr>
+						<tr><td aria-labelledby="static-text">td 1</td><td>td 2</td></tr></table>
+				<br>
+				
+				<table ><tr><th>This is a  table with aria-labelledby on 2nd row tr element</th><th>header 2</th></tr>
+						<tr aria-labelledby="static-text"><td>td 1</td><td>td 2</td></tr></table>
+				
+					=== aria-describedby ===
+					  <h1 aria-describedby="static-text">aria-describedby="static-text" on an h1 referencing text below</h1>
+					<h2 aria-describedby="static-text">h2  with aria-describedby="static-text" </h2>
+					<h3 aria-describedby="static-text">h3 with aria-describedby="static-text"</h3>
+					<h4 aria-describedby="static-text">h4 with aria-describedby="static-text" </h4>
+					<h5 aria-describedby="static-text">h5 with aria-describedby="static-text" </h5>
+					<h6 aria-describedby="static-text">h6 with aria-describedby="static-text" </h6>
+				
+					<p aria-describedby="static-text">p element with aria-describedby="static-text" </p>
+					<span aria-describedby="static-text">span element with aria-describedby="static-text" </span>
+					<div aria-describedby="static-text">
+					  div element with aria-describedby="static-text"
+					  
+					</div>
+					<fieldset><legend aria-describedby="static-text">legend element with aria-describedby="static-text" . It is inside a fieldset element </legend></fieldset>
+					<ul>
+					  <li aria-describedby="static-text">li with aria-describedby="static-text" . It is inside of a ul element </li></ul>
+					<ul><li aria-describedby="static-text">li element inside ul element. The ul has aria-describedby="static-text"   </li></ul>
+					<footer   aria-describedby="static-text">footer element with aria-describedby="static-text"  </footer><br>
+						<header   aria-describedby="static-text">header element with aria-describedby="static-text"  </header>
+							<aside  aria-describedby="static-text">aside element with aria-describedby="static-text"  </aside>
+						<main   aria-describedby="static-text"> main element with aria-describedby="static-text" </main>
+				  <nav aria-describedby="static-text">nav element  with aria-describedby="static-text" </nav><br>
+					<section   aria-describedby="static-text"> section element with aria-labelledby="static-text" </section><br>
+					
+					<table aria-describedby="static-text"><tr><th>This is a  table with aria-describedby="static-text" on table element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+						<table><tr><th  aria-describedby="static-text">This is a  table with aria-describedby="static-text" on th element</th><th>header 2</th></tr>
+						<tr><td>td 1</td><td>td 2</td></tr></table><br>
+						
+							<table><tr><th>This is a  table with aria-describedby="static-text" on td element</th><th>header 2</th></tr>
+						<tr><td aria-describedby="static-text">td 1</td><td>td 2</td></tr></table>
+				  <br>
+				
+				<table ><tr><th>This is a  table with aria-describedby on 2nd row tr element</th><th>header 2</th></tr>
+						<tr aria-describedby="static-text"><td>td 1</td><td>td 2</td></tr></table>
+					End TEST ==========
+					<br><br>
+					   <h2>Static text Elements with role attributes and aria-label, aria-labelledby and aria describedby</h2>
+					
+				BEGIN TEST ====<br>
+				=== aria-label ===<br>
+					<span role="img" aria-label="test 12">span element with aria-label="test 12" with role=img</span>
+					<div role="img" aria-label="test 13">
+					  div element with aria-label="test 13"  with role=img
+					  
+					</div>
+					<div role="note" aria-label="test 35">
+					  <p>div element with aria-label="test 35"  with role=note
+					    
+				      </p>
+					</div>
+				  <span role="button" tabindex="0"  aria-label="test 14">span element with aria-label="test 14" with role=button and tabindex=0</span>
+					<div role="button" tabindex="0" aria-label="test 15">
+					  <p>div element with aria-label="test 15" with role=button and tabindex=0</p>
+					  
+					</div>
+					
+					<span role="heading" aria-level="1" aria-label="test 16">span element with aria-label="test 16" with role=heading and aria-level=1</span><br>
+					<div  role="heading" aria-level="1" aria-label="test 17">div element with aria-label="test 17" with role=heading and aria-level=1</div>
+					<span role="link"  aria-label="test 18">span element with aria-label="test 18" with role=link </span><br>
+					<span role="listitem"  aria-label="test 19">span element with aria-label="test 19" with role=listitem </span><br>
+					<div role="banner"  aria-label="test 20">div element with aria-label="test 20" with role=banner </div>
+					<div role="contentinfo"  aria-label="test 20">div element with aria-label="test 20" with role=contentinfo </div>
+					<div role="complementary"  aria-label="test 20">div element with aria-label="test 20" with role=complementary </div>
+					<div role="main"  aria-label="test 20">div element with aria-label="test 20" with role=main </div>
+					<div role="search"  aria-label="test 20">div element with aria-label="test 20" with role=search </div>
+					<div role="banner"  aria-label="test 20">div element with aria-label="test 20" with role=banner </div>
+					<div role="navigation"  aria-label="test 20">div element with aria-label="test 20" with role=navigation </div>
+					
+					
+				<br> === aria-labelledby ===<br><br>
+				  <span role="img" aria-labelledby="static-text">span element with aria-labelledby="static-text"  with role=img</span>
+				  <div role="img" aria-labelledby="static-text">
+					  div element with aria-labelledby="static-text"   with role=img
+					  
+					</div>
+				  <span role="button" tabindex="0"  aria-labelledby="static-text">span element with aria-labelledby="static-text"  with role=button and tabindex=0</span>
+				  <div role="button" tabindex="0" aria-labelledby="static-text">
+					  <p>div element with aria-labelledby="static-text"  with role=button and tabindex=0</p>
+					  
+					</div>
+					
+				  <span role="heading" aria-level="1" aria-labelledby="static-text">span element with aria-labelledby="static-text"  with role=heading and aria-level=1</span><br>
+				  <div  role="heading" aria-level="1" aria-labelledby="static-text">div element with aria-labelledby="static-text"  with role=heading and aria-level=1</div>
+				  <span role="link"  aria-labelledby="static-text">span element with aria-labelledby="static-text"  with role=link </span><br>
+				  <span role="listitem"  aria-labelledby="static-text">span element with aria-labelledby="static-text"  with role=listitem </span><br>	
+				  <div role="banner"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=banner </div>
+					<div role="contentinfo"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=contentinfo </div>
+					<div role="complementary" aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=complementary </div>
+					<div role="main"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=main </div>
+					<div role="search"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=search </div>
+					<div role="banner"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=banner </div>
+					<div role="navigation"  aria-labelledby="static-text">div element with aria-labelledby="static-text" with role=navigation </div>
+					
+					
+						<br> === aria-describedby ===<br>
+					<span role="img" aria-describedby="static-text">span element with aria-describedby="static-text"  with role=img</span>
+					<div role="img" aria-describedby="static-text">
+					  div element with aria-describedby="static-text"   with role=img
+					  
+					</div>
+					<span role="button" tabindex="0"  aria-describedby="static-text">span element with aria-describedby="static-text"  with role=button and tabindex=0</span>
+					<div role="button" tabindex="0" aria-describedby="static-text">
+					  <p>div element with aria-describedby="static-text"  with role=button and tabindex=0</p>
+					  
+					</div>
+					
+					<span role="heading" aria-level="1" aria-describedby="static-text">span element with aria-describedby="static-text"  with role=heading and aria-level=1</span><br>
+					<div  role="heading" aria-level="1" aria-describedby="static-text">div element with aria-describedby="static-text"  with role=heading and aria-level=1</div>
+					<span role="link"  aria-describedby="static-text">span element with aria-describedby="static-text"  with role=link </span><br>
+					<span role="listitem"  aria-describedby="static-text">span element with aria-describedby="static-text"  with role=listitem </span><br>	
+						  <div role="banner"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=banner </div>
+					<div role="contentinfo"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=contentinfo </div>
+					<div role="complementary" aria-describedby="static-text">div element with aria-describedby="static-text" with role=complementary </div>
+					<div role="main"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=main </div>
+					<div role="search"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=search </div>
+					<div role="banner"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=banner </div>
+					<div role="navigation"  aria-describedby="static-text">div element with aria-describedby="static-text" with role=navigation </div>
+					
+					
+					<span id="static-text">Here is some text to reference with id="static-text"</span><br><br>
+				 END OF TEST ===============
+				  <br><br>
+			      <h2>Results</h2>
+			      <div class="table-responsive">
+					<table class="table table-striped table-bordered" >
+					<thead class="thead-dark">
+						<tr>
+							<th width="12%" scope="col">&nbsp;</th>
+							<th width="21%" scope="col">JAWS</th>
+							<th width="25%" scope="col">NVDA</th>
+							<th width="30%" scope="col">VoiceOver</th>
+							<th width="12%" scope="col">Talkback</th>
+						</tr>
+						</thead>
+						<tr>
+							<th scope="row">FireFox  (Sept 2018)</th>
+							<td ><p>Aria-label, aria-labelledby are ignored on all  static content unless it has a an interactive role, <code>img</code> role, or <code>nav</code>, <code>main</code>, <code>search</code> roles.</p>
+						    <p>aria-describedby well supported on static content</p></td>
+							<td ><p>Aria-label, aria-labelledby  are override headings.</p>
+						    <p> <code>landmark</code> roles OK. </p>
+						    <p>On other elements there is no aria-label aria-labelledby read.</p>
+						    <p>aria-describedby pooly supported on static content</p></td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<th scope="row">IE  (Sept 2018)</th>
+							<td><p>Aria-label, aria-labelledby are ignored on all  static content unless it has a an interactive role, <code>img</code> role, or <code>nav</code>, <code>main</code>, <code>search</code> roles.</p>
+						    <p>aria-describedby well supported on static content</p></td>
+							<td ><p>Aria-label, aria-labelledby  are override headings.</p>
+                              <p> <code>landmark</code> roles OK. </p>
+                              <p>On other elements there is no aria-label aria-labelledby read.</p>
+                            <p>aria-describedby pooly supported on static content</p></td>
+							<td>N/A</td>
+							<td>N/A</td>
+						</tr>
+						<tr>
+							<th scope="row">Chrome  (Sept 2018)</th>
+							<td ><p>Aria-label, aria-labelledby are ignored on all  static content unless it has a an interactive role, <code>img</code> role, or <code>nav</code>, <code>main</code>, <code>search</code> roles.</p>
+						    <p>aria-describedby well supported on static content</p></td>
+							<td ><p>Aria-label, aria-labelledby  are override headings.</p>
+                              <p> <code>landmark</code> roles OK. </p>
+                              <p>On other elements there is no aria-label aria-labelledby read.</p>
+                            <p>aria-describedby pooly supported on static content</p></td>
+							<td><p><span 
+							>All the headings are overridden by the VO, User then has to interact with heading to hear it, but would not discover that easily. Other elements read <code>aria-label </code> when virtual cursor hits the elements and then let user enter and read the contents.</span></p>
+						    <p>aria-describedby pooly supported on static content</p></td>
+							<td><p>All the static content is overridden  except list items which are ignored (weird)</p>
+						    <p>aria-describedby well supported on static content</p></td>
+						</tr>
+						<tr>
+							<th scope="row"><p>Safari MacOS</p>
+						    <p> (Sept 2018)</p></th>
+							<td>N/A</td>
+							<td>N/A</td>
+							<td ><p>All the headings are overridden by the VO, User then has to interact with heading to hear it, but would not discover that easily. Other elements read <code>aria-label </code> when virtual cursor hits the elements and then let user enter and read the contents.</p>
+						    <p>aria-describedby pooly supported on static content</p></td>
+							<td >N/A</td>
+						</tr>
+						<tr>
+						  <th scope="row"><p>Safari iOS (Sept 2018)</p></th>
+						  <td>N/A</td>
+						  <td>N/A</td>
+						  <td ><p>All the headings are overridden by the VO. <code>nav</code> reads the label and then the contents correctly. On other elements there is no <code>aria-label </code> read.</p>
+					      <p>aria-describedby pooly supported on static content</p></td>
+						  <td >N/A</td>
+				      </tr>
+					</table></div>
+					
+				  <p>
+						Feel free to comment on Twitter <a
+							href="https://twitter.com/davidmacd">@davidmacd </a>
+					</p>
+					<h4>Author information:</h4>
+					<p>
+						David MacDonald is a veteran WCAG member, co-editor of <a
+							href="http://www.w3.org/TR/aria-in-html/">Using WAI ARIA in
+							HTML5 
+						</a> and HTML5 Accessibility Task Force Member. Opinions are my own.
+					</p>
+					<br>
+					<div class="text-center">
+						<a href="http://www.davidmacd.com/blog/testing-blog.html"
+							class="btn btn-danger btn-big">All Blog Articles</a>
+					</div>
+					<br>
+					<br>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<aside>
+						<a href="http://www.davidmacd.com" class="link-black"><img
+							src="http://www.davidmacd.com/images/icons/canadapt_logo.svg"
+							class="width100" alt="Can Adapt Logo"><br>
+							<div class="center-header size80">
+								<em>Adapting the web to all users</em>
+							</div></a>
+						<div class="hr-ruler"></div>
+						<span class="skipnav"><a href="#contact">Skip Twitter
+								Feed</a></span><br> <a class="twitter-timeline" data-height="400"
+							data-theme="dark" data-chrome="nofooter noheader noscrollbar"
+							data-link-color="#FAB81E" href="https://twitter.com/davidmacd">Tweets
+							by davidmacd</a>
+						<script async src="//platform.twitter.com/widgets.js"
+							charset="utf-8"></script>
+						<div class="endorse">
+							<h3 class="h3-content">Endorsements</h3>
+							<br>
+							<div class="side-quote">
+								<blockquote class="none">"I have worked with David
+									since he joined the WCAG Working Group in 2002. One of the most
+									productive members, authored innumerable techniques, failures,
+									prototypes, examples. He is innovative ... solutions based on
+									real world test cases. David truly is a world expert on
+									Accessibility and web access."</blockquote>
+							</div>
+							<br>
+							<em class="size80">Katie Haritos-Shea, WCAG Invited Expert,
+								IAAP Certification Committee.</em><br>
+						</div>
+						<br>
+						<div class="center-header">
+							<a href="http://www.davidmacd.com/endorsements.html"
+								class="btn btn-danger">More Endorsements</a>
+						</div>
+					</aside>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- contact section -->
+	<section id="contact">
+		<div class="container">
+			<div class="row  shadowlight">
+				<div class="col-md-12 col-sm-12 text-center">
+					<div class="section-title">
+						<h2 class="heading bold foot-head">CONTACT US</h2>
+						<p>For a quote or just to chat about your organization's needs</p>
+						<div class="hr-ruler"></div>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div class="row contact-info shadow mx-auto">
+				<div class="col-md-4 col-sm-4">
+					<h3 class="text-center">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i> EMAIL
+					</h3>
+
+					<p class="text-center">
+						<img src="http://www.davidmacd.com/images/p-mail.png"
+							alt="help at can hyphen adapt dot com, (spoken phonetically to trick spam bots)">
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h3 class="text-center">
+						<i class="fa fa-mobile" aria-hidden="true"></i> PHONE
+					</h3>
+					<p class="text-center">
+						<img src="http://www.davidmacd.com/images/p-number.png"
+							alt="six one three, eight zero six, nine zero zero five">
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<h3 class="text-center">
+						<i class="fa fa-comments-o " aria-hidden="true"></i> SOCIAL MEDIA
+					</h3>
+					<p class="social-icon text-center">
+						<a href="https://www.linkedin.com/in/davidmacdonald100"><img
+							alt="Go to linkedIn profile"
+							src="http://davidmacd.com/images/icons/Logo-2CRev-34px-R.png" class="width30"></a> <br>
+						<a href="https://www.twitter.com/davidmacd"><span>Twitter
+								&nbsp;</span><img
+							src="http://davidmacd.com/images/icons/Twitter_Social_Icon_Circle_Color.svg"
+							class="width10" alt=""></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	</main>
+
+	<!-- footer section -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<p>
+						<a href="http://www.davidmacd.com" class="link-white"><img
+							src="http://www.davidmacd.com/images/icons/final-logo-white-red-small.png"
+							class="glyphicon-align-center" alt="CanAdapt logo"><br>Copyright
+							© CanAdapt Solutions Inc. </a>&nbsp;&nbsp;&nbsp;&nbsp; <a
+							href="http://www.davidmacd.com/terms-and-conditions.html"
+							class="link-white"><br>Terms and Conditions </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://use.fontawesome.com/3555306538.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+	<script src="http://davidmacd.com/js/fix-bs-menu.js"></script>
+</body>
+</html>

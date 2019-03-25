@@ -1,0 +1,798 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Meiryo UI";}
+@font-face
+	{font-family:"MS PGothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:Meiryo;}
+@font-face
+	{font-family:"\@MS PGothic";}
+@font-face
+	{font-family:"\@Meiryo UI";}
+@font-face
+	{font-family:"\@Meiryo";}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:28.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:28.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Heading 5 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Heading 6 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:2.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Heading 7 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Heading 8 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:3.75in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Heading 9 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:4.25in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Calibri Light",sans-serif;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-weight:bold;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-link:"Heading 5";
+	font-weight:bold;
+	font-style:italic;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-link:"Heading 6";
+	font-weight:bold;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-link:"Heading 7";}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-link:"Heading 8";
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-link:"Heading 9";
+	font-family:"Calibri Light",sans-serif;}
+.MsoChpDefault
+	{font-size:11.0pt;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='text-justify-trim:punctuation'>
+
+<div class=WordSection1>
+
+<h1 style='margin-left:0in;text-indent:0in'><b><span style='font-size:44.0pt;
+font-family:"Meiryo UI",sans-serif;color:#141719'>Promoting Web Accessibility<br>
+With Organizational Vision</span></b></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>Daisuke Kobayashi (Cybozu, inc)<br>
+Yuta Saito (Cybozu, inc)</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Presenters</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>2012:</span><span style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> Started my career as
+a programmer</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>2014:</span><span style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> Saw the usability
+test for people with low vision</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>2018:</span><span style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> Became Accessibility
+expert</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Presenters</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>I'm involved in user
+research and user centered design</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>We design and develop </span><span
+style='color:#141719'>&nbsp;</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>'Groupware'</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Topic
+1</span></b><b><span style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;
+color:#141719'>/3</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-size:24.0pt;
+font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;<span
+style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Especially in Japan,
+it is difficult to promote web accessibility.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-size:24.0pt;
+font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;<span
+style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>The current situation
+in Japan.</span><span style='font-size:24.0pt;color:#141719'>&nbsp;</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-size:24.0pt;
+font-family:"Meiryo UI",sans-serif;color:#141719'>&nbsp;</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-size:24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>&nbsp;</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Topic
+</span></b><b><span style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;
+color:#141719'>2/3</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-size:24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;<span
+style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Organizational vision
+is going to be a key theme.</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Topic
+</span></b><b><span style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;
+color:#141719'>3/3</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-size:24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;<span
+style='font:7.0pt "Times New Roman"'> </span></span><span style='font-size:
+24.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Seminars and Workshops
+to promote web accessibility.</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:white'>The
+difficulty of<br>
+promoting web accessibility</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Do you
+promote accessibility?<br>
+If so, how?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:40.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Ways to
+promote web accessibility</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Legal
+Risk</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Many
+countries have</span></b><b><span style='font-size:32.0pt;color:#141719'>&nbsp;</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>been
+establishing<br>
+ laws &amp; policy</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>ADA
+Web Accessibility-Related Lawsuits</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Lawsuits
+and litigations become total risks</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>How
+about Japan?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>How
+about Japan?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>JIS-X
+8341-3</span></b></h1>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>JIS = Japanese
+Industrial Standards</span></b></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>JIS-X
+8341-3</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>Created in 2004</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>Got similar to WCAG 2.0 in 2016</span></h2>
+
+<h3 style='margin-left:25.5pt;text-indent:0in'><span style='font-size:28.0pt;
+font-family:Wingdings;color:#141719'>l</span><span style='font-size:28.0pt;
+font-family:"Meiryo UI",sans-serif;color:#141719'>&#12288;</span><span
+style='font-size:28.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>3
+Levels (A, AA, AAA)</span></h3>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&nbsp;</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Law
+of web accessibility in Japan</span></b></h1>
+
+<h2 style='margin-left:.25in'><span lang=EN style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>&#9612;</span><span lang=EN style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>Act for Eliminating Discrimination</span><span lang=EN
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span><span lang=EN
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>against Persons with
+Disabilities </span></h2>
+
+<h2 style='margin-left:.25in'><span lang=EN style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>&#9612;</span><span lang=EN style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>Enforced in April 2016.</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Legal
+binding force</span></b><b><span style='font-size:32.0pt;color:#141719'>&nbsp;</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>is
+very weak<span lang=JA>…</span></span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>Must make websites
+accessible.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>Some institutions
+don't make websites accessible.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>They are not follow
+JIS-X 8341-3.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>There has never been
+any single lawsuits.</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Legal
+binding force</span></b><b><span style='font-size:32.0pt;color:#141719'>&nbsp;</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>is
+very weak<span lang=JA>…</span></span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>There is NO penalty.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>Only an obligation to make best efforts.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>There has never been any single lawsuits.
+</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&nbsp;</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Reasonable
+Accommodation</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:44.0pt;font-family:"Meiryo",sans-serif;color:white'>How do you
+promote<br>
+web accessibility<br>
+<u>without explaining any legal risk?</u></span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:white'>To help
+minorities</span></b></h1>
+
+<h1 style='margin-left:0in;text-indent:0in'><b><span style='font-size:32.0pt;
+color:white'>&nbsp;</span></b><b><span style='font-size:32.0pt;font-family:
+"Meiryo UI",sans-serif;color:white'> </span></b><b><span style='font-size:32.0pt;
+color:white'>&nbsp;</span></b><b><span style='font-size:32.0pt;font-family:
+"Meiryo UI",sans-serif;color:white'>By any device</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:44.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Not
+make everyone feel empathy</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:44.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Not
+make everyone feel empathy</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>The
+Difficulty of promoting web accessibility</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:white'>What is
+important for promoting web accessibility?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Organizations
+have their own vision</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Translate
+Accessibility into organizational Vision</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:40.0pt;font-family:"Meiryo UI",sans-serif;color:white'>just to
+the people with disabilities</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'><br>
+Accessibility = Access + Ability</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>What
+does it mean? </span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>Access
+= Products / Service ???</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>What
+are your users accessing<br>
+by accessing your products?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Case of
+our company</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Our
+company<span lang=JA>’</span>s product </span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Our
+company<span lang=JA>’</span>s vision</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>How
+should they interact?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>What
+are our users accessing<br>
+by accessing our products?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>User
+access groupware?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>What is
+the Purpose?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>The
+answer is Team</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>define
+accessibility<br>
+as an ability to access to <b><u>products</u></b>.</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>define
+accessibility<br>
+as an ability to access to <b><u>teams</u></b>.</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>Respect
+users<br>
+who want to access to <b><u>teams</u></b>.</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Accessibility
+is not just about</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>A</span></b><b><span
+lang=JA style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>ccessibility
+is about <u>achieving our vision</u></span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:white'>H</span></b><b><span
+lang=JA style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:white'>ow
+to spread </span></b><b><span style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;
+color:white'>this idea<br>
+ </span></b><b><span lang=JA style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;
+color:white'>to your </span></b><b><span style='font-size:48.0pt;font-family:
+"Meiryo UI",sans-serif;color:white'>organization?</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>I
+first started promoting alone</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>When
+I first started trying to promote accessibility</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Post</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>ing</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'> </span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>blogs</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'> </span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>on</span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'> </span></b><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>our</span></b><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>
+groupware</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=EN
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+lang=EN style='font-family:"Meiryo UI",sans-serif;color:#141719'>In our
+company, we all use our groupware.</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+lang=EN style='font-family:"Meiryo UI",sans-serif;color:#141719'>Good place to
+spread my thought.</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>I
+</span></b><b><span style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;
+color:#141719'>posted many blogs</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>An</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>Introduction</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>of</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>screen reader</span><span lang=JA style='color:#141719'>&nbsp;</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>How</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>our</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>competitors</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>face</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>with</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>the</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> </span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>accessibility</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span lang=JA style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>Re</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>lat</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>i</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>onship</span><span lang=JA style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>between</span><span
+lang=JA style='color:#141719'>&nbsp;</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>w</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>e</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>b</span><span lang=JA style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>a</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>cc</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>e</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>ssibility</span><span
+lang=JA style='color:#141719'>&nbsp;</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>an</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>d</span><span lang=JA style='color:#141719'>&nbsp;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>ou</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>r</span><span lang=JA
+style='color:#141719'>&nbsp;</span><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>vision</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>In-house
+seminars and workshops</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=JA style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>We
+provided many accessibility training</span></b></h1>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+lang=JA style='font-family:"Meiryo UI",sans-serif;color:#141719'>Accessibible
+Coding &amp; Accessible Design</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+lang=JA style='font-family:"Meiryo UI",sans-serif;color:#141719'>How to check
+accessibility</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>How to use screen
+readers</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>How to create a simple
+checklist of accessibility</span></h2>
+
+<h2 style='margin-left:25.5pt;text-indent:-25.5pt'><span lang=JA
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#9612;</span><span
+lang=JA style='font-family:"Meiryo UI",sans-serif;color:#141719'>...</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>not
+just talking accessibility techniques</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Usability
+Testing by the people with disabilities</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>True
+meaning of the test</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:54.0pt;font-family:"Meiryo UI",sans-serif;color:white'>Not
+only developers</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>A
+lot of members started to have an empathy</span></b></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><i><span lang=JA style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>“It really made me want to find what I
+can do for letting </span></i><i><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>  </span></i><i><span lang=JA style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>everyone on a planet earth access to their team”.</span></i><i><span
+lang=JA style='color:#141719'>&nbsp;</span></i></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><i><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>&nbsp;</span></i></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>&#12300;&#19990;&#30028;&#20013;&#12398;&#20154;&#12364;&#12481;&#12540;&#12512;&#12395;&#12450;&#12463;&#12475;&#12473;&#12391;&#12365;&#12427;&#12424;&#12358;&#12395;
+&#33258;&#20998;&#12364;&#12391;&#12365;&#12427;&#12371;&#12392;&#12301;&#12434;&#12371;&#12428;&#12363;&#12425;&#35211;&#12388;&#12369;&#12390;&#12356;&#12365;&#12383;&#12356;&#12392;&#24515;&#12363;&#12425;&#24605;&#12356;&#12414;&#12375;&#12383;&#65281;</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>A
+lot of members started to have an empathy</span></b></h1>
+
+<h2 style='margin-left:0in;text-indent:0in'><i><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>“</span></i><i><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>I think the idea that</span></i><i><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span style='font-family:
+"Meiryo UI",sans-serif;color:#141719'>users</span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>are</span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>not</span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>accessing</span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>our</span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'> </span></i><i><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>so</span></i><i><span
+lang=JA style='font-family:"Meiryo UI",sans-serif;color:#141719'>ftware, they
+are accessing their teams</span></i><i><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'> is something we should never forget.<span lang=JA>”</span></span></i></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'><br>
+</span><span style='font-family:"Meiryo UI",sans-serif;color:#141719'>&#12300;&#12464;&#12523;&#12540;&#12503;&#12454;&#12455;&#12450;&#12395;&#12450;&#12463;&#12475;&#12473;&#12377;&#12427;&#12398;&#12364;&#30446;&#30340;&#12391;&#12399;&#12394;&#12367;&#12289;&#12300;&#12377;&#12409;&#12390;&#12398;&#12518;&#12540;&#12470;&#12301;&#12364;&#12481;&#12540;&#12512;&#12395;&#12450;&#12463;&#12475;&#12473;&#12377;&#12427;&#12371;&#12392;&#12364;&#30446;&#30340;&#12391;&#12354;&#12427;&#12392;&#12356;&#12358;&#32771;&#12360;&#26041;&#12399;&#12289;&#32118;&#23550;&#12395;&#24536;&#12428;&#12394;&#12356;&#12424;&#12358;&#12395;&#12375;&#12383;&#12356;&#12392;&#24863;&#12376;&#12414;&#12375;&#12383;&#12290;&#12301;</span></h2>
+
+<h2 style='margin-left:0in;text-indent:0in'><span style='font-family:"Meiryo UI",sans-serif;
+color:#141719'>&nbsp;</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:36.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>We
+became one team</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:36.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>We
+became one team</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Mob
+programing</span></b></h1>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-family:"Meiryo UI",sans-serif;color:#141719'>Key persons improved
+the team by sharing the knowledge</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Check
+the problems at <u>every step</u> in dev process</span></b></h1>
+
+<h2 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+lang=EN style='font-family:"Meiryo UI",sans-serif;color:#141719'>Find problems
+in an earlier stage at lower costs</span></h2>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Created
+a checklist based on WCAG2.0</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+lang=EN style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Accessibility
+is regarded as an important value </span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Many
+members having an empathy for accessibility</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:32.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Importance
+of Organizational Vision</span></b></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>We
+can overcome<br>
+the lack of legal binding</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><span
+style='font-size:48.0pt;font-family:"Meiryo UI",sans-serif;color:#1F616F'>What
+are your users <b>accessing</b><br>
+by <b>accessing</b> your products?</span></h1>
+
+<h1 align=center style='margin-left:0in;text-align:center;text-indent:0in'><b><span
+style='font-size:40.0pt;font-family:"Meiryo UI",sans-serif;color:#141719'>Promote
+Web Accessibility<br>
+With Your Organization<span lang=JA>’</span>s Vision</span></b></h1>
+
+</div>
+
+</body>
+
+</html>

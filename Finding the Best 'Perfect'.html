@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Finding the best 'perfect' - by Scott O'Hara, CSUN 2019</title>
+
+		<link rel="stylesheet" href="demos/switch/assets/css/switch--checkbox.css">
+		<link rel="stylesheet" href="demos/switch/assets/css/switch--toggle-button.css">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			body {
+				overflow-x: hidden;
+				font-family: arial;
+				font-size: 110%;
+				color: #fff;
+				background: #222;
+			}
+			pre {
+				background: #000;
+				padding: 1em;
+				overflow: auto;
+			}
+
+			h1,h2,h3,h4 {
+				line-height: 1.5;
+			}
+
+			iframe {
+				border: none;
+			}
+
+			blockquote {
+				background: rgba(255,255,255,.05);
+				border-left: 3px solid #fff;
+				margin: 0;
+				padding: 1em;
+			}
+
+			@media screen and ( min-width: 600px ) {
+				body {
+					font-size: 150%;
+				}
+
+				.chk-cont {
+					max-width: 45%
+				}
+			}
+
+
+			small {
+				font-size: 75%;
+			}
+
+			a[href] {
+				color: #00d3ff;
+			}
+
+			details {
+				display: block;
+				margin-top: 2em;
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			a[href]:hover,
+			a[href]:focus {
+				outline: 2px solid;
+				text-decoration: none;
+			}
+
+			section {
+				margin: auto;
+				max-width: 1100px;
+				min-height: 20em;
+				overflow: hidden;
+				padding: 2em;
+				position: relative;
+				transform: none;
+			}
+
+			section:not(:last-of-type) {
+				border-bottom: 2px solid;
+			}
+
+			.opacity {
+				opacity: 0;
+			}
+
+			@media screen and ( max-width: 600px) {
+				.hide-img-mobile {
+					background: none!important;
+				}
+				.opacity {
+					opacity: 1;
+				}
+
+				section {
+					padding: .75em;
+					margin: .5em;
+				}
+			}
+
+
+			li {
+				margin-top: .5em;
+			}
+
+			.modals img {
+				border: 2px solid black!important;
+			}
+
+
+			iframe {
+				background: #fff;
+			}
+
+			.btn {
+				background: transparent !important;
+				border-radius: 6px !important;
+				border: 2px solid #fff !important;
+				color: #fff !important;
+				cursor: pointer;
+				display: inline-block !important;
+				font-size: .4em !important;
+				padding: .75em 1.25em !important;
+			}
+
+			.btn:hover {
+				background: #000 !important;
+			}
+
+			.btn:focus {
+				outline: 2px solid lightblue !important;
+				outline-offset: 4px !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<div>
+				<section>
+					<img src="images/road-closed.jpg" alt style="position: absolute; left: -9em; top: -2em; width: 160vw; height: 160vh; max-height: 200vh; opacity: .05; max-width: 200vw">
+					<div style="position: relative; z-index: 2">
+						<h1 style="font-size: 180%">
+							Finding the best "perfect"
+						</h1>
+						<p>
+							<span>Or, as submitted...</span>
+						</p>
+						<p>
+							Roads Less Traveled:<br>
+							<span style="font-size: 120%">
+								When to Detour from Standards to Reach Accessible UX
+							</span>
+						</p>
+						<p style="margin-top: 3em">
+							Presented at <a href="http://www.csun.edu/cod/conference/2019/sessions/index.php/public/presentations/view/1167">CSUN 2019</a>
+						</p>
+						<p>By <a href="https://twitter.com/scottohara">Scott O'Hara</a>
+							of <a href="https://www.paciellogroup.com/">The Paciello Group (TPG)</a>
+						</p>
+					</div>
+				</section>
+
+
+				<section data-background="images/obviously.png">
+					<h2>
+						Accessibility and inclusive UX can be hard...
+					</h2>
+					<img src="images/obviously.png" style="float: right" alt="Captain Obvoius, from hotels.com commercials, knowingly putting his finger to his face.">
+					<small>(thank you captain obvious)</small>
+
+					<details>
+						<summary>Notes: a11y and inclusive UX can be hard</summary>
+						<p>
+							Not just within the scope of auditing,
+							writing criteria for new accessible features.
+						</p>
+						<p>
+							But specifically when
+							you have to convince designers, developers,
+							and stakeholders to make it a priority.
+						</p>
+
+						<p>
+							Getting buy in can be hard.  It can be harder
+							when you get buy in, and then you follow criteria,
+							specifications, best practices, and things don't
+							work out as expected.
+						</p>
+					</details>
+				</section>
+
+				<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+					<h2 class="opacity">
+						Trivia Time!
+					</h2>
+
+					<p style="text-align: center; margin-top: 4em">Unexpected stage setting...</p>
+				</section>
+
+
+				<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+					<h3 class="opacity">
+						Trivia Time!
+					</h3>
+<pre style="margin-top: 4em;"><code>&lt;img src="logo.svg" role="img" alt="..."></code></pre>
+					<p>
+						Without <code>role=img</code> VoiceOver on...</p>
+						<ul>
+							<li>macOS announces as the <code>&lt;img></code> as a "group"</li>
+							<li>and iOS will ignore it entirely</li>
+						</ul>
+					<p>
+						<a href="https://bugs.webkit.org/show_bug.cgi?id=187695" title="by eric eggart">bug filed</a>
+					</p>
+				</section>
+
+
+				<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+					<h3 class="opacity">
+						Trivia Time!
+					</h3>
+					<img src="images/buttons-hc.jpg" alt="native buttons showing off their colors in windows high contrast mode. white for normal, and aria-disabled. green for button with disabled attribute (respecting WHCM setting)" style="width: 100%; border: 0; box-shadow: none; margin-top: 4em;">
+					<p >
+					Windows High Contrast Mode cares not for your ARIA</p>
+					<p>
+						<span>
+							<a href="https://www.scottohara.me/blog/2019/02/12/high-contrast-aria-and-images.html">More info on Windows High Contrast Mode styling</a></span>
+					</p>
+				</section>
+
+					<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+						<h3 class="opacity">
+							Trivia Time!
+						</h3>
+
+						<p style="margin-top: 4em">
+							Safari and Chrome on macOS currently need:
+						</p>
+<pre style="margin: 0;"><code>&lt;footer role="contentinfo">
+
+&lt;address role="presentation">
+</code></pre>
+						<p><span>
+							<a href="https://bugs.webkit.org/show_bug.cgi?id=190138">bug filed (fixed)</a> and
+							<a href="https://bugs.webkit.org/show_bug.cgi?id=194654">bug filed (open)</a>, respectively
+						</span>
+						</p>
+						<details>
+							<summary>Notes: contentinfo</summary>
+							<p>
+								Largely through browser implementation, and partially through screen readers
+								propping up IE, landmarks have great support.  But Webkit has open issues for correctly exposing contentinfo.
+							</p>
+						</details>
+					</section>
+
+					<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+						<h3 class="opacity">
+							Trivia Time!
+						</h3>
+
+							<p style="margin-top: 4em">
+								Firefox Android presently lacks support for <br>
+								<code>aria-describedby</code>
+								<small>(at least with form fields, needs more testing)</small>.
+							</p>
+							<pre><code>&lt;input aria-describedby="desc">&lt;p id="desc">Ignored!&lt;/p></code></pre>
+							<p>
+								<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1525470">bug filed (fix will release in Firefox 67)</a>.
+							</p>
+					</section>
+
+
+				<section class="hide-img-mobile" style="background: url(images/trivia.jpg) no-repeat center top;">
+					<h3 style="margin-top: 5em;">Just one more question:</h3>
+					<p>Where am I going with this?</p>
+
+					<details>
+						<summary>Notes: one more question</summary>
+						<p>
+							It's not enough to point to best practices, if those best
+							practices currently have gaps in implementation, have only a passable
+							user experience, or result in avoidable assistive technology quirks.
+						</p>
+						<p>
+							Technology and user expectations change rapidly.  We should always test to ensure not only emerging patterns work correctly, but tried and true patterns continue to work as we expect.
+						</p>
+					</details>
+				</section>
+
+
+				<section style="background: url(images/RoadClosed.jpg) no-repeat center top; background-size: cover">
+					<h2 style="background: rgba(0,0,0,.8); padding: .5em;">
+						If a road is closed, find another way
+					</h2>
+
+					<details>
+						<summary style="background: #000; width: 40%; min-width: 200px">Notes: road closed</summary>
+						<div style="background: rgba(0,0,0,.8); padding: .5em; ">
+							<p>
+								There is never not another option.  Whether it's a design change,
+								or deviating from generally accepted best practices.
+							</p>
+							<p>
+								If we can figure out a way over, around or even barreling through that gap. Let's take it. (Note: I'm not advocating for hacks that would create significant tech debt, or create a poor experience for when a bug is fixed. Rather I mean we should implement 'silent' work arounds that would have no impact were a bug to be rectified. Or implement a separate pattern/design that wouldn't cause an issue and possibly could have better UX anyway.)
+							</p>
+						</div>
+					</details>
+				</section>
+
+
+				<section data-background="images/w3c.png" data-state="w3c">
+					<h3>
+						<a href="https://www.w3.org/TR/html-design-principles/#priority-of-constituencies">HTML Design Principles WD</a>:<br> 3.2 - Priority of constituencies
+					</h3>
+					<blockquote cite="https://www.w3.org/TR/html-design-principles/#priority-of-constituencies">
+						"In case of conflict, consider users over authors over implementors over specifiers over theoretical purity."
+					</blockquote>
+
+					<details>
+						<summary>Notes: Priority of constituencies</summary>
+						<p>
+							We need specs, guidance, and shouldn't take for granted the countless hours
+							and hard work that people put into create documents.
+						</p>
+						<p>
+							But, if there's a gap in implementation, or something doesn't quite make sense or meet users' needs...
+						</p>
+						<p>
+							We can't just shrug and say "out of our hands."
+						</p>
+					</details>
+				</section>
+
+
+
+				<section style="background: url(images/directions.png); background-size: cover">
+
+					<div style="max-width: 80%;
+						background: rgba(0,0,0,.88);
+						padding: .75em;">
+						<h2>
+							Searching for<br> alternate paths:
+						</h2>
+
+						<ul>
+							<li>When expectations don't match reality.</li>
+							<li>When there are no clear expectations.</li>
+							<li>When expectations went out the window.</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section style="background: url(images/not-impressed.jpg) no-repeat top center; background-size: cover">
+					<div style="position: absolute; bottom: 1em; left: 2em; right: 2em; font-size: 80%; padding: .5em; background: #222">
+
+						<h2 style="margin: .5em 0 0;">
+							When expectations don't match reality:
+							<code>role="switch"</code>
+						</h2>
+						<p class="hide-mobile">
+							Background image: McKayla Maroney is not
+							presently impressed with <code>role="switch"</code>.
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Is it a good switch or a bad switch?</h3>
+					<p>What are the issues?</p>
+
+					<ul>
+						<li>iOS: role="switch" announces as checkbox &amp; <a  href="https://bugs.webkit.org/show_bug.cgi?id=194006">doesn't announce state.</a></li>
+						<li>Firefox and Chrome with NVDA announce as a "toggle button".</li>
+						<li>NVDA will always announce "not pressed" regardless of state.<br> (e.g. "not pressed, checked") - <a href="https://github.com/nvaccess/nvda/issues/9187">bug filed</a>.</li>
+						<li>IE11 with screen readers sort of a mix of all the above.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 style="text-align: center; margin-bottom: 1em">Which switch is switch?</h3>
+
+					<div class="chk-cont" style="margin: auto; font-size: 22px;">
+						<label class="check-switch" for="switch_2" style="overflow: visible; border: none; padding-left: 0">
+							Checkbox
+							<input type="checkbox" id="switch_2">
+							<span aria-hidden="true"></span>
+						</label>
+
+						<button type="button" id="sbtn" data-switch-toggle data-switch-toggle-pressed style="color: #fff;">
+							Button
+						</button>
+					</div>
+					<script src="demos/switch/assets/js/switch-toggle-buttons.js"></script>
+					<script>
+						// some other file.js
+						var selector = '[data-switch-toggle]';
+						var elList = document.querySelectorAll(selector);
+						var i;
+
+						for ( i = 0; i < elList.length; i++ ) {
+							var a11ybtn = new A11yToggleButton();
+							a11ybtn.init( elList[i] );
+						};
+					</script>
+
+					<p style="text-align: center; margin-top: 2em; font-size: 90%">
+						<a href="https://scottaohara.github.io/a11y_styled_form_controls/src/checkbox--switch/">Checkbox switch</a>
+						<span aria-hidden="true">|</span>
+						<a href="https://scottaohara.github.io/a11y_styled_form_controls/src/toggle-button-switch/">Toggle Button Switch</a>
+					</p>
+				</section>
+
+
+				<section>
+					<h2>When there are no <s>clear</s> expectations: carousels</h2>
+					<div style="text-align: center">
+						<details open>
+							<summary style="text-align: left;">Is this what user delight looks like?</summary>
+							<img src="images/carousel.gif" alt="animated gif of a young girl holding onto a merry-go-round with a single hand. She is laying face down on the floor and the merry-go-round is dragging her along the floor as it spins, slowly, in an infinite animated gif loop.">
+						</details>
+					</div>
+				</section>
+
+
+				<section>
+					<h2 style="text-align: center;">
+						<a href="http://shouldiuseacarousel.com/">
+							should I use a carousel.com
+						</a>
+					</h2>
+					<p style="text-align: center; font-size: 80%; margin-right: 1.25em; margin-top: -.5em">
+						Credit: <a href="https://twitter.com/jared_w_smith">Jared Smith</a>
+					</p>
+					<p style="margin-top: 1.5em; text-align: center" class="fragment">
+						No.<br>  But sometimes saying ""no" doesn't work...
+					</p>
+				</section>
+
+
+				<section>
+					<h3>Carousel Criteria:</h3>
+					<ul>
+						<li>Progressively Enhanced markup.</li>
+						<li>Have slides with a single call to action.
+							<ul style="font-size: 90%">
+								<li>Possibly with optional short description.</li>
+							<li>
+								But <b>should not</b> contain multiple accessible elements.</li>
+						</ul>
+						</li>
+						<li style="margin-top: .5em">Strive for UX Equality & considerations:
+							<ul style="font-size: 90%">
+								<li>Only active slide is accessible.</li>
+								<li>Slide purpose & current number is announced.</li>
+								<li>All users activate the CTA similarly.</li>
+								<li>Keep in mind high contrast & reduced motion media queries</li>
+							</ul>
+						</li>
+					</ul>
+
+					<details>
+						<summary>Notes: carousel criteria</summary>
+						<p>The issue with defining something like this,
+						is that the best UX may be dependent on the contents:
+
+						<p>For instance:</p>
+						<ul>
+							<li>Content-heavy single panel carousels
+							<li>Single call to action CTA / panel carousels
+							<li>Carousels with multi-panels and ctas shown at a time
+						</ul>
+						<p>I have found luck with a single-focus CTA carousel, in projects I've had to write criteria for carousels.</p>
+						<p>
+							Note: a few days before giving this talk I became aware that
+							<a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/carousel/carousel-1/carousel-1.html">ARIA authoring practices</a> have released
+							a carousel and they are presently looking for feedback.  I would recommend
+							we check it out and provide any helpful feedback we can.
+						</p>
+					</details>
+				</section>
+
+				<section>
+					<h3>The Markup</h3>
+					<pre><code>&lt;div role="group" aria-label="Name it!"
+  aria-roledescription="carousel">
+
+  &lt;!-- visually hidden -->
+  &lt;span aria-live="polite">&lt;/span>
+
+  &lt;!-- role=presentation added by JS  -->
+  &lt;ul role="presentation">
+    &lt;li role="presentation">
+      &lt;div class="panel-bg">
+        &lt;!-- img here -->
+      &lt;/div>
+      &lt;a href="...">
+        &lt;!-- CTA text here -->
+      &lt;/a>
+    &lt;/li>
+  &lt;/ul>
+
+  &lt;!-- generated by the JS -->
+  &lt;div class="pn-btn-wrap">
+    &lt;button>Previous slide&lt;/button>
+    &lt;button>Next slide&lt;/button>
+    &lt;p aria-hidden="true">X / Y&lt;/p>
+  &lt;/div>
+&lt;/div></code></pre>
+<p style="font-size: 90%">
+  <a href="https://tink.uk/using-the-aria-roledescription-attribute/">read about <code>aria-roledescription</code></a>.
+</p>
+				</section>
+
+
+				<section>
+					<h3>Single Call to action carousel (demo)</h3>
+
+					<iframe style="width: 100%; margin-top: 0; height: 500px;" title="demo carousel." src="demos/carousel/index.html"></iframe>
+
+					<p>Note: looping has been disabled in this example.</p>
+				</section>
+
+				<section>
+					<h3 style="background: rgba(0,0,0,.9); padding: .5em;">But, I still don't recommend carousels...</h3>
+
+					<details>
+						<summary style="text-align: left;">repeat of animated gif</summary>
+						<img src="images/carousel.gif" alt="animated gif of a young girl holding onto a merry-go-round with a single hand. She is laying face down on the floor and the merry-go-round is dragging her along the floor as it spins, slowly, in an infinite animated gif loop.">
+					</details>
+				</section>
+
+
+				<section >
+					<h2 style="background: #000;padding: .625em;">
+						When expectations went out the (modal) window
+					</h2>
+
+						<img src="images/modals.png" alt="two cartoon character modal dialogs are looking at each other. the one on the left says to the one on the right 'umm... your document is showing...'  the modal dialog on the right has a document (piece of paper) sticking out from behind its back. it looks embarrassed.">
+				</section>
+
+
+
+				<section>
+					<h3>What is a modal dialog:</h3>
+					<div class="modals">
+						<blockquote cite="https://www.w3.org/TR/wai-aria-1.1/#dialog">
+							Dialogs are most often used to prompt the user to enter or respond to information. A dialog that is designed to interrupt workflow is usually modal.
+							<cite style="display: block; text-align: right; font-size: .625em">- ARIA 1.1</cite>
+						</blockquote>
+
+
+						<details>
+							<summary>GitHub modal</summary>
+							<img src="images/modal-github.jpg" alt="github modal with heading, warning text, and paragraphs of content prior to auto-focused text input and disabled by default submit button">
+						</details>
+
+						<details>
+							<summary>CNN modal</summary>
+							<img src="images/modal-cnn-desktop.jpg" alt="cnn modal showcasing an add about ruth bader ginsburg, and promoting their podcast on varoius platforms." class="fragment" >
+					</details>
+						<details>
+							<summary>Sign in tab widget modal</summary><img src="images/modal-sign.jpg" alt="a modl containing a tab widget that would allow someone to sign in, register, and 'why?' to the website. the inital focus moving past the tabs and focusing the alias text field" class="fragment" >
+						</details>
+						<details>
+							<summary>Medium.com modal</summary><img src="images/modal-medium.jpg" alt="Medium's modal pompting sign in via social account, or link, with decorative graphics and explanatory content after the sign in links and buttons" >
+						</details>
+						<details>
+							<summary>Reddit modal</summary><img src="images/modal-reddit.jpg" alt="reddit modal dialog promoting their new profile feature. contains intro heading, text, a series of images and descriptions in a horizontal list format and a 'show me' button and customize your profile link(?)" >
+						</details>
+						<details>
+							<summary>"traditional" modal</summary><img src="images/modal-unable.jpg" alt="a 'standard' alert dialog indicating that a request couldn't be completed. a heading, short text paragraph and ok button are displayed." class="fragment">
+						</details>
+						<details>
+							<summary>WordPress media manager modal</summary>
+							<img src="images/modal-elf.jpg" alt="wordpress's media manager modal dialog containing varoius buttons and form fields to provide alt text and other meta information to an image. Image currently being edited is of Will Ferrell as the character he played in Elf, yelling." class="fragment">
+						</details>
+					</div>
+				</section>
+
+				<section>
+					<h3>High level modal functionality</h3>
+					<ul>
+						<li>Creates a sub-window within the primary window.</li>
+						<li><i>Should</i> contain a button to close.
+							<ul>
+								<li>expectations that <kbd>Esc</kbd> and </li>
+								<li>tapping/clicking outside will also close.
+							</li>
+							</ul>
+						</li>
+						<li><i>Should</i> have an accessible name.</li>
+						<li><i>Should</i> receive and manage focus when invoked.</li>
+						<li><i>Should</i> not allow access to content beneath the dialog.</li>
+					</ul>
+
+					<details>
+						<summary>high level notes</summary>
+						<p>"Should" does not mean "must".  "Should" is often encouraged, and typically the most desirable expectation. However, "should" also implies that authors "could" take another path if necessary.</p>
+					</details>
+				</section>
+
+				<section>
+					<h3>So what are the problems?</h3>
+					<div style="text-align: center;">
+						<a href="https://modalzmodalzmodalz.com/" style="display: inline-block;">
+							<img src="images/toomany.jpg" alt="we use too many damn modals. let's just not.">
+							<div><cite>- Adrian Egger, modalzmodalzmodalz.com</cite></div></a>
+					</div>
+				</section>
+
+				<section>
+					<h3>First...</h3>
+						<p><a href="https://www.scottohara.me/blog/2019/03/05/open-dialog.html">We can't rely on the <code>&lt;dialog></code> element</a></p>
+						<div>
+							<ul>
+								<li>Blink-based browsers only.</li>
+								<li>Inconsistent accessibility & bugs.</li>
+								<li>Polyfill doesn't make it fully accessible.</li>
+							</ul>
+						</div>
+				</section>
+
+				<section>
+					<h3>Second...</h3>
+
+					<p>
+						<a href="https://www.w3.org/TR/wai-aria-1.1/#aria-modal"><code>aria-modal="almost"</code></a>
+					</p>
+
+					<ul>
+						<li>Added to ARIA in 2014.</li>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=174667">Bugged with VO prior to Safari 12</a><br> <span>(fixed in Safari 12 - 09/2018)</span></li>
+						<li>Support still varies regarding platform.
+							<br>Tabbing and swiping will still often escape the dialog.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h4>A solution: <br><code>inert</code> & <code>aria-hidden</code></h4>
+<pre style="font-size: 80%"><code>&lt;div role="dialog" aria-labelledby="aName">
+  &lt;div role="document"> &lt;!-- but why? -->
+    &lt;h1 id="aName">...&lt;/h1>
+    &lt;!-- STUFF! -->
+    &lt;button>Close&lt;/button>
+  &lt;/div>
+&lt;/div>
+&lt;div id="app" aria-hidden="true" inert="true">
+  &lt;!-- base document stuff! -->
+&lt/div>
+</code></pre>
+<p><a href="https://github.com/WICG/inert"><code>inert</code> polyfill</a></p>
+
+					<details>
+						<summary>Note on role=document</summary>
+						<p>The <code>role=document</code> was added to the code example to mitigate
+						an issue with VoiceOver quick nav mode.
+						<p>The issue here being that if a
+						modal dialog has an accessible name, and the contents of the dialog are
+						not wrapped in a role=document, then certain elements within the dialog
+						may be inaccessible when quick nav is on.
+						<p>This issue does not appear to exist if the dialog does not have
+							an accessible name.  Nor does it appear to exist if not using quick nav.
+					</details>
+				</section>
+
+
+				<section>
+					<h3>Third...</h3>
+
+					<p>
+						Initial focus placement is... opinionated...
+					</p>
+					<div style="text-align: center;">
+						<img src="images/focus.jpg" alt="diagram of initial focus placement comparison between a web document and a dialog. A web document, on the left, sets focus to the top of the document on page load.  A dialog have multiple arrows pointing to various different places of where focus could go based on content or other conditionals.">
+
+					</div>
+
+					<details>
+						<summary>Notes on focus placement</summary>
+						<p>For documents we start at the top</p>
+						<p>For modals, guidance and implemented native functionality may dictate that focus could go wherever the first focusable element exists, unless it is not in the visible viewport in which case another element must be focused.</p>
+						<p>
+							There are various quirks in behavior, depending on the screen reader and browser used, when elements within a dialog have been focused.
+						</p>
+						<p>
+							I've written quite a bit about these in my article on native dialogs, and the current state of modal dialog accessibility (linked in references at the
+							end of these slides)
+						</p>
+					</details>
+				</section>
+
+
+				<section>
+					<h4>
+						Solution: focus what makes sense
+					</h4>
+
+					<p>
+						<a href="https://www.w3.org/TR/html-design-principles/#avoid-needless-complexity">HTML Design Principles WD</a>:<br> 4.2 - Avoid Needless Complexity
+					</p>
+					<blockquote style="font-size: 110%" cite="https://www.w3.org/TR/html-design-principles/#avoid-needless-complexity">
+						"Simple solutions are preferred to complex ones, when possible. ..."
+					</blockquote>
+
+					<div >
+						<p><a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#dialog-focusing-steps">WHATWG HTML Living Standard - dialog focusing steps</a></p>
+
+					<p><small>- <a href="https://github.com/whatwg/html/issues/1929#issuecomment-272632190">GitHub thread advocating for change (which would then match HTML 5.3 draft's dialog focus algorithm).</a></small></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h4>
+						Whatever your choice, <code>.focus()</code> on testing!
+					</h4>
+
+					<p>
+						Regardless of where you set focus,<br>
+						test to ensure the best user experience!
+					</p>
+
+					<details>
+						<summary>Note on testing</summary>
+						<p>If you've found that your methods for implementing dialogs, focusing them, etc. meet the expectations of your users, then keep doing what you're doing!
+						<p>Consistency of expectations and meeting the goals of our end users is our priority!
+					</details>
+				</section>
+
+
+
+				<section>
+					<h2>Wrapping up: some take aways</h2>
+
+					<ul>
+						<li>Don't assume, always be testing.</li>
+						<li>Validate features and implementation methods<br>
+							aka: Do your users need what you want?
+						</li>
+						<li>
+							We can help make the web better:
+							<ul>
+								<li>Find a bug, report it!
+								<li>Displeased with guidance? Start a discussion!
+							</ul>
+						</li>
+					</ul>
+
+					<details>
+						<summary>Notes on wrapping up</summary>
+						<p>
+							We should remember we're far better off today than we used to be,
+							regarding browser implementations, user experience, etc.
+						</p>
+
+						<p>
+							But there are inconsistencies and challenges that we still need to address.
+						</p>
+					</details>
+				</section>
+
+				<section>
+					<h2>And educate!</h2>
+					<p>
+						Not just the hows and whys of accessibility.</p>
+					<p>
+						But educate about imperfections, how to test,
+						and strive for UX equality above all else.
+					</p>
+
+					<ul>
+						<li><a href="https://developer.paciellogroup.com/blog/">TPG Blog</a></li>
+						<li><a href="https://www.w3.org/community/aria-at/">ARIA-AT community group</a>
+						<li><a href="https://github.com/accessibilitysupported/a11ysupport.io">a11ysupport.io</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>
+						So let's just keep striving for the best perfect we can.
+					</h2>
+
+					<div class="fragment">
+						<div style="display: inline-block; vertical-align: middle; min-width: 45%">
+						<details open>
+							<summary>Animated gif: stop talking</summary>
+							<img src="images/stop.gif" alt="stop talking" >
+						</details>
+					</div>
+						<div style="display: inline-block; vertical-align: middle; margin-left: 2em">
+						<p >
+						Thank you</p>
+						<p><span>
+							<a href="https://twitter.com/scottohara">@scottohara</a><br>
+							<a href="https://twitter.com/paciellogroup">@paciellogroup</a></span>
+						</p>
+					</div>
+					</div>
+				</section>
+
+				<section>
+					<h2>Additional reading</h2>
+					<p>
+						Quite a bit of this talk is based on testing and writing I've done over
+						the past year or so. Here are some links to those posts:
+					</p>
+					<ul>
+						<li><a href="https://developer.paciellogroup.com/blog/2018/06/the-current-state-of-modal-dialog-accessibility/">The current state of modal dialog accessibility</a></li>
+						<li>
+							<a href="https://www.scottohara.me/blog/2019/03/05/open-dialog.html">Having an open dialog</a>
+						</li>
+						<li>
+							<a href="https://www.scottohara.me/blog/2019/02/14/addressing-contentinfo.html">An address of sorts</a>
+						</li>
+						<li>
+							<a href="https://www.scottohara.me/blog/2019/02/12/high-contrast-aria-and-images.html">Quick Note on high contrast mode</a>
+						</li>
+						<li>
+							<a href="https://developer.paciellogroup.com/blog/2018/09/describing-aria-describedby/">Describing aria-describedby</a>
+						</li>
+						<li>
+							<a href="https://scottaohara.github.io/a11y_styled_form_controls/">The Accessibility of Styled Form Controls</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Links to references and resources</h3>
+					<ul>
+						<li><a href="https://tink.uk/using-the-aria-roledescription-attribute/">Using the aria-roledescription attribute</a></li>
+						<li><a href="https://www.w3.org/TR/html-design-principles/">HTML Design Principles</a></li>
+						<li><a href="http://shouldiuseacarousel.com/">should i use a carousel.com</a></li>
+						<li><a href="https://modalzmodalzmodalz.com/">MODALZ MODALZ MODALZ.COM</a></li>
+						<li><a href="https://www.w3.org/TR/wai-aria-1.1/#aria-modal">ARIA 1.1: aria-modal</a></li>
+						<li><a href="https://github.com/WICG/inert">WICG Inert polyfill</a></li>
+						<li><a href="https://html.spec.whatwg.org/multipage/interactive-elements.html#dialog-focusing-steps">HTML Standard dialog focus steps</a></li>
+						<li><a href="https://developer.paciellogroup.com/blog/">The Paciello Group Blog</a></li>
+						<li><a href="https://www.w3.org/community/aria-at/">ARIA AT Community Group</a></li>
+						<li><a href="https://github.com/accessibilitysupported/a11ysupport.io">a11ysupport.io</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Links to bugs and issues</h3>
+					<p>
+						For a list of bug trackers (and a generally awesome article) see
+						<a href="https://alistapart.com/article/semantics-to-screen-readers#section17">Semantics to Screen Readers</a>.
+					</p>
+					<ul>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=187695">img pointing to .svg file bug</a></li>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=190138">footer and contentinfo bug</a></li>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=194654">address as contentinfo bug</a></li>
+						<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1525470">Android Firefox aria-describedby bug</a></li>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=194006">Switch not exposing state to VoiceOver bug</a></li>
+						<li><a href="https://github.com/nvaccess/nvda/issues/9187">NVDA awkwardly announcing state of role=switch</a></li>
+						<li><a href="https://bugs.webkit.org/show_bug.cgi?id=174667">aria-modal Webkit bug</a>
+						<span style="font-size: 70%"> (marked as open but should be fixed)</span></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

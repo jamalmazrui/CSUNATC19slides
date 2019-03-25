@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://on.notist.cloud">
+    <title>Bringing Accessibility to the Ember.js Framework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://on.notist.cloud/fonts/TruenoLt.woff2">
+    <link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://on.notist.cloud/fonts/TruenoBd.woff2">
+        <link rel="stylesheet" href="/assets/css/styles-054.css">
+    <script src="/assets/js/focus-visible.js" async></script>
+    <link rel="shortcut icon" href="https://on.notist.cloud/assets/favicon.ico" type="image/x-icon">
+        <link rel="canonical" href="https://noti.st/melsumner/21QWfB">
+    <meta name="description" content="JavaScript frameworks have been notorious for disregarding accessibility- but we are trying to make that better in Ember.js.">
+    <meta property="og:url"
+          content="https://noti.st/melsumner/21QWfB">
+    <meta property="og:type" content="article">
+    <meta property="og:title" name="twitter:title"
+          content="Bringing Accessibility to the Ember.js Framework by Melanie Sumner">
+    <meta property="og:description" name="twitter:description" content="JavaScript frameworks have been notorious for disregarding accessibility- but we are trying to make that better in Ember.js.">
+    <meta property="og:image" name="twitter:image" content="https://on.notist.cloud/slides/deck2468/large-0.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:site" content="@benotist">
+                <meta name="twitter:creator" content="@melaniersumner">
+            <link rel="alternate" type="application/json+oembed"
+              href="/api/oembed?url=https%3A%2F%2Fnoti.st%2Fmelsumner%2F21QWfB&amp;format=json"
+              title="Bringing Accessibility to the Ember.js Framework">
+        
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "PresentationDigitalDocument",
+            "url": "https://noti.st/melsumner/21QWfB",
+            "name": "Bringing Accessibility to the Ember.js Framework",
+            "headline": "Bringing Accessibility to the Ember.js Framework",
+            "description": "JavaScript frameworks have been notorious for disregarding accessibility- but we are trying to make that better in Ember.js.",
+            "author": {
+                "@type": "Person",
+                "name": "Melanie Sumner",
+                "url": "https://noti.st/melsumner"
+            },
+            "datePublished": "2019-02-01T08:00:00-08:00",
+            "keywords": "Digital media, IT infrastructure, Information technology management, Ajax (programming), Free content, Information economy, Public commons, Software architecture, Software using the MIT license, Software, Cyberspace, JavaScript, Computer programming, Computer libraries, Software development, Free software, Web development, Computing, Prototype-based programming, Software engineering, Web frameworks, Web applications, JavaScript library, Software frameworks, World Wide Web, Web 2.0, Centralized computing, Human–computer interaction, Graphical user interfaces, Hypertext",
+            "image": "https://on.notist.cloud/slides/deck2468/large-0.jpg",
+            "publication": {
+                "@type": "PublicationEvent",
+                "name": "CSUN 2019",
+                "url": "https://noti.st/events/rNCDYz/csun-2019",
+                "location": {
+                    "@type": "Place",
+                    "address": "Anaheim, CA, USA"
+                },
+                "startDate": "2019-03-11T08:00:00-07:00",
+                "endDate": "2019-03-15T18:00:00-07:00"
+            }
+        }
+    </script>
+
+        <link rel="alternate" type="application/vnd.api+json" href="/melsumner/21QWfB.json">
+</head>
+<body>
+    <div class="full-width bg-white">
+    <div class="content-width site-banner ">
+        <div class="site-logo">
+            <a href="/"><img src="https://on.notist.cloud/assets/svg/notist.svg" alt="Notist"></a>
+        </div>
+        <nav>
+            <ul class="main-nav"><li><a href="/explore">Explore</a></li><li class="push-right"><a href="/register">Register</a></li><li ><a
+                                    href="/login">Log&nbsp;in</a></li></ul>
+        </nav>
+    </div>
+</div>
+
+
+    
+        
+
+        
+        
+        
+    
+    <div class="full-width bg-ltgrey nb">
+        <div class="content-width presentation-header">
+            <h1><a href="/melsumner/21QWfB/bringing-accessibility-to-the-ember-js-framework">Bringing Accessibility to the Ember.js Framework</a></h1>
+            <p class="subhead">A presentation at <a href="/events/rNCDYz/csun-2019">CSUN 2019</a>  in
+                    <time datetime="2019-03-15T11:00:00-07:00">March 2019</time> in
+                    <a
+                    href="/places/anaheim-ca-usa">Anaheim, CA, USA</a> by <a href="/melsumner">
+                    Melanie Sumner
+                </a></p>
+
+
+        </div>
+        
+    
+    <div class="full-width bg-ltgrey">
+        <div class="content-width slides-panel">
+            <div class="slide-presentation">
+                <div class="deck"><figure class="slide" data-hash="vrFR8K" id="svrFR8K"><img class="slide-image" src="https://on.notist.cloud/slides/deck2468/large-0.jpg"
+                                             alt="Bringing Accessibility to Ember.js"
+                                             srcset="https://on.notist.cloud/slides/deck2468/thumb-0.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-0.jpg 1600w"><figcaption><h3>Bringing Accessibility to Ember.js</h3><div class="hidden"><p>Hello, everyone! Today I am going to be talking with you about building accessible applications with the Ember.js framework.</p></div></figcaption></figure><figure class="slide" data-hash="YAyF0j" id="sYAyF0j"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-1.jpg"
+                                             alt="About me"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-1.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-1.jpg 1600w"><figcaption><h3>About me</h3><div class="hidden"><p>A little bit about me- I work at LinkedIn as an accessibility engineer. Specifically, I work on accessibility in Ember.js. I am a member of the Ember.js core team- On the steering committee, I help shape the policies that give Ember structure and stability from a project perspective; on the Learning Core Team I manage our projects over the course of an “Ember year” (EmberConf to EmberConf) and help make sure the website is accessible, and on the Framework Core Team, I am there to help make Ember more accessible and am responsible to make sure that new things we want to create in Ember are accessible. - I’m also the co-organizer of the Ember Chicago Meetup, as I currently live in downtown Chicago. We meet on the first Tuesday of every month, so if you’re ever in Chicago and it happens to be the first Tuesday of the month, please feel free to join us! - Last but not least, I’m a disabled, decorated military veteran. I served in the US Navy for six years, from 1999-2005.</p></div></figcaption></figure><figure class="slide" data-hash="AUh2t8" id="sAUh2t8"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-2.jpg"
+                                             alt="Thank you to my family"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-2.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-2.jpg 1600w"><figcaption><h3>Thank you to my family</h3><div class="hidden"><p>I also want to say thank you to the people who make my life possible- I couldn’t do this without the support of my family- my partner Joseph, our son Dylan, and our fur babies, Atlas and P-body.</p></div></figcaption></figure><figure class="slide" data-hash="moPqlX" id="smoPqlX"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-3.jpg"
+                                             alt="What is Ember.js"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-3.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-3.jpg 1600w"><figcaption><h3>What is Ember.js</h3><div class="hidden"><p>Ember is one of the OG Javascript Frameworks. It’s 100% open source, and a complete solution, with ember, ember-cli, and ember-data. It also has a backwards compatibility guarantee, which means you can update your apps with each version without worry.</p></div></figcaption></figure><figure class="slide" data-hash="P88edw" id="sP88edw"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-4.jpg"
+                                             alt="Pragmatic Core Values"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-4.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-4.jpg 1600w"><figcaption><h3>Pragmatic Core Values</h3><div class="hidden"><p>Ember has pragmatic core values. Now before I dig into this, I just want to say that sometimes developers can get into these little groups and the term “religious war” is used. I happen to like this framework, and that is why I’m talking about it. However, that doesn’t mean that your framework- or your preference for no framework- is not pretty okay too. Talking about what we have built in Ember should only be taken in the context of what Ember has done, and it is not intended as a comment on what anyone else has done.</p></div></figcaption></figure><figure class="slide" data-hash="1RrSWL" id="s1RrSWL"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-5.png"
+                                             alt="There are always trade-offs"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-5.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-5.png 1600w"><figcaption><h3>There are always trade-offs</h3><div class="hidden"><p>To understand Ember’s core values, it’s important to also understand that in building software, there are tradeoffs. The tradeoffs that Ember has chosen were after much thought and consideration.</p></div></figcaption></figure><figure class="slide" data-hash="dlaGOk" id="sdlaGOk"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-6.png"
+                                             alt="Ambitious Applications"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-6.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-6.png 1600w"><figcaption><h3>Ambitious Applications</h3><div class="hidden"><p>Ambitious applications- Ember is focused on tooling for whole production applications with multiple pages. This is why Ember, Ember CLI, and Ember Data were built to work together.</p></div></figcaption></figure><figure class="slide" data-hash="G5J4H9" id="sG5J4H9"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-7.png"
+                                             alt="Don&amp;#039;t Break The Web"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-7.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-7.png 1600w"><figcaption><h3>Don&#039;t Break The Web</h3><div class="hidden"><p>Instead of the “wait until you need it” approach, where tooling isn’t built with any considerations other than the single consideration it intends to solve, Ember embraces the value of “Don’t break the web.” In an Ember apps, you can use your back button. You know where you are in the app because it says so in the URL bar. In Ember, URLs are one of the primary nonnegotiables.</p></div></figcaption></figure><figure class="slide" data-hash="sP1s9Y" id="ssP1s9Y"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-8.png"
+                                             alt="Everybody Shares"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-8.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-8.png 1600w"><figcaption><h3>Everybody Shares</h3><div class="hidden"><p>Everybody shares- Ember tools are designed for beginners and experienced devs alike The reason we believe strongly in this- the curse of knowledge is real. It’s easy for experienced devs to build really complex tooling that leave new developers behind. In Ember, the really experienced developers build the tooling for the new developers, and use that same tooling. There is always teaching and sharing, and because we are all working together, bugs in our shared tooling are identified and fixed sooner. New developers don’t become burdens, they become valuable community members.</p></div></figcaption></figure><figure class="slide" data-hash="Uikg1x" id="sUikg1x"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-9.png"
+                                             alt="Pragmatism"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-9.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-9.png 1600w"><figcaption><h3>Pragmatism</h3><div class="hidden"><p>We don’t believe that programming paradigms are the primary driver of productivity we do believe strongly in adopting good ideas (including programming model ideas) from competing tools.</p></div></figcaption></figure><figure class="slide" data-hash="72TTuM" id="s72TTuM"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-10.png"
+                                             alt="Code of Conduct"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-10.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-10.png 1600w"><figcaption><h3>Code of Conduct</h3><div class="hidden"><p>Finally, the Ember community works because we have a strong code of conduct that not only tells our existing members what our expectations are, it also openly invites anyone to join the community who wants to be part of building and using Ember.</p></div></figcaption></figure><figure class="slide" data-hash="jMCHml" id="sjMCHml"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-11.jpg"
+                                             alt="Application Configuration"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-11.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-11.jpg 1600w"><figcaption><h3>Application Configuration</h3><div class="hidden"><p>Let’s start at the very beginning, and look at the options that Ember has for configuring your app in a way to help make accessibility easier.</p></div></figcaption></figure><figure class="slide" data-hash="Lfv5fA" id="sLfv5fA"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-12.jpg"
+                                             alt="The current state"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-12.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-12.jpg 1600w"><figcaption><h3>The current state</h3><div class="hidden"><p>Of course, if your app is already up and running, you can still make your application accessible, simply by adding the correct roles to your markup. You’ll see that I’ve added the role of banner to the header element, the role of main to the main element, and the role of contentinfo to the footer element. So it is still possible to have accessibility in this way, you’ll just have a bit more markup to include, and that can feel a little untidy at times. 13</p></div></figcaption></figure><figure class="slide" data-hash="xzdtXZ" id="sxzdtXZ"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-13.png"
+                                             alt="Application Template Wrapper"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-13.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-13.png 1600w"><figcaption><h3>Application Template Wrapper</h3><div class="hidden"><p>By using the command ember space feature colon disable space application hyphen template hyphen wrapper, we can use this optional feature. The div that wraps the Ember app inside of the body element will be removed, which means that your header, main and footer elements can then be the direct descendant of the body element, and will benefit from their native roles.</p></div></figcaption></figure><figure class="slide" data-hash="aJMhPy" id="saJMhPy"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-14.jpg"
+                                             alt="Enabled Feature"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-14.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-14.jpg 1600w"><figcaption><h3>Enabled Feature</h3><div class="hidden"><p>In this example, I have enabled removing the application template wrapper, and we can instantly see that we have more concise, tidy code. The header, main and footer elements no longer need those extra roles, as they are now the direct descendants of the body element. This also means that we haven’t had to add any extra code to help screen reader users find them using the landmark regions keyboard shortcuts that are standard in assistive technology.</p></div></figcaption></figure><figure class="slide" data-hash="Cd5VIN" id="sCd5VIN"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-15.jpg"
+                                             alt="The Ember Ecosystem"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-15.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-15.jpg 1600w"><figcaption><h3>The Ember Ecosystem</h3><div class="hidden"><p>The Ember community prefers to focus on shared solutions. It makes it easier to get help from others in the community, and we can all help each other improve addons over time. This helps them become more robust, better tested, and allows application developers to start on the 20th floor instead of the basement.</p></div></figcaption></figure><figure class="slide" data-hash="owoJAm" id="sowoJAm"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-16.jpg"
+                                             alt="Finding and maintaining shared solutions"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-16.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-16.jpg 1600w"><figcaption><h3>Finding and maintaining shared solutions</h3><div class="hidden"><p>Enter ember observer dot com. Ember Observer keeps track of all Ember addons, and allows you to probably find something for your use case. It even has a code search, which is super useful. You may find what you are looking for- and that’s great! You might also find an addon that needs some TLC, and that’s great too because you can help update that addon. And that’s not all- this past year we started a new org called “Adopted Ember Addons”, where maintainers can confidently pass the torch to the next maintainer of the addon. In this way, popular addons can still be maintained for a long time, providing stability to the ecosystem.
+17</p></div></figcaption></figure><figure class="slide" data-hash="RGX73B" id="sRGX73B"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-17.png"
+                                             alt="Useful A11y Addons"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-17.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-17.png 1600w"><figcaption><h3>Useful A11y Addons</h3><div class="hidden"><p>This is especially helpful for accessibility, because we are able to create addons that help developers create accessible applications.</p></div></figcaption></figure><figure class="slide" data-hash="3aFuva" id="s3aFuva"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-18.jpg"
+                                             alt="ember-component-attributes"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-18.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-18.jpg 1600w"><figcaption><h3>ember-component-attributes</h3><div class="hidden"><p>My favorite, really, is an addon that allows you to add ARIA and HTML attributes to your existing components.</p></div></figcaption></figure><figure class="slide" data-hash="ftyinz" id="sftyinz"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-19.jpg"
+                                             alt="Updated Component Syntax"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-19.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-19.jpg 1600w"><figcaption><h3>Updated Component Syntax</h3><div class="hidden"><p>this is something that you will get out of the box with the new standard component syntax- by using …attributes.</p></div></figcaption></figure><figure class="slide" data-hash="IDhWgO" id="sIDhWgO"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-20.jpg"
+                                             alt="Challenges"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-20.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-20.jpg 1600w"><figcaption><h3>Challenges</h3><div class="hidden"><p>While I would have liked to come up here and tell you that we solved all of our accessibility issues since I joined the core team last March- well, we all know this is a marathon, not a sprint.</p></div></figcaption></figure><figure class="slide" data-hash="uXQKYn" id="suXQKYn"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-21.png"
+                                             alt="Consensus-based Leadership"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-21.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-21.png 1600w"><figcaption><h3>Consensus-based Leadership</h3><div class="hidden"><p>Turns out the consensus-based leadership is good in the long term, but does present its challenges. In short, it means that all core team members must all at least not object to a feature, but ideally we have taken the time to address everyone’s concerns and we all agree that it is a good feature.</p></div></figcaption></figure><figure class="slide" data-hash="Wr98RC" id="sWr98RC"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-22.jpg"
+                                             alt="The Ember.js Core Team"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-22.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-22.jpg 1600w"><figcaption><h3>The Ember.js Core Team</h3><div class="hidden"><p>However, when you have a large core team, all brilliant engineers in their own right, it can be challenging to get everyone on board. Plus, there are only so many hours in a day, and we rarely get through our entire agenda for any given meeting.</p></div></figcaption></figure><figure class="slide" data-hash="9ArwJb" id="s9ArwJb"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-23.jpg"
+                                             alt="Accessible Color Challenge"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-23.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-23.jpg 1600w"><figcaption><h3>Accessible Color Challenge</h3><div class="hidden"><p>Another big challenge- making orange things accessible. When you typically think not enough color contrast, it’s usally light gray on lighter gray. In Ember’s case, it’s a barely-not-conformant default color with default font sizes.</p></div></figcaption></figure><figure class="slide" data-hash="lUakC0" id="slUakC0"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-24.jpg"
+                                             alt="Input helper"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-24.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-24.jpg 1600w"><figcaption><h3>Input helper</h3><div class="hidden"><p>Ember comes with an input helper, which is very useful.</p></div></figcaption></figure><figure class="slide" data-hash="NoJY4P" id="sNoJY4P"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-25.jpg"
+                                             alt="Adding a11y"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-25.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-25.jpg 1600w"><figcaption><h3>Adding a11y</h3><div class="hidden"><p>But it doesn’t come with a label, so it’s often used without one, or requires extra markup to make accessible. Note: I’m hoping we can change this.</p></div></figcaption></figure><figure class="slide" data-hash="082Lwo" id="s082Lwo"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-26.jpg"
+                                             alt="Accessibility Roadmap"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-26.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-26.jpg 1600w"><figcaption><h3>Accessibility Roadmap</h3><div class="hidden"><p>Despite our challenges, we are well on our way to being a front end framework with first-class accessibility support.</p></div></figcaption></figure><figure class="slide" data-hash="cRl9pD" id="scRl9pD"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-27.png"
+                                             alt="Accessible Routing"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-27.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-27.png 1600w"><figcaption><h3>Accessible Routing</h3><div class="hidden"><p>I think all of us are aware of the single page application routing problem. While we have addons like ember-self-focused and ember-a11y that help with this issue in Ember, one of our goals is to figure out the best way to make this natively supported in the framework, so no addons are required.</p></div></figcaption></figure><figure class="slide" data-hash="ElTxhc" id="sElTxhc"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-28.png"
+                                             alt="Application Focus- Today"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-28.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-28.png 1600w"><figcaption><h3>Application Focus- Today</h3><div class="hidden"><p>Today we have two addons that will help Ember applications implement appropriate focus for single page applications.</p></div></figcaption></figure><figure class="slide" data-hash="r5Cla1" id="sr5Cla1"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-29.png"
+                                             alt="Application Focus- Tomorrow"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-29.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-29.png 1600w"><figcaption><h3>Application Focus- Tomorrow</h3><div class="hidden"><p>But we want accessible routing in Ember by default. No addon needed. To that end, I’ve proposed an accessible routing request for consideration – or RFC. This is how community members can propose new ideas to the framework. Just as a side note, anyone can comment on these. The more folks are telling us that they support an idea, the higher priority we give that idea. So, if you think that accessible routing in single page applications should be there by default, feel free to comment your positive support message on the RFC!</p></div></figcaption></figure><figure class="slide" data-hash="TOvZSQ" id="sTOvZSQ"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-30.png"
+                                             alt="Application Focus- In the Future"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-30.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-30.png 1600w"><figcaption><h3>Application Focus- In the Future</h3><div class="hidden"><p>But we don’t only want to think about what we can do now, or what we can do in Ember. Like so many other ways Ember has lent good ideas to other JavaScript frameworks, and vice versa, we believe this should have a solution in the standards space. JavaScript frameworks need a standard something to hook into, to indicate that a page transition has occurred.
+31</p></div></figcaption></figure><figure class="slide" data-hash="5ieNKp" id="s5ieNKp"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-31.png"
+                                             alt="Semantic Test Helpers"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-31.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-31.png 1600w"><figcaption><h3>Semantic Test Helpers</h3><div class="hidden"><p>We can use axe-core via ember-a11y-testing to explicitly audit our UIs for accessibility. While this is extremely valuable, it involves active participation on the part of the developer. What if, instead, our UI tests implicitly asserted that our UIs meet the community’s standards for accessibility. Therefore, the act of writing a UI test would also guarantee that the key flows in an app are accessible. One step we can take is to impose “access via accessibility”. That is to say, we can interact with our UI the same way our users do: by perceivable semantic labels. If an element is not meaningfully labelled, it is likely invisible to users of assistive technologies and therefore should be invisible to our tests too. The corollary: if we want to access a UI element in a test, we do so as if we were using a screen reader.</p></div></figcaption></figure><figure class="slide" data-hash="i2NBDE" id="si2NBDE"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-32.png"
+                                             alt="Developer Support"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-32.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-32.png 1600w"><figcaption><h3>Developer Support</h3><div class="hidden"><p>Another item is improved developer support. We want to help developers write accessible applications before they commit a single line of code to the application’s repository.</p></div></figcaption></figure><figure class="slide" data-hash="KM5z5d" id="sKM5z5d"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-33.png"
+                                             alt="template linting"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-33.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-33.png 1600w"><figcaption><h3>template linting</h3><div class="hidden"><p>We plan to improve accessibility support in ember-template-lint, an addon that ensures that best practices are followed.</p></div></figcaption></figure><figure class="slide" data-hash="wfomy2" id="swfomy2"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-34.jpg"
+                                             alt="Chat support"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-34.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-34.jpg 1600w"><figcaption><h3>Chat support</h3><div class="hidden"><p>We also will continue to provide accessibility support in our topic-a11y channel on the Ember Discord server.</p></div></figcaption></figure><figure class="slide" data-hash="YzXaqR" id="sYzXaqR"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-35.png"
+                                             alt="Patterns and Addons"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-35.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-35.png 1600w"><figcaption><h3>Patterns and Addons</h3><div class="hidden"><p>We want to add common a11y patterns to our website, to help Ember developers know what users with assistive technology need. We provide feedback to existing addons, and also write addons as needed when gaps are identified.</p></div></figcaption></figure><figure class="slide" data-hash="BJGOiq" id="sBJGOiq"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-36.png"
+                                             alt="Lead by Example"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-36.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-36.png 1600w"><figcaption><h3>Lead by Example</h3><div class="hidden"><p>We want to lead by example, too. We are working to make sure that our own emberjs.com website is completely accessible. We think it will be valuable to add accessibilty into our code samples on our website- we all have come to accept that developers will copy and paste the examples into their code, and we think they may as well copy and paste accessible code. We’ve added a basic accessibility guide to our guides, and will iterate on it and make it more complete throughout the course of the year.</p></div></figcaption></figure><figure class="slide" data-hash="nczCbF" id="snczCbF"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-37.jpg"
+                                             alt="Transparency"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-37.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-37.jpg 1600w"><figcaption><h3>Transparency</h3><div class="hidden"><p>But all that being said, we still have work to do. I ran aXe on our website this morning, and we still have 22 issues on our home page. But we will get there!</p></div></figcaption></figure><figure class="slide" data-hash="Pwi0Te" id="sPwi0Te"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-38.png"
+                                             alt="Roadmap"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-38.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-38.png 1600w"><figcaption><h3>Roadmap</h3><div class="hidden"><p>So this is the roadmap, if you will, for better accessibility in Ember.js - Accessible routing, semantic test helpers, improved developer support, providing pattern and addon support, and leading by example.</p></div></figcaption></figure><figure class="slide" data-hash="2GQoM3" id="s2GQoM3"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-39.png"
+                                             alt="Want to learn more?"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-39.png 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-39.png 1600w"><figcaption><h3>Want to learn more?</h3><div class="hidden"><p>If this seems interesting to you, there are a few ways you can learn more about Ember.</p></div></figcaption></figure><figure class="slide" data-hash="ea9cES" id="sea9cES"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-40.jpg"
+                                             alt="Watch the documentary"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-40.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-40.jpg 1600w"><figcaption><h3>Watch the documentary</h3><div class="hidden"><p>A documentary was recently released about Ember, and it tells the story of how Ember came to be, and what it is today.</p></div></figcaption></figure><figure class="slide" data-hash="GtsQ6r" id="sGtsQ6r"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-41.jpg"
+                                             alt="Learn Ember"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-41.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-41.jpg 1600w"><figcaption><h3>Learn Ember</h3><div class="hidden"><p>You can also visit https://emberjs.com/learn to view tutorials on how to learn Ember yourself.</p></div></figcaption></figure><figure class="slide" data-hash="tDbDzG" id="stDbDzG"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-42.jpg"
+                                             alt="Try Ember!"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-42.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-42.jpg 1600w"><figcaption><h3>Try Ember!</h3><div class="hidden"><p>I think that it’s a great time to try Ember- or try Ember again, if you have in the past.</p></div></figcaption></figure><figure class="slide" data-hash="VXK1rf" id="sVXK1rf"><img class="slide-image" data-flickity-lazyload-src="https://on.notist.cloud/slides/deck2468/large-43.jpg"
+                                             alt="Thank you"
+                                             data-flickity-lazyload-srcset="https://on.notist.cloud/slides/deck2468/thumb-43.jpg 640w,
+                                                        https://on.notist.cloud/slides/deck2468/large-43.jpg 1600w"><figcaption><h3>Thank you</h3><div class="hidden"><p>thank you for your time!</p></div></figcaption></figure><div class="sharesheet hidden" aria-hidden id="sharesheet"><div class="inner"><h4>Link for this presentation:</h4><p><input class="copybox" type="text" readonly value="https://noti.st/melsumner/21QWfB"></p><h4>HTML code for embedding:</h4><textarea class="copybox" rows="3" cols="80" readonly><p data-notist="melsumner/21QWfB">View <a href="https://noti.st/melsumner/21QWfB">Bringing Accessibility to the Ember.js Framework</a> on Notist.</p><script async src="https://on.notist.cloud/embed/002.js"></script></textarea><p class="buttons"><button id="sharesheet-dismiss" class="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon icon-cancel-circle" viewBox="0 0 24 24"><path data-name="cancel-circle" d="M12 0a12 12 0 1 0 12 12A12 12 0 0 0 12 0zm4.707 15.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12z"/></svg> Dismiss</button></p></div></div></div>            </div>
+            <div class="slide-footer">
+                <div class="person-badge">
+                                            <img src="https://on.notist.cloud/profile/av-melsumner-large-d66658deb9166426.jpg" class="avatar" alt="Melanie Sumner">
+                                        <div class="details">Melanie Sumner
+                        <br><a href="/melsumner" title="View Melanie’s profile">@melsumner</a></div>
+                </div>
+                <div class="slide-count">
+                                            <span title="Currently showing slide" href="/melsumner/21QWfB/slides/"
+                              class="slide-count-current">1</span> /
+                        <span href="/melsumner/21QWfB/slides" class="slide-count-total"
+                              title="Number of slides in slidedeck">44</span>
+                                    </div>
+                <div class="slide-actions">
+                                            <ul class="action-icons">
+                            <li>
+                                <a class="action" href="https://noti.st/melsumner/21QWfB/embed" title="Embed" id="showembed" aria-describedby="action-embed"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon icon-code-alt" viewBox="0 0 24 24"><path data-name="code-alt" d="M18.939 6.94a1.5 1.5 0 0 0-2.121 2.121L19.758 12l-2.94 2.94a1.5 1.5 0 0 0 2.121 2.121L24 12zm-11.757 0a1.5 1.5 0 0 0-2.121 0L0 12l5.061 5.061a1.5 1.5 0 0 0 2.121-2.121L4.242 12l2.94-2.939a1.5 1.5 0 0 0 0-2.121zm8.081-6.9a1 1 0 0 0-1.228.7l-6 22a1 1 0 0 0 .7 1.227A.961.961 0 0 0 9 24a1 1 0 0 0 .965-.737l6-22a1 1 0 0 0-.702-1.228z"/></svg></a>
+                                <span id="action-embed" role="tooltip">Embed</span>
+                            </li>
+                                                        <li><a href="/melsumner/21QWfB/slides" class="action" title="View all slides" aria-describedby="action-map"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon icon-map" viewBox="0 0 24 24"><path data-name="map" d="M8 23l7-3V1L8 4zm-8-3l6 3V4L0 1zM17 1v19l7 3V4z"/></svg></a>
+                                <span id="action-map" role="tooltip">View&nbsp;all&nbsp;slides</span>
+                            </li>
+                            <li><a href="/melsumner/21QWfB/present" class="action"
+                                   title="Enter presentation mode" aria-describedby="action-present"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="icon icon-presentation" viewBox="0 0 24 24"><path data-name="presentation" d="M22 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h9v1.586l-4.707 4.707a1 1 0 0 0 1.414 1.414L11 20.414V23a1 1 0 0 0 2 0v-2.586l3.293 3.293a1 1 0 0 0 1.414-1.414L13 17.586V16h9a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 13H3V3h18z"/></svg></a>
+                                <span id="action-present" role="tooltip">Present</span>
+                            </li>
+                        </ul>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+            <script src="/assets/js/flickity.pkgd.min.js?v=2.1.2"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function (event) {
+
+                var flkty = new Flickity('.deck', {
+                    // options
+                    lazyLoad: 3,
+                    pageDots: false,
+                    cellSelector: '.slide',
+                    selectedAttraction: 0.5,
+                    friction: 1,
+                    hash: true
+                });
+
+                document.querySelector('.slide-count-total').innerHTML = (flkty.cells.length);
+
+                flkty.on('select', function () {
+                    var hash = flkty.selectedCell.element.getAttribute('data-hash');
+                    document.querySelector('.slide-count-current').innerHTML = (flkty.selectedIndex + 1);
+                    document.querySelector('.slide-count [href]').href = '/melsumner/21QWfB/slides/' + hash;
+                });
+
+                flkty.on('change', function() {
+                    // restart GIFs when they're shown
+                    var gif = flkty.selectedCell.element.querySelector('img[src$=".gif"]');
+                    if (gif) gif.setAttribute('src', gif.getAttribute('src'));
+                });
+
+                if (location.hash) {
+                    setTimeout(function () {
+                        window.scrollTo(0, 0);
+                    }, 1);
+                }
+
+                // show embed
+                var embedTrigger = document.getElementById('showembed');
+                if (embedTrigger) {
+                    var sharesheet = document.getElementById('sharesheet');
+                    if (sharesheet) {
+                        embedTrigger.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            shide(sharesheet);
+                        });
+
+                        document.getElementById('sharesheet-dismiss').addEventListener('click', function(event) {
+                            event.preventDefault();
+                            shide(sharesheet);
+                        }, false);
+                    }
+
+                }
+
+                var shide = function (el) {
+                    if (el) {
+                        if (!el.classList.contains('hidden')) {
+                            el.classList.add('hidden');
+                            el.setAttribute('aria-hidden', true);
+                        } else {
+                            el.classList.remove('hidden');
+                            el.setAttribute('aria-hidden', false);
+                        }
+                    }
+                }
+            });
+
+        </script>
+    
+<div class="bg-white full-width">
+    <div class="content-width presentation-description presentation-description-short">
+        <p>JavaScript frameworks have been notorious for disregarding accessibility- but we are trying to make that better in Ember.js.</p>
+
+    </div>
+</div>
+
+    </div>
+            <img src="/activity/presentation/21QWfB.png" alt="" width="1" height="1">
+    
+    	<footer class="main-footer full-width">
+	    <div class="content-width r-grid-4">
+	        <div class="logo-strap">
+	            <a href="/"><img src="https://on.notist.cloud/assets/svg/notist.svg" alt="Notist"></a>
+	        </div>
+			<ul>
+				<li><h3>Important stuff</h3></li>
+				<li><a href="/support">Help &amp; support</a></li>
+				<li><a href="/legal/terms">Terms of use</a></li>
+				<li><a href="/legal/privacy">Privacy policy</a></li>
+			</ul>
+	       	<ul>
+	            <li><h3>And more</h3></li>
+	            <li><a href="/pro">Pro accounts</a></li>
+	            <li><a href="/teams">Notist for teams</a></li>
+                <li><a href="/about/credits">Credits</a></li>
+	        </ul>
+	        <ul>
+	            <li><h3>Elsewhere</h3></li>
+	            <li><a href="https://be.noti.st/">Blog</a></li>
+                <li><a href="https://twitter.com/benotist">Twitter</a></li>
+                <li><a href="https://be.noti.st/newsletter">Newsletter</a></li>
+	        </ul>
+	    </div>
+	</footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107258730-1"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+    gtag('config', 'UA-107258730-1', {
+      'page_path': '/melsumner/21QWfB'
+  });
+  </script>
+</body>
+</html>

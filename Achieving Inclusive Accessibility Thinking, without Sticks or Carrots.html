@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="sl-root decks show " data-account="" >
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Achieving inclusive accessibility thinking, without sticks or carrots</title>
+    <meta name="description" content="A presentation created with Slides." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta property="og:title" content="Achieving inclusive accessibility thinking, without sticks or carrots" />
+    <meta property="og:description" content="A presentation created with Slides." />
+    <meta property="og:site_name" content="Slides" />
+    <meta property="og:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/bb95a06e2639d92bb0444d5969663385/thumb.jpg?1552414528" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://slides.com/emmajpr/inclusive-a11y" />
+    <meta property="fb:app_id" content="146002942236376" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" rel="stylesheet" type="text/css" data-application-font="opensans">
+
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/slides/slides-8a5ab5ebb84fcd5a99a8c73434bd36b521c6571e2121184c32e4742d26106c14.css" />
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/application-f0caa8a689578da4f92e19272636bb0324ec92e1ada2b7108e5a229e46353a1e.css" />
+    	<link rel="stylesheet" media="all" href="//assets.slid.es/assets/deck-v2-6d64b451cffaa02748feee4faa884354bbecf2793798fc4f8ed228bcda93d996.css" />
+
+
+
+<style id="user-css-output" type="text/css"></style>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="wEvS8eSTkP6ygODmlBsiQIMKaYMaKsiDoKqCiPNoQ80Qfdww14RRm/Jb6WZKdUBamcesKbBAnPTetIwufOtXBA==" />
+    <script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+    <!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-0bfa553ebc9c42abf66248f2f3feba0935da70b430bace410f80b72729c14820.js"></script>
+<![endif]-->
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="Achieving inclusive accessibility thinking, without sticks or carrots">
+	<meta name="twitter:description" content="An presentation created with Slides.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/bb95a06e2639d92bb0444d5969663385/thumb.jpg?1552414528">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  </head>
+  <body>
+    
+    <div id="container" class="container">
+      <header class="global-header show-on-scroll">
+  <div class="wrapper">
+    <h1 class="logo-animation">
+      <a class="symbol" href="/">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </a>
+      <a class="word" href="/"></a>
+    </h1>
+    <ul class="nav nav-long">
+        <li class="nav-item" data-page-id="home/explore">
+          <a class="nav-item-anchor" href="/explore"><span class="nav-item-label">Explore</span></a>
+        </li>
+        <li class="nav-item" data-page-id="static/features">
+          <a class="nav-item-anchor" href="/features"><span class="nav-item-label">Features</span></a>
+        </li>
+        <li class="nav-item" data-page-id="static/pricing">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Pricing</span></a>
+        </li>
+        <li class="nav-item-divider"></li>
+        <li class="nav-item" data-page-id="sessions/new">
+          <a class="nav-item-anchor" href="/users/sign_in"><span class="nav-item-label">Log in</span></a>
+        </li>
+        <li class="nav-item nav-item-highlighted nav-item-secondary" data-page-id="static/pricing">
+          <a class="nav-item-anchor" href="/pricing"><span class="nav-item-label">Sign up</span></a>
+        </li>
+    </ul>
+  </div>
+</header>
+
+      
+      <div id="main" class="main " role="main">
+        
+
+
+
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-opensans theme-color-grey-blue">
+			<div class="reveal">
+				<div class="slides">
+					<section data-id="5a725b158fee247c1955155ff5196a30" readability="3"><div class="sl-block" data-block-type="text" style="width: 817px; left: 74px; top: 84px; height: auto;" data-block-id="a9f26a8432ae0f391d4a1fcda5111652" readability="11"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; font-size: 87%;" dir="ui">
+<h1>achieving inclusive accessibility thinking<br>
+<span style="font-size:0.9em">without sticks or carrots</span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="9795ae1badf9a8823e97cfd8dd2e35c9" style="height: auto; min-width: 30px; min-height: 30px; width: 465px; left: 86px; top: 550px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;">
+<p><span style="font-size:0.9em"><a href="https://twitter.com/EmmaJ_PR" target="_blank">@EmmaJ_PR</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="2a093d493abbfe066e26a6be27de0c8d" style="min-width: 4px; min-height: 4px; width: 90px; height: 59px; left: 625px; top: 543px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="128" data-natural-height="84" data-lazy-loaded="" alt="BBC" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/3525746/BBC.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="317acd08aead6b489e1c3571f0726646" style="height: auto; min-width: 30px; min-height: 30px; width: 176px; left: 700px; top: 550px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: right;"><span style="font-size:0.9em">Accessibility</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7cfe9f968d772ed8e77d13d3e4b49080" style="min-width: 4px; min-height: 4px; width: 75px; height: 116px; left: 122px; top: 441px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="256" data-natural-height="398" data-lazy-loaded="" alt="Emma avatar" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/3541753/Emma-avatar.png"></div></div>
+
+<div class="sl-block" data-block-type="text" data-block-id="e49db12ab5e75bad8b906d086db9f464" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 621px;" readability="9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" readability="43">
+<p><span style="font-size:0.5em"><strong>Space</strong><span style="color:rgb(255, 255, 255)"> key, arrow keys, or swipe to navigate through slides.</span></span></p>
+</div></div></section><section data-id="2a32aac0ff5666858ac550e729fe1190"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 92px; height: auto;" data-block-id="3d8f7d41b907fab25e5d18d443ef904a"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation metaphor</span></h2>
+</div></div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="405e1b70f6ce3e34ec4db8b6d5f298e0" style="min-width: 4px; min-height: 4px; width: 617px; height: 353px; left: 170px; top: 226px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1398" data-natural-height="800" data-lazy-loaded="" alt="Clipart donkey eagerly moving toward a carrot suspended in front of it from a stick tied to its back." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5836178/kisspng-royalty-free-carrot-clip-art-carrots-clipart-5aee8f5cdbe923.0814718515255837089008.png"></div></div>
+</section><section data-id="85247bcbe77f02916721be281b34906b"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 92px; height: auto;" data-block-id="cec4d7fad05d499e435a8474300053b1"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation metaphor</span></h2>
+</div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 443px; height: 405px; left: 259px; top: 210px; min-width: 4px; min-height: 4px;" data-block-id="ab8e383cdab455ff9e2d502d356cc345"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1060" data-natural-height="968" data-lazy-loaded="" alt="Jenks cartoon of a dog excitedly jumping for a stick held high and ignoring a carrot on the ground, above the line &quot;Just one example of why the carrot and stick philosophy doesn't work&quot;." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5782030/Screen_Shot_2019-02-14_at_10.54.52.png"></div></div>
+</section><section data-id="0454337b617b18601343d2577c144e85"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 92px; height: auto;" data-block-id="0c0b2d404828570b1fa4bb1642dba6d2"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">What are the "sticks"?</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="shape" data-block-id="3731e5f61bd4d8c8a7b5d667754609d6" style="min-width: 4px; min-height: 4px; width: 300px; height: 300px; left: 330px; top: 229px;"><div class="sl-block-content" data-shape-type="symbol-sad" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(241, 194, 50)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM9.997 24.398l-2.573-1.544c1.749-2.908 4.935-4.855 8.576-4.855 3.641 0 6.827 1.946 8.576 4.855l-2.573 1.544c-1.224-2.036-3.454-3.398-6.003-3.398-2.549 0-4.779 1.362-6.003 3.398z"></path></g></svg></div></div></section><section data-id="0ddd9bb288d39e02c1b306212703caca"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 92px; height: auto;" data-block-id="85b7d29efc48077bda23bab3c6d84f4d"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">What are the "carrots"?</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="shape" style="width: 300px; height: 300px; left: 330px; top: 229px;" data-block-id="b4060b86d1d613f35dfad36ef564b555"><div class="sl-block-content" data-shape-type="symbol-smiley" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(241, 194, 50)"><path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM8 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM20 10c0-1.105 0.895-2 2-2s2 0.895 2 2c0 1.105-0.895 2-2 2-1.105 0-2-0.895-2-2zM22.003 19.602l2.573 1.544c-1.749 2.908-4.935 4.855-8.576 4.855s-6.827-1.946-8.576-4.855l2.573-1.544c1.224 2.036 3.454 3.398 6.003 3.398s4.779-1.362 6.003-3.398z"></path></g></svg></div></div></section><section data-id="007c958396dcded27598c5da86af6f13"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 92px; height: auto;" data-block-id="ae52d1c522b52b10672da9bc7dfa159f"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">sticks &amp; carrots may not be the most effective long term motivators</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="fefb9a275c481732bb5946c0b87966b0" style="min-width: 4px; min-height: 4px; width: 412px; height: 275px; left: 272px; top: 336px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="664" data-natural-height="444" data-lazy-loaded="" alt="Cartoon of a fed up employee lying on the floor ignoring a carrot dangled by a manager sat on their back." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5782243/Screen_Shot_2019-02-14_at_11.44.01.png"></div></div></section><section data-id="00ac907fd470f1964204d177750b8cf4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="e2563084bc63658609957d844e937ca0"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="7af9453a38d50910bb356dde7b794dac" style="min-width: 4px; min-height: 4px; width: 960px; height: 260px; left: 0px; top: 243px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="2304" data-natural-height="624" style="" alt="The great pyramid near Cairo, with smaller pyramids in the distance." data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5858997/pyramids.jpg"></div></div></section><section data-id="e2e42ebf0e4ec2494833704aa1d9e9de"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="a116419079b9277daa59ccd054218695"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 852px; height: 426px; left: 71px; top: 198px; min-width: 4px; min-height: 4px;" data-block-id="00b111892ff3a798104e3be17a063602"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1400" data-natural-height="700" style="" data-lazy-loaded="" alt="Diagram visualising Maslow and Alderfer's hierarchies of motivating needs." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5864763/needs-heirarchy-t.png"></div></div></section><section data-id="9dd23764cd1ce59bbd10d8e54f6ce331"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="7445ace5762abb24472e0ca4caf81c88"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" data-block-id="5f5d36320fa4cd4fb7dcb5deca31c8a9" style="height: auto; min-width: 30px; min-height: 30px; width: 560px; left: 80px; top: 247px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="text-align: left;">Individual knows organisation's goals and how own efforts contribute</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="8201782b1ec6f0b4cd335879e78b002f" style="height: auto; min-width: 30px; min-height: 30px; width: 627px; left: 264px; top: 432px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: left;">Individual confident association with and realising goals of organisation will positively satisfy and not threaten own needs</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="bf8588157b8e701ee27eb334d06f4e32" style="min-width: 4px; min-height: 4px; width: 69px; height: 69px; left: 562px; top: 331px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-down-right" data-shape-fill-color="rgb(159, 197, 232)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="4 4 24 24"><g class="shape-element" fill="rgb(159, 197, 232)"><path d="M28 14c0-1.105-0.895-2-2-2s-2 0.895-2 2v7.172l-16.586-16.586c-0.781-0.781-2.047-0.781-2.828 0-0.391 0.391-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414l16.586 16.586h-7.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h14v-14z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 69px; height: 69px; left: 160px; top: 351px;" data-block-id="c0d498ad251aac29a1a1078605d2d64a"><div class="sl-block-style" style="z-index: 16; transform: rotate(180deg);"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-down-right" data-shape-fill-color="rgb(164, 194, 244)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="4 4 24 24"><g class="shape-element" fill="rgb(164, 194, 244)"><path d="M28 14c0-1.105-0.895-2-2-2s-2 0.895-2 2v7.172l-16.586-16.586c-0.781-0.781-2.047-0.781-2.828 0-0.391 0.391-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414l16.586 16.586h-7.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h14v-14z"></path></g></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="77e61e6bc8562257398d2be2622383ea" style="height: auto; min-width: 30px; min-height: 30px; width: 126px; left: 66px; top: 567px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 70%;">
+<p>Urwicks</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="865deb545345a93205b8d0d7fb41b806" style="min-width: 4px; min-height: 4px; width: 375px; height: 307px; left: 605px; top: 97px;"><div class="sl-block-style" style="z-index: 10; transform: rotate(351deg);"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1649" data-natural-height="1350" alt="BBC values: Audiences are at the heart of everything we do." data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5882799/bbc-values-t.png"></div></div></div></section><section data-id="32ff1c18b97a4954909cfda476c80c8b"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="3850efbb7e8c57adb240dd48ba48e5fb"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 126px; left: 770px; top: 560px;" data-block-id="5d6625337ff759e7d1df630344c187e0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 70%;">
+<p>Vroom</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="65ba901dc497b3d617089f0e6aa2a929" style="height: auto; min-width: 30px; min-height: 30px; width: 150px; left: 54px; top: 323px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 150%; background-color: rgb(230, 145, 56); line-height: 1.56;" data-has-line-height="">
+<p>Effort</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 303px; left: 297px; top: 323px;" data-block-id="dab58c936dab9cc3cfdd9b3e53051a75"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; background-color: rgb(166, 77, 121); line-height: 1.56;" data-has-line-height="">
+<p>Performance</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 217px; left: 692px; top: 323px;" data-block-id="4c49d841f4837374a9506f19c26009a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 150%; background-color: rgb(61, 133, 198); line-height: 1.56;" data-has-line-height="">
+<p>Rewards</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="89f5120b41b7ae38c2b4cfb8fb46e5c9" style="min-width: 4px; min-height: 4px; width: 70px; height: 43px; left: 218px; top: 337px;"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-right" data-shape-fill-color="rgb(252, 229, 205)" data-shape-stretch="true" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="2 4 28 24"><g class="shape-element" fill="rgb(252, 229, 205)"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 70px; height: 43px; left: 612px; top: 337px;" data-block-id="67207e738e46d68eef4117c5ecf55e8c"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-right" data-shape-fill-color="rgb(234, 209, 220)" data-shape-stretch="true" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="2 4 28 24"><g class="shape-element" fill="rgb(234, 209, 220)"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="ebe883575ecd7f191bc53ce2c8ff963f" style="height: auto; min-width: 30px; min-height: 30px; width: 717px; left: 90px; top: 241px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p>Expectancy     x     Instrumentality     x     Valence</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 717px; left: 90px; top: 509px;" data-block-id="988ea1c2d1a2ed6b9b84b0c57b7560b3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;">
+<p>=     Motivation</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 120px; height: 43px; left: 576px; top: 447px;" data-block-id="a5b67b3e0d63e33a25deee6d2993d864"><div class="sl-block-style" style="z-index: 19; transform: rotate(156deg);"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-right" data-shape-fill-color="rgb(201, 218, 248)" data-shape-stretch="true" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="2 4 28 24"><g class="shape-element" fill="rgb(201, 218, 248)"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path></g></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 119px; height: 43px; left: 205px; top: 443px;" data-block-id="1d40f8497c7ac0d40d7109c3cc3fcea5"><div class="sl-block-style" style="z-index: 21; transform: rotate(208deg);"><div class="sl-block-content" data-shape-type="symbol-thin-arrow-right" data-shape-fill-color="rgb(201, 218, 248)" data-shape-stretch="true" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="2 4 28 24"><g class="shape-element" fill="rgb(201, 218, 248)"><path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path></g></svg></div></div></div></section><section data-id="e56211d5049b4533468620be0b7499f8"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="770c04d1b8387f6a337dc975c85f9e59"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 868px; height: 434px; left: 59px; top: 199px; min-width: 4px; min-height: 4px;" data-block-id="c9b9db9dda8c2cbc8b87a1753e90942f"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="1400" data-natural-height="700" style="" data-lazy-loaded="" alt="Diagram visualising Miller's lean system of extrinsic and intrinsic motivation." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5865118/lean-motivation-t.png"></div></div></section><section data-id="96bf756b54f829422db76bdacc0a6ff3"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="562c5747bef00ac04bf866f7c368ee32"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 14; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivation theory</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 182px; top: 208px;" data-block-id="9032ef78fe6a9d81b26d84f08de885c3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Autonomy</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 549px; top: 256px;" data-block-id="69ce87cd45d42cf154bb8ba74251121d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Mastery</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 260px; top: 447px;" data-block-id="9a61098f59eac3c564e12aa7a3a43912"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Purpose</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7358be38e4424e42d9210c7ac8e54356" style="height: auto; min-width: 30px; min-height: 30px; width: 340px; left: 132px; top: 273px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 90%;">
+<p style="text-align: left;">The desire for control over your work, time and decisions</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 292px; left: 527px; top: 321px;" data-block-id="64a66ccf654bef404109687277622ebe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 90%;" dir="ui"><p style="text-align:right">The urge to use and improve skills you enjoy</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 361px; left: 242px; top: 512px;" data-block-id="85bf9bcd1c373491f93063653f868671"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 90%;">
+<p>The desire to do something that has meaning and makes a contribution</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="19445379a6d4dc765f49a220af058eff" style="min-width: 4px; min-height: 4px; width: 476px; height: 260px; left: 72px; top: 190px;"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#e69138" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 476 260"><defs><clippath id="shape-mask-1-1552002694518"><ellipse rx="238" ry="130" cx="238" cy="130"></ellipse></clippath></defs><ellipse rx="238" ry="130" cx="238" cy="130" clip-path="url(#shape-mask-1-1552002694518)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#e69138" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 439px; height: 260px; left: 450px; top: 237px;" data-block-id="07cf5c78de16f76e8d34022425a5571b"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#a64d79" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 439 260"><defs><clippath id="shape-mask-5-1552003028023"><ellipse rx="219.5" ry="130" cx="219.5" cy="130"></ellipse></clippath></defs><ellipse rx="219.5" ry="130" cx="219.5" cy="130" clip-path="url(#shape-mask-5-1552003028023)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#a64d79" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 510px; height: 290px; left: 168px; top: 374px;" data-block-id="7da1535005993bc278e8b3501bf2f5ff"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#3d85c6" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 510 290"><defs><clippath id="shape-mask-6-1552003042110"><ellipse rx="255" ry="145" cx="255" cy="145"></ellipse></clippath></defs><ellipse rx="255" ry="145" cx="255" cy="145" clip-path="url(#shape-mask-6-1552003042110)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#3d85c6" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 126px; left: 770px; top: 560px;" data-block-id="ce38ee90be436d9127de265dbac9056b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; font-size: 70%;">
+<p>Pink</p>
+</div></div></section><section data-id="5be0d674ed3310cc0a2f5af87b665bce"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="337760389fce1da166e760193f7e29fd"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">theory in practice</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="102e39cef3c2af2af59f04cf8653da12" style="min-width: 4px; min-height: 4px; width: 783px; height: 445px; left: 89px; top: 203px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1000" data-natural-height="569" style="" data-lazy-loaded="" alt="Illustration of man evolving from a focus on basic survival, through stick and carrot motivators, to a focus on meaningful purpose that lifts others." data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/5865577/evolution.jpg"></div></div></section><section data-id="e6c8779b18e25959d2d361cfce6fd85c"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="f1bbe1e5e956cf4d796995e8afc22dcc"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivate and empower</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 190px; left: 78px; top: 210px;" data-block-id="3fb52a1da6ae738ef4155b628b6dc956"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 150%; line-height: 1.56; background-color: rgb(61, 133, 198); text-align: center;" data-has-line-height="">
+<p>Purpose</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7be441d9a9c133b61edcdd285ebe6fd9" style="height: auto; min-width: 30px; min-height: 30px; width: 802px; left: 78px; top: 315px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="text-align:left">Shared understanding through training:</p>
+
+<ul>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">social model: environments can be improved</span></li>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">accessibility is about everyone: not a minority</span></li>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">inclusive approach: from the start and throughout</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="cb7de864f81390bcf5c37fdf7dd5bdf0" style="height: auto; min-width: 30px; min-height: 30px; width: 792px; left: 85px; top: 561px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 110%; border-style: dotted; border-width: 4px; line-height: 1.69; color: rgb(111, 168, 220); border-color: rgb(111, 168, 220);" data-has-line-height="">
+<p><em>impairment + mismatched environment =&gt; disability</em></p>
+</div></div></section><section data-id="b8736f0bfd9aaa3350c662c717c55786"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="8815ef5cf7414f8318e68aacd55e5c93"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivate and empower</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 190px; left: 78px; top: 210px;" data-block-id="4e6008cc08562bf7071b1ce72c08cac0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; line-height: 1.56; background-color: rgb(166, 77, 121); text-align: center;" data-has-line-height="">
+<p>Mastery</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 790px; left: 78px; top: 315px;" data-block-id="70c097d1f290bedf9c928d468f7502ca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align:left">Empowered with knowledge:</p>
+
+<ul>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">assistive technology: have a go, be more familiar</span></li>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">guidelines: baseline for accessible, not everything</span></li>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">3 key things: colour, focus, labels</span></li>
+	<li>tools: to help with designing, coding, and testing</li>
+</ul>
+</div></div></section><section data-id="3f3186b9b3ff7f338a11854f436f19b5"><div class="sl-block" data-block-type="text" style="width: 800px; left: 78px; top: 90px; height: auto;" data-block-id="446b0292345b8271f7198c4621d05ad5"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2><span style="color:#F0F8FF">motivate and empower</span></h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 234px; left: 78px; top: 210px;" data-block-id="3b9d09f3b6aa108977f1a33e174de670"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 150%; line-height: 1.56; background-color: rgb(230, 145, 56); text-align: center;" data-has-line-height="">
+<p>Autonomy</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 562px; left: 78px; top: 315px;" data-block-id="119ec1dcfe77c081a06a83310335bfed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: left;">Simple requirements:</p>
+
+<ul>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">be an example</span></li>
+	<li>remind others</li>
+	<li>get it into relevant conversations</li>
+</ul>
+</div></div></section><section data-id="eedc541fbe73ccbc801e407dcf829a46"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 64px; height: auto;" data-block-id="c478e2d8285b76a83bdb471b3ecd818b"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(255, 255, 255);">
+<h2>
+<span style="color:#F0F8FF">motivate and empower</span><br>
+accessibility champions</h2>
+</div></div></div>
+
+
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 476px; height: 228px; left: 72px; top: 222px;" data-block-id="143eca268e62d5c7bc6b3c9b15dffe62"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#e69138" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 476 228"><defs><clippath id="shape-mask-1-1552018387365"><ellipse rx="238" ry="114" cx="238" cy="114"></ellipse></clippath></defs><ellipse rx="238" ry="114" cx="238" cy="114" clip-path="url(#shape-mask-1-1552018387365)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#e69138" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 439px; height: 260px; left: 450px; top: 237px;" data-block-id="2adab823a81010c7d0252b3aaec1d212"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#a64d79" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 439 260"><defs><clippath id="shape-mask-2-1552018387368"><ellipse rx="219.5" ry="130" cx="219.5" cy="130"></ellipse></clippath></defs><ellipse rx="219.5" ry="130" cx="219.5" cy="130" clip-path="url(#shape-mask-2-1552018387368)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#a64d79" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 510px; height: 290px; left: 168px; top: 374px;" data-block-id="53310dcca5b23859aec572cd004f0687"><div class="sl-block-content" data-shape-type="circle" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 11;" data-shape-stroke-color="#3d85c6" data-shape-stroke-width="8px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 510 290"><defs><clippath id="shape-mask-3-1552018387370"><ellipse rx="255" ry="145" cx="255" cy="145"></ellipse></clippath></defs><ellipse rx="255" ry="145" cx="255" cy="145" clip-path="url(#shape-mask-3-1552018387370)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#3d85c6" stroke-width="16"></ellipse></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 182px; top: 242px;" data-block-id="583e87526e3176393e0bb1539b5a8150"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Autonomy</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 549px; top: 256px;" data-block-id="696056a9c68611e3dd80de8dd5b05481"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Mastery</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 251px; left: 260px; top: 447px;" data-block-id="551e5fab353e66b7a5345a60b548ca74"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; font-size: 150%; line-height: 1.56;" data-has-line-height="">
+<p>Purpose</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 310px; left: 132px; top: 307px;" data-block-id="cf488eced67ed8d92649af489808af99"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; font-size: 90%;">
+<p style="text-align:left">Simple requirements they can shape</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 292px; left: 550px; top: 321px;" data-block-id="382e5a3899030dadef7420f01ec04fbc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; font-size: 90%;" dir="ui">
+<p style="text-align:right">Empowered with knowledge they can use and improve</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 361px; left: 225px; top: 512px;" data-block-id="fd296595a96da3279d3c111e830b4328"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; font-size: 90%;">
+<p>Shared understanding of what to improve and<br>
+who benefits</p>
+</div></div></section><section data-id="34a401509bb76469d0d5edff2ab456fb">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 173px; height: auto;" data-block-id="3a83bffb2f898ca4140196a0f3b634a1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Thank you!</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 282px;" data-block-id="70c4901baac4e395d3440626f70f1c6a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<p style="text-align:center"><a href="https://slides.com/emmajpr/inclusive-a11y" target="_blank">https://slides.com/emmajpr/inclusive-a11y</a></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 90px; height: 59px; left: 625px; top: 543px;" data-block-id="7bfc17cd9f6b07471b98efae08153b53"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="128" data-natural-height="84" data-lazy-loaded="" alt="BBC" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/3525746/BBC.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 176px; left: 700px; top: 550px;" data-block-id="f006e80cc4662e75a8f75bc2b71e91a9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p style="text-align: right;"><span style="font-size:0.9em">Accessibility</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 465px; left: 86px; top: 550px;" data-block-id="6ab13486358f58f1f8b73bdae2298a3c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left;">
+<p><span style="font-size:0.9em"><a href="https://twitter.com/EmmaJ_PR" target="_blank">@EmmaJ_PR</a></span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 75px; height: 116px; left: 122px; top: 441px;" data-block-id="8a5801cc1326aa9f4eca98ea73c1639c"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="256" data-natural-height="398" data-lazy-loaded="" alt="Emma avatar" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/635299/images/3541753/Emma-avatar.png"></div></div></section>
+				</div>
+				<div class="deck-kudos">
+					<button class="kudos-button kudos-trigger" data-kudos-id="1432227" data-kudoed-by-user="false">
+						<div class="kudos-heart">
+							<span class="kudos-icon icon i-heart-fill"></span>
+						</div>
+						<div class="kudos-count" data-kudos-value="0" data-kudos-id="1432227"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pill summary-pill">
+		<div class="pill-picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">Achieving inclusive accessibility thinking, without sticks or carrots</h4>
+			<p class="pill-description">By Emma Pratt Richens</p>
+		</div>
+	</div>
+
+	<div class="pill instructions-pill">
+		<div class="pill-picture"></div>
+		<div class="pill-content">
+			<h4 class="pill-title"></h4>
+			<p class="pill-description"></p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+	<header class="deck-card">
+
+		<div class="deck-card-header">
+				<div class="deck-social">
+					<a href="#" class="deck-social-button facebook-share-button" data-tooltip="Share on Facebook">
+					</a>
+					<a href="#" class="deck-social-button twitter-share-button" data-tooltip="Share on Twitter">
+						<span class="icon i-twitter"></span>
+					</a>
+				</div>
+
+			<div class="deck-options">
+				<a class="fullscreen-button" data-tooltip="Fullscreen" href="#"><span class="icon i-fullscreen"></span></a>
+				<a class="comment-button" data-tooltip="Comments" data-scroll-to href="#comments" data-scroll-to data-scroll-to-offset="-90"><span class="icon i-comment-stroke"></span></a>
+				<a class="share-button" data-tooltip="Share" href="#"><span class="icon i-share"></span></a>
+			</div>
+
+			<div class="deck-promotion">
+				<a class="button cta" href="/?ref=caplt">Create a presentation like this <span class="logo"></span></a>
+			</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="deck-card-body">
+			<div class="deck-info">
+				<h3 class="title">Achieving inclusive accessibility thinking, without sticks or carrots</h3>
+				<ul class="deck-meta">
+					<li data-tooltip="Published date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2019-02-14 10:11:20 UTC"></time>
+					</li>
+					<li data-tooltip="Kudos" data-tooltip-delay="500">
+						<span class="icon i-heart-fill"></span>
+						<span class="value" data-kudos-value="0" data-kudos-id="1432227"></span>
+					</li>
+					<li data-tooltip="Views" data-tooltip-delay="500">
+						<span class="icon i-eye"></span>
+						<span class="value">159</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+	<div class="text">
+		<h3 class="title">
+			<a href="/emmajpr" class="username">Emma Pratt Richens</a>
+		</h3>
+		<p class="description">Digital Accessibility Specialist</p>
+		<ul class="links">
+			
+			 <li><a href="http://twitter.com/EmmaJ_PR" target="_blank"><span class="icon i-twitter"></span>EmmaJ_PR</a></li> 
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
+
+	<section class="comments" id="comments">
+		<div id="disqus_thread"><span class="placeholder">Loading comments...</span></div>
+	</section>
+
+	<section class="deck-list">
+		<h2>More from <a href="/emmajpr">Emma Pratt Richens</a></h2>
+		<ul class="carousel">
+			<li class="deck-thumbnail">
+  <a class="deck-link" href="/emmajpr/ux-a11y"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/b094b2f53c35c33efef3cecf26c27df1/thumb.jpg?1550672171)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">UX&amp;D Accessibility at the BBC</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/emmajpr">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Emma Pratt Richens</span>
+      </a>
+      <div class="stats">
+        <div>23<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/emmajpr/tailoring-a11y"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/6a8fea6d1e0c535df07ad9aca71019ee/thumb.jpg?1524610316)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Tailoring for Beginners</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/emmajpr">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Emma Pratt Richens</span>
+      </a>
+      <div class="stats">
+        <div>325<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/emmajpr/a11yaid"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/27be56b19626074574a4ad123378da9e/thumb.jpg?1522865554)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Introduction to Accessibility and Inclusive Design</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/emmajpr">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Emma Pratt Richens</span>
+      </a>
+      <div class="stats">
+        <div>623<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/emmajpr/a11y101-screenreaders"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/1581a235b89ee9427b7d14d187af045d/thumb.jpg?1520965705)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Accessibility 101: Screen Readers</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/emmajpr">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">Emma Pratt Richens</span>
+      </a>
+      <div class="stats">
+        <div>319<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+
+		</ul>
+	</section>
+
+</div>
+      </div>
+      <footer class="global-footer">
+    <div class="link-group">
+      <h5>Tour</h5>
+      <a href="https://slides.com/?root=true">Home</a>
+      <a href="https://slides.com/explore?root=true">Explore Decks</a>
+      <a href="https://slides.com/features?root=true">Features</a>
+      <a href="https://slides.com/pricing?root=true">Pricing</a>
+      <a href="https://slides.com/developers?root=true">For Developers</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Help</h5>
+      <a href="http://help.slides.com" target="_blank">Forum</a>
+      <a href="http://help.slides.com/knowledgebase" target="_blank">Knowledge Base</a>
+      <a href="http://help.slides.com" data-feedback-mode="smartvote">Leave Feedback</a>
+      <a href="http://help.slides.com" data-feedback-mode="contact">Report an Issue</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Follow</h5>
+      <a href="https://slides.com/news/" target="_blank">News</a>
+      <a href="http://blog.slides.com" target="_blank">Blog</a>
+      <a href="https://twitter.com/slides" target="_blank">Twitter</a>
+      <a href="https://facebook.com/slidesapp" target="_blank">Facebook</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Company</h5>
+      <a href="https://slides.com/about?root=true">About Slides</a>
+      <a href="https://slides.com/changelog?root=true">Changelog</a>
+      <a href="https://slides.com/security?root=true">Security</a>
+      <a href="https://slides.com/partners?root=true">Partners</a>
+    </div>
+
+    <div class="legal">
+      <a href="https://slides.com/terms?root=true">Terms</a>
+      &bull; <a href="https://slides.com/privacy?root=true">Privacy</a>
+      &bull; <span class="copyright">&copy; 2019 Slides, Inc.</span>
+    </div>
+</footer>
+
+    </div> <!--! end of #container -->
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+    
+<script>
+	var SLConfig = {"deck":{"id":1432227,"slug":"inclusive-a11y","title":"Achieving inclusive accessibility thinking, without sticks or carrots","description":"","width":960,"height":700,"visibility":"all","published_at":"2019-02-14T10:11:20.151Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/bb95a06e2639d92bb0444d5969663385/thumb.jpg?1552414528","view_count":159,"user":{"id":635299,"username":"emmajpr","name":"Emma Pratt Richens","description":"Digital Accessibility Specialist","thumbnail_url":"https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":482837,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":false,"default_deck_tag_id":null}},"background_transition":"none","transition":"none","theme_id":null,"theme_font":"opensans","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":true,"slide_number":true,"slide_count":18,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1552865253035,"font_typekit":null,"font_google":null,"notes":{"5a725b158fee247c1955155ff5196a30":"Emma Pratt Richens is an accessibility specialist, and previously a front-end web developer, working at the BBC ... and EmmaJ_PR on Twitter.\n\nThis is a 5 minute talk ... with a game, and a bit of an introduction.","3418c1300c7448c870743a586c2304d5":"Creating the BBC Mobile Accessibility Guidelines, first published late in 2013, was a two year process. They expanded on previous BBC guidelines;  included considerable referencing of other widely accepted guidelines, such as WCAG, Funka, Android and iOS; and worked closely with various BBC product and research teams to figure out what guidance the BBC needed. This was followed by several rounds of feedback from other BBC staff and non-BBC experts.\n\nRecently the BBC Mobile Accessibility Guidelines were updated following an 18 month long review, that began with research into accessibility for online games and interactive content. It was also an opportunity to make the guidelines relevant for a broader audience, use clearer language, and make adjustments for technology advances in the industry.\n\nThe guidelines are written, predominantly, for BBC digital development teams, or agencies contracted to do such work for the BBC. Originally they focused on developers and testers, and now have relevance for designers and many others involved in the process.\n\nThe guidelines do not contradict WCAG or other industry guidelines, but incorporate and expand on them, with some BBC specific additions.\n\nDespite misconceptions, the Mobile Accessibility Guidelines cover responsive web pages as well as native applications. And as such, they replace any previous accessibility guidelines for BBC digital content.\n\nThe BBC guidelines can be found via the short links http://bbc.in/asg or http://bbc.in/SFOzh0.","baf275441f93adbb0e7ce812977ff3bd":"Through growth of a network of accessibility champions, or advocates, our team recognised an ever increasing need for accessibility to be part of requirements gathering, research and design. \n\nThe guidelines could help counteract unconscious bias and increase awareness about accessibility for non-technical people in product teams, but they needed to better accommodate this wider audience.\n\nUK regulators expect the BBC, a large public organisation, to operate and exceed legal standards and requirements for accessibility, which have broadened in scope in recent years. \n\nAs an industry leader in the UK, making new digital products accessible often means figuring out how, so the regulators do give some allowance for not always get it right first time, so long as the BBC is always trying to improve accessibility.\n\nThe BBC is not allowed to be the world's worst website.\n\n... and there's more...","b86aae6f6d81e4082aafa1e1d4765a60":"Games and playful gamification has an amazing ability to draw people in and motivate them to read more or keep trying. This is vital for those needing to overcome impairments that can make things difficult, especially when combined with favourite characters from beloved television programmes. Like Mr. Tumble, pictured, one of the UK's most loved Children's TV characters.\n\nUnderstanding cause and effect is the first step for many severely disabled children in a journey to learning assistive technology that can provide communication and greater independence.\n\n(click)\n\nHTML5 + Javascript canvas means there can be more control over accessibility than prior technologies, and interactive content can use more native elements which have built in accessibility.\n\n(click)\n\nNor is interactive content just for children. News and Sport regularly create interactive widgets, as do Knowledge and Learning - for adults as well as children.","7aeff456dd37c3fe5595b994d0e6361b":"We wanted to make sure each guideline, and the explanation for each guideline, could be understood by everyone, including less technical colleagues in production teams. So we adopted a Plain English approach and cross-referenced for consistency.\n\n* Short sentences with no unnecessary words. \n* Active verbs rather than abstracted verbs (complete rather than completion). \n* Giving instruction when appropriate and using everyday audience appropriate words. \n* And using headings and lists to help readers understand the structure.\n\nYou may notice that GEL also uses Plain English and also adopts a less formal style.\n\nThe image on screen reads \"Dear Larry, let me tell you this in plain English. It's over! ... and also in HTML \u003chtml\u003e\u003cbody\u003e\u003ccenter\u003e\u003cb\u003eIt's over!\u003c/b\u003e\u003c/center\u003e\u003c/body\u003e\u003c/html\u003e.","0ad6279fde6cd76d1748eb640650a705":"What if the clothing industry made every outfit as a “one size fits all”. \n\nPeople come in many shapes and sizes. Ranging in height from 2 foot to 8 foot. Skinny, rotund, top heavy, bottom heavy, or bulging with muscle or other lumps. And that's before considering preferences in colour or fabric.\n\nHow many people would one size would fit well? How many would want to wear it?\n\nAnd how does that apply to digital output?\n","56f0409979f1ef5d9750ef4c1ae7ab08":"So first - a potted history.","a4caf0dbfb65b46255e047644afff44b":"As many of you will know, Technology is a fast paced ever-advancing industry. A landscape that is constantly changing.\n\nIn the past 4 years there has been vast increases in the use of smart phones and tablets, following device and network improvements and more affordable data plans. There has been an increase in wearable technology, such as smart watches, and in internet connected things, such as lights or home heating that can be controlled via apps. And there has been significant advances in hardware and systems for virtual reality and augmented reality.\n\n(click)\n\nThere is also more availability of better accessibility features, built in as part of operating systems. There is better and broader support in browsers for newer code standards, such as HTML 5, CSS 3 and new Javascript services. And big leaps in artificial intelligence and computer learning, that facilitates conversation interfaces and voice interfaces, such as iOS Siri, Google assistant, and Amazon's Alexa.\n\n(click)\n\nAnd those advances carry through into the area of assistive technology, that brings everyone to CSUN. Native apps have helped to bring assistive technology to the home, more affordably and better personalised.","da1f20243164171da5f92715dec72164":"And coding languages rarely sit still either. There are regular advances, new methods and properties, and even new languages.\n\nHTML5 and CSS3 are both much more stable code standards, and have broad support in a wide field of browsers. Javascript is now a core tool, powering in-browser apps as capable as installed software, and much less likely to be disabling thanks to ARIA. And, of course, in the mobile arena Apple have developed Swift for building native apps for iOS devices.\n\nMeanwhile, designs have had to become more responsive, adapting to screen size so that content only needs to exist in one place. Apple developed and encourage their Human Interface Guidelines. Android developed their Material Design Guidelines. And the BBC have created their own design guidance in the shape of GEL, a Global Experience Language, which incorporates the accessibility guidelines.\n","8ab1b3a8cef10a496e87555131e3e757":"The BBC guidelines can be found via the short links http://bbc.in/asg or http://bbc.in/SFOzh0.\n\nWe still have further feedback to come, so there may yet be minor tweaks to some of the descriptions, examples and test instructions, but the changes went public this morning (2 March 2017).\n\nIncidentally, the section of the BBC website that currently links out the the guidelines is to be decommissioned later this year, so we have also be working on a new BBC site for accessibility guidance. The short links will continue to work following that change, whenever it happens. ","ae5302f0e68827104b717f81891af5a7":"Volume control - Separate volume controls should be provided for background music, ambient sounds, narrative and editorially significant sound effects. (Helpful for those with sensory sensitivities and screen reader users - yes, we are starting to think about screen reader users within game development.)\n\nAudio conflict - Narrative audio in games or interactive media should not talk over or conflict with native assistive technology. (We are still doing research into how best to achieve this.)\n\nAdjustability - Interactive media, including games, should be adjustable for user ability and preference. (There is no one size fits all.)\n\nFlicker - Content must not visibly or intentionally flicker or flash more than three times in any one-second period. (This guideline was to be included originally but somehow was not published.)\n\nFeedback and assistance - Non-critical feedback or assistance should be provided when appropriate. (This can prevent users becoming discouraged as they learn something new.)\n\nInput controls - Interaction input control should be adaptable. (Such as setting up to use keys on the left of the keyboard, or as a single control key.)","93c83211c1f4bdade2a81118ecea1129":"Technical advances mean transcripts are less prevalent, and that subtitles and other alternatives are more available, so these guidelines were rolled together. This combined guideline was then expanded to cover more than just long-form AV content. It now covers short-form AV content and clips, and interactive content such as games.\n\nAutoplay now covers continous play as well as automatic play on page/screen load.\n\nBecause of changes in how OS and browsers can magnify and zoom content, the original zoom guideline had become redundant. However, we decided some guidance was still needed to encourage responsive text sizes and not breaking zoom features.\n\nThe guideline on consistency and choice was a confusion of things, so we split it into two guidelines.\n\nAnd Actionable elements has been reworded to cover interactive content, such as games.","644556d8ef73c32ffb040125199f089a":"Lastly, where can you find the guidelines...","a0d68aeff1eecf973782435446193450":"So why did things need to change?","87f0671b675b6627b1654ed40fc43fa5":"A potted summary of the process...","34b9ee4a6681589fd02175073f80ed6a":"Three reports were commissioned and analysed for best practice recommendations for games. They were then mapped against the existing guidelines. Of the 13 main recommendations, 6 became new guidelines, and 7 were incorporated into existing guidelines.\n\nA team review of the original guidelines happened summer 2015, but life happens and vacations and other work meant progress was slow. So Becky and I started having weekly meetings to review and edit guidelines, which afterward were reviewed by Gareth and Jamie. \n\nThere were many involved discussions on the meaning and nuances of words and phrases, often via Slack to facilitate remote working. And some changes needed the whole team together to discuss options and make decisions.\n\nGuidelines are hard!\n\nAnd after all that, there were still consistency checks, example reviews, and review \u0026 feedback by other BBC colleagues.","796f958addf8128e0cbb170f9e72cebe":"So, after all that ... let's look at what is new and what has changed ...","632c3edb0f5b771cf3877dc0ab1eb88e":"Indictating language and Changing language have been merged into a single guideline.\n\nInstructions has been moved to the Editorial section, as it felt a better fit, although it links out to other guidelines on labelling and notifications.\n\nUser interactions replaces what was Touch events and covers a broader range of inputs, splitting to those that generate a click event and those that generate a keypress event. It also acknowledges that interactive content may need to use low level events for a better experience, and what those should be.\n\nAlternative input methods has been expanded to clearly cover interactive content, encouraging multiple input/control methods. For example, a carousel must not reply in swipe or mouse gestures, but should also provide button controls and/or tab through items while moving them into view as they receive focus.","34a401509bb76469d0d5edff2ab456fb":"Thank you. \n\nFor anyone interested, the slide deck is available at slides.com/emmajpr/inclusive-a11y, and the speaker notes include URLs for lots of reference material. (other BBC slide decks at https://bbc.github.io/csun/)\n\nIf you have any questions please ask or contact EmmaJ_PR via Twitter.\n","4132fe680e2f3deea08ca49de7ee239c":"Labelling form controls and Form inputs replace Input labels and Keyboard input types, and a good examples of rewriting in plainer language to provide greater clarity.\n\nManaging focus has been moved from the Focus section to the Forms section, as it is predominantly about not moving the focus while an input field is being completed.\n\nInclusive notifications was the focus of quite a bit of team discussion, as it combines Changes of state and Visual cues and audio alerts. Our initial rewrites produced two guidelines that were very similar, so it started to make sense to combine the points they were making into a single guideline that covers all scenarios.","5731f8e35a0560dbf72e050ccb181606":"Progressive functionality replaces Javascript alternatives, as Javascript is now better supported and, with the help of ARIA, less problematic for accessibility. Enhancing a base accessible experience progressively covers robustness and feature availability. The guideline also advices using \u003cnoscript\u003e to inform users when Javascript is essential for content, such as embedded video or interactive content.\n\nControlling media and Grouped elements now cover interactive content.\n\nRoles, traits and properties got a little rename, to be more complete. And like the remaining guidelines (there are 54 in total) has been rewritten in plainer English.","e34bf7d138360b68dc75ca352ff3d310":"In addition to the mute control, separate volume controls should be provided in settings for interactive media, such as games, \nto minimise the risk of sensory overload for users with audio sensitivity.\n\nThis minimises the risk of sensory shock.\n\nThose with hearing impairment may need to adjust different audio elements to hear the narrative speech clearly.\n\nAnd screen reader users need to be able to hear the screen reader over the sounds within interactive media.\n\n\nIn order to interact with embedded media, all users need to perceive the editorial narrative and/or instructions.\n\nIf the embedded media is self-voicing content, then this does not need to be available to the screen reader. If the embedded media is providing content to the screen reader, then this does not need to be self-voicing.\n\nNote: Further research is currently being conducted to ascertain user preferences.\n","912ae5f20ce9394f14932f61b6c63a63":"Users of interactive media have differing abilities and preferences. Where appropriate, adjustment should be offered to make an experience inclusive and enable everyone to join in.\n\nFor example, users in bright sunlight, experiencing a migraine, or with vision impairment may choose to adjust the contrast and text size, or enable a colour blind mode. Users in a noisy environment, needing quiet, or with hearing impairment may wish to adjust the volume or enabled subtitles. Users carrying something, nursing a hand injury, or with motor impairment may want to adjust the controls and pace. Younger users, those less familiar with technology, or with a cognitive impairment may adjust a difficulty level, use tutorials or enable hints.\n\n\nVisual flicker, flashing and strobe lighting can affect anyone, but some users will be more susceptible than others. Symptoms may include eyestrain, dizziness, fatigue, headaches, migraine, and nausea. Users with medical conditions such as Ménière's or photosensitive epilepsy can be severely affected, experiencing vertigo, hearing loss and seizures.\n\nA well-documented example of the effects of flicker is Pokémon Shock.\n\nIf flicker is unavoidable, the user must be warned before they reach the content.\n\nWhere editorially appropriate, provide an alternative version of content that does not flicker but is as close to the original as possible.\n\nThere is further information on flashing images within BBC Editorial Policy.\n","5e734102167aa977febc0823314428e8":"Occasional feedback and assistance can help people learn how to use something unfamiliar. It can be especially helpful for young children and people with cognitive impairments.\n\nWhen someone is not completing an objective correctly and/or does not progress multiple times, support and encouragement can motivate them to continue or keep trying. For example, in a game or other interactive content this could include hints, tips or the option to pass and move on to other content.\n\n\nPeople with motor or other physical impairments may need to adapt the input control for interactive content, to best accommodate their abilities. For example, someone who is left-handed may prefer to use a pattern of control keys on the left of the keyboard that are within closer reach; and someone with developing or impaired fine motor skills would benefit from simpler controls that allow for less precise gestures.\n\nAdaption could be through user settings or automatic detection. Things to consider for adaption include:\n\n* the mapping of control keys,\n* the complexity of controls (such as offering both multi-button and one-button control modes),\n* the sensitivity and pace of reaction to input signals, and\n* the quantity, size and distance between targets or paths.","33ddbe878a2eb1f8216326d0dff19fe3":"Image on screen says \"You deserve a ta da!\"","f9fd7316a6fba27540cdfef988ff181b":"Image on screen is an example of some game settings, and includes separate toggles for Audio (all sounds), Background music, Sound FX, and Subtitles.","7165f5a63ef38ac3866faa80f3cea3a6":"Image on screen shows another example of game settings, where a Pop the Balloon game can adjust the size, quantity and speed of movement for balloon's to adapt player ability and improvement.","2850b937757c23e7e40c51674a61799e":"GEL includes accessibility as patterns are shaped and documented.","058bc1f5d91f43f27a17219d17b6cd09":"BBC is a big place and with a small team it is only possible to have so much influence. Policing guidelines was inevitably too little input too late in the process for much to be changed.\n\nA small team can train and support champions who are dotted throughout other teams. They in turn set the example and help colleagues to understand what is needed.\n\nSome volunteer, some are encouraged by managers, and others are inspired by training or working with a champion. Enthusiasm for a worthwhile thing can be infectious.\n\nMultiple champions on teams also means accessibility isn't forgotten when one person leaves or changes team, as has happened in the past. Hopefully the team they leave has someone else become a champion, and the the leaving champion moves to another team that team gains another champion.","26c1fd43b14c23f7d55fc3fadd10a99c":"To understand accessibility, there is a need to first define an understanding of some other concepts...","f3776a556131cff81a81095541582d3f":"When defining disability, the answer seems obvious until trying to put it into words.\n\nThere are some key terms to define that will help with this: \"impairment” and “environment”.\n","27d7593772a38a1f21eb1e008ef03809":"Impairment is the bit that's about someone’s body or mind. It’s a fact, not a disability.\n\nImpairment falls into 4 general areas – vision, hearing, motor control or physical, and cognition or learning. \n\nBeware of stereotypes. These are groupings of impairment, not people.\n\nPeople are diverse and varied. Impairments come with many different ranges and combinations to consider… just like making clothing!\n","9d9e9014847c41abc2bf6ff32e993690":"Impairment can be permanent, temporary or situational, so different people will have similar requirements. Something Microsoft's personas beautifully illustrate.\n\nThis means impairment can affect anybody at anytime. As children and when aging – learning and losing abilities. \nThrough injury, illness, and other incapacitation (such as distraction or inebriation).\n","af3d93862588122e0e72ecd8d7b70fbb":"Environment includes many different things.\n\nPhysical: buildings, roads, parks, gardens - both public and private spaces. \n\nSocial: people's habits, attitudes, beliefs and assumptions about each other and themselves. \n\nNuances: subtle things, such as low expectation or over-estimation. For example, people using technology range in experience and ability to use it.\n","fa968367f127df02d799771389df6f6f":"In 1980, attitudes put the onus very much on the person and their inability to be ‘normal’.\n\nThankfully attitudes can change.\n","20476f236bf04b681954e59b10539f06":"There is a subtle but significant difference in the change the World Health Organisation made in it's definition of disability.\n\nThe onus is no longer solely on the person. There is recognition of the role the environment and society play.\n\nThis is referred to as the social model of disability.\n\nLooked at another way...\n\n","1b2fca2e5e627ee706727cdcf1a4f39a":"... when someone's impairment combines with a poorly designed environment - that disables them.\n\nIt is the stairs that disable a wheelchair user, not the wheelchair!\n\nAnd that mismatch is something we can change by designing better environments.\n","d1d6d80d221fe48765b55d477bb34bcb":"Inclusive design remembers the diversity of people and designs things that are accessible to all of them.","b9205ec9db198e495bfc34bea3240457":"Accessibility is no insurmountable barriers to access.\n\nIt's OK to expect people to use assistive tools, and for an access route to be used by people you didn't expect.\n\nAccessibility is providing a ramp for wheel chair users, that is also used by those with walking sticks, strollers, skateboards and rolling suitcases.\n\nAccessibility is providing subtitles for deaf viewers, that are also used in noisy places, to stay quiet, or to understand an accent.\n\nAccessibility is providing buttons for users who can't swipe, that are also used by the inexperienced.\n","2a32aac0ff5666858ac550e729fe1190":"A common metaphor for motivation originated as a carrot hanging from a stick, slightly beyond reach, to encourage a stubborn donkey to move.\n\nMost creatures, people included, will eventually tire of trying to achieve something that is always out of reach. So the metaphor was adapted to include a stick or whip as additional encouragement to keep moving toward the carrot.\n\nThe carrot represents attractive rewards or enticements for doing something. The stick in the adapted metaphor represents punishments or negative outcomes for not doing something.\n\nClipart of a cartoon donkey eagerly moving toward a carrot suspended in front it from a stick tied to its back.","05610736fb4e080f068a99996461d453":"When it comes to technology, the most common assistive tool is the keyboard. It comes in many shapes, sizes and styles to suit different people in different situations.\n\nPointers include the mouse, rollerballs, nipples, pens, joysticks, and touch devices. These also come in many shapes and sizes. Even ones that can be controlled with feet.\n\nAnd a wide range of other tools include head switches, body switches, mouth pieces, eye-tracking, voice control, magnification and zoom software, braille readers and text to speech screen readers. Most use or mimic either keyboard or pointer control.","e62fe9751f44625b3fa806978667eec0":"Become familiar with the tools other people use.\n\nThis is a few fundamentals. There is lots more information elsewhere on the internet.","ac741ba40fda9f92c9529d8ab766179a":"“Logic, visualization, user empathy and language are described as the most applicable skills required to succeed.” – Martina Bettina Starke (www.linkedin.com/pulse/20140808193150-58202011-girls-who-code-insights-from-successful-women-in-technology)\n","aee4ffec234712cf0e220ec4dcd1c30f":"Anne Gibson and Dave Letorey each wrote a great article that will get you thinking about yourself and the people you know.\n\nAccessibility is not just about screen readers. \n\nScreen readers will come up a lot. So will plain English, and subtitles, and keyboard control, and colour contrast, and visible focus. Because the things that make stuff a better experience for people overlap quite a lot. \n\nAccessibility is about people. About ALL people, in all their variety, not a small subgroup.\n","3fb11a0903784e7606e6b72e5b138b99":"Spend a few minutes in someone else's shoes occasionally.\n\nCheck out empathyprompts.net for some more ideas.","d0931d1a3ba18e2b85f3c809c26f78e0":"As mentioned before, inclusive design remembers the diversity of people and designs things that are accessible to all of them.\n\nIf you don't know how diverse people are, learn more. Get to know them.","78a6109ef058a676c0c91705cca9cfd7":"Inclusive design does not have to be dull or mundane. Use the limitations and complications to spark innovation.\n\nTry to provide all users with an equivalent experience, even if it is not the same. Equivalence is when everyone can perceive, understand, navigate, interact with, and enjoy an experience.\n\nThis video about sign interpreting music explains it well…\nwww.youtube.com/watch?v=EuD2iNVMS_4\n","0e6308e28b06c6aae4ae73bdb2e0fdbd":"BBC Global Experience Language (GEL) has an article about designing for accessibility that covers some principles of inclusive design.\n\n - Put the needs of the user ahead of your own inconvenience.\n - Use familiar and expected patterns to accelerate on-boarding and understanding of the interface. \n - Avoid changes the user does not initiate, and offer customization where appropriate.\n - Provide multiple different ways for people to do things so they can use what best suits them.\n - When prioritizing features, choose those that improve accessibility for the most people.\n","54026240dd78ea30aa63499bed1b15c0":"Other good resources are:\n\n - the poster of Inclusive Design Principles from The Paciello Group, as visualized by Barclays\n\n - the information provided by WebAIM at webaim.org/resources/designers/","f9ba80fa8a42458eb9e02ca09257edf3":"Remember that people come in a variety of shapes and sizes and abilities. Some accessibility requirements will require opposite things. Such as the blind person who needs things to be tactile or audible, and the deaf person who needs things to be visual. Try to provide choice and keep a balance.\n\nDo what you can to make things accessible for the most people, but don’t let one accessibility concern stop you doing something you already do. Note it for a future improvement or redesign.\n","9f56f44188065cc2e6f3f72101b56610":"Guidelines act as a solid foundation for good practice. They do not and cannot cover everything you might need to think about.","4c52811ab2a39e03f6e670a375999f46":"Start off by looking at how you provide meaning and structure in the underlying code. Be mindful of keyboard and other assistive technology users. And get the basics of legibility and colour usage correct.\n\nThese practical steps will improve accessibility for a high percentage of users most of the time.","be2cf4ffed92522f5093241be7acdcf9":"The W3 Consortium, the BBC, and other organisations provide extensive guidelines for accessibility, and there are many online tutorials, if you wish to learn more.","0454337b617b18601343d2577c144e85":"In the adapted metaphor, sticks are negative outcomes that will happen if something is not done. \n\nFor a donkey that might be a sharp tap on the rump with a stick for not walking. For a student that might be a detention or exclusion for bad behaviour. For an employee that might be a verbal warning or a reduction in pay for not working as expected.\n\nWhen it comes to the accessibility of services and products, the sticks are guidelines and legal requirements. Not meeting those requirements can result in complaints, legal action, heavy fines, and damaged reputation.\n\nFrowning face icon.","0ddd9bb288d39e02c1b306212703caca":"In the metaphor, carrots are positive outcomes that will happen if something is done.\n\nFor a donkey that might be a carrot to eat. For a student that might be a gold star or a fun activity. For an employee that might be a promotion or a financial bonus.\n\nWhen it comes to the accessibility of services and products, the carrots might be “inspiration porn”, an ego boost for helping others who can't help themselves, or doing the right thing for social approval. There can also be industry recognition, improved reputation, an increase in customers or users, and greater financial return.\n\nSmiling face icon.","007c958396dcded27598c5da86af6f13":"People can grow weary and become demotivated by their job continually being under threat, or the constant stress to perform better. \n\nThey can also lose motivation if good work is not acknowledged, if insufficient or wrong incentives are offered, or an incentive has been achieved and there is no further incentive.\n\nWhatever sticks and carrots you have, may have some use, but they will likely only get you part way. They may not be the most effective long term motivators.\n\nCartoon panel of a fed up employee lying on the floor ignoring the carrot being offered by a manager who's sat on top of them. (apologies to cartoonist who's name is illegible)\n\nhttps://fitproessentials.com/how-to-keep-clients-motivated-after-a-transformation-challenge/","00ac907fd470f1964204d177750b8cf4":"There is lots of reading material out there on motivation. Perhaps the best known theory is the pyramid shaped hierarchy of needs by Maslow, and the various derivatives of it.\n\nPhoto Emma took of the great pyramid near Cairo, with smaller pyramids in the distance, perhaps demonstrating iterative improvement.\n\nhttp://www.1000ventures.com/business_guide/crosscuttings/motivating_main.html\n\n","85247bcbe77f02916721be281b34906b":"Motivating people is complex. \n\nThe carrots and sticks being used don't always work in the way they are intended to.\n\nJenks cartoon panel showing an excited dog jumping up to get a stick held high above it, while ignoring a carrot on the ground nearby. The strapline reads \"Just one example of why the carrot and stick philosophy doesn't work\".\n\nhttp://theviewinside.me/mastering-motivation-and-drive/","e6c8779b18e25959d2d361cfce6fd85c":"So with all that theory and hind sight ... what does it sum up to? Here's the 5 minute talk and as it's a celebration, forfeits for a pass-the-parcel game (music provided by David McDonald and 2017 CSUN karaoke: https://www.youtube.com/watch?v=-IWBT4Tk3t0) ...\n\n1. Give your colleagues a purpose. \n\n(Forfeit - Stop unconscious bias: Change attitudes about ‘Joe Average’ and disability with training: social model.)\nHelp them reach an understanding of the social model of disability so they recognise that disability happens at the point where an impairment meets an environment mismatch, and that environment is something that they can change and improve. \n\n(Forfeit - Design for opposites: Accessibility is about everyone and divergent user cases will bring innovative improvement for many.)\nHelp them to understand that accessibility is about everyone, from the 3 year old who doesn't read yet, to the 31 year old celebrating their first child one-handed, to the 68 year old getting used to their new hearing aid. It's not about an exclusive or minority group, though it does include them. It will impact on them and the people they know. And for all screen readers will feature a lot in accessibility conversations, it's about a lot more besides.\n\n(Forfeit - Ask and include your audience: Your audience knows their experience better than you and will bring insights and ideas.)\nAnd help them to adopt an inclusive approach, that involves the users throughout the process, from requirements gathering and input on designs, to user testing the alpha, beta and release versions of your product features.\n","e2e42ebf0e4ec2494833704aa1d9e9de":"Abraham Maslow's theory of motivation pivots on the idea that motivation for a deficiency of basic needs will weaken motivation for more complex needs. For example, it could be difficult to learn or work if you're worried where your next meal will come from or if you will have shelter to sleep. Maslow considered the most basic needs to be physiological: breathing, hunger, thirst, sleep, etc. Next is safety: shelter, health, security, abuse, etc. Then social belonging: family, friends, support, intimacy, etc. Then esteem: confidence, recognition, respect from and for others, etc, with a higher level being self-esteem and self-respect.  And the most complex need is self-actualisation: realising and mastering one's potential, which can progress to transcendence: helping others to achieve their potential.\n\nThe ERG theory by Clayton Alderfer condenses Maslow's hierarchy into 3 categories: existence (things needed to keep existing), relatedness (things needed to maintain relationships), and growth (things needed for personal development).\n\nHowever intertwined these motivating needs actually are, in the society most of us operate in, wages, welfare and housing programmes take care of existence needs for most people. So other theories tend to focus on higher motivators.\n\nOn screen is a diagram visualising the Maslow and Alderfer hierarchies.\n\nhttp://www.yourarticlelibrary.com/motivation/motivation-theories-top-8-theories-of-motivation-explained/35377\n","5be0d674ed3310cc0a2f5af87b665bce":"How does this apply to accessibility?\n\nOnce upon a while ago, accessibility was the remit of a dedicated few who were trying hard to survive against the odds. Then came guidelines like WCAG 1.0 in 1999 (Happy 20th birthday WCAG!), with version 2.0 in 2008 and 2.1 in 2018 ... and laws like the UK's Disability Discrimination Act 1995 and Equality Act 2010, and the USA's the Americans with Disabilities Act 1990 and the 508 Amendment in 1998 to the 1973 Rehabilitation Act (Happy 21st birthday 508!). These were the sticks to motivate people. The carrots of improved reputation and increased revenue eventually became evident for some, but up to 90% of websites and apps are still not meeting WCAG single-A standard 20 years on (https://www.abilitynet.org.uk/techsharepro/carrots-vs-sticks).\n\nFor a public service organisation like the BBC, those legal sticks were early motivators, but increased revenue is never going to be a compelling carrot. However, once the BBC was established as an online service provider, we put guidelines in place, created training for those who were interested, and encouraged adherence.\n\nTraining wasn't mandatory. Auditing and policing guidelines was ineffective, and happened too late to have a real impact. We needed some motivation that was present more regularly and could help guide people on what to do. The approach we adopted 5 years ago was accessibility champions. Initially this was a few select colleagues from different key product teams, who were given training and expected to share and dissipate that knowledge with the teams they worked with. These early champions were essentially a stick, albeit a very gentle nudging reminder of what was supposed to be done.\n\nFive years on, our champions approach has evolved considerably:\n\n - First, we noticed that multiple champions within a product team support each other and get less pushback. So we have encouraged multiple champions within product teams. More champions means wider sharing of knowledge across the organisation and greater cross-team support (and not just for accessibility). \n\n - Second, we noticed that champions earlier in the process have a ripple impact further along the process. So we have encouraged designers and business analysts to be champions, as well as developers and testers, and we've put in place mandatory accessibility training for all designers. A quick dig into the WAI responsibility breakdown of WCAG reveals that almost 95% of accessibility thinking should start before any code is written (https://www.w3.org/community/wai-engage/wiki/Accessibility_Responsibility_Breakdown and https://www.youtube.com/watch?v=8ovXWPxkA4c talk by Bill Tyler and https://www.youtube.com/watch?v=XTee8Hol1kM talk by Derek Featherstone).\n\n- Thirdly, we noticed that getting our champions talking to one another sparked ideas, shared techniques and other such magic. So we have encouraged networking through communication tools and meet-ups. Established champions support and encourage newer champions who in turn bring a fresh sense of wonder and curiosity and enthusiasm. We love dropping in on groups of accessibility champions and hearing about the work they are doing to improve the accessibility of their products. It inspires us and assures us we're moving in the right direction, and we respond with fresh appreciation and validation of the work they are doing. Networking and dropping in provide opportunities for reflection, which amplifies impact and makes achievements more meaningful (https://www.linkedin.com/pulse/only-thing-makes-work-meaningful-aaron-hurst/).\n\nMost importantly, our network of accessibility champions has reached a point where others want to become champions because of a conversation they had with an existing champion. We rarely have to seek out new accessibility champions. We have also reached a point where the culture of some teams has changed so that accessibility is an integrated part of an inclusive approach. Audits are no longer needed as testing accessibility requirements happens along with everything else. For those teams, accessibility has become an intrinsic part of best practice and quality of work. There is still space for improvement, but if ever the proof was in the pudding, our complaints about accessibility have significantly reduced from several a month to 1 or 2 a year.\n\nThe sticks and carrots still have their place, motivating the business and the industry. For the teams who have made accessibility thinking part of their day to day process their motivation is now much more intrinsic and long term. The guidelines are just guidelines, a starting point not a checklist. And they are bringing others along with them. This approach has become a cycle of intrinsic motivation.\n\nOn screen is a graphic of evolving man, early man thinking about survival, middle man thinking about punishments and rewards, and evolved man thinking about lifting others.","9dd23764cd1ce59bbd10d8e54f6ce331":"Lyndall Urwicks' Theory Z: proposes that individuals are motivated when they know an organisations goals and understand how their efforts contribute, and in turn how such association with the organisation will positively satisfy their own needs.\n\nOn screen is a diagram of Urwicks' theory and a photo of the BBC values.\n\nEmma definitely recognises this approach in some of how the BBC operates. Her pass carries the organisation's mission and values on the back, and her annual objectives are based on those values and subsequent departmental goals. For example, a particularly pertinent value is \"The Audience is at the heart of everything we do.\"\n","e56211d5049b4533468620be0b7499f8":"Lawrence Miller's recent hierarchy of motivation may be less well known, yet it struck a chord and combine's elements of several of the other theories mentioned. He recognises that people are motivated by different things at different times, and sometimes by multiple things at the same time. He also recognises that it will be most effective to optimise on all aspects of motivation, not one. The three sources of motivation he identifies are Purpose or Meaning: focus on spiritual and wider society impact, Social Relationships: focus on the team or community and belonging, and Situational Rewards and Punishments: focus on material outcomes and self. They should be judged as equally significant, and equally important at different times. However, there is plenty of evidence that people focused only on material and self tend to be less content then people focused on an ennobling purpose: making a difference in the world. People who are physically or mentally unwell can become very focussed on self, and doing something for others can be instrumental in improving their wellbeing.\n\nOn screen is a diagram of Miller's hierarchy.\n\nRewards and punishments, the carrots and sticks, are good incentives, but they are extrinsic motivators. Most aspects of Social Relationships are also extrinsic motivators, where the motivation comes from outside of self. It is meaning and purpose that act as intrinsic motivators, where the motivation comes from within. And intrinsic motivators are powerful, so long as the other motivators are not absent.\n\nThey work best when all are at work. This is synergistic motivation (combining empowerment, recognition and rewards).\n\nhttp://www.lmmiller.com/employee-involvement-empowerment-engagement-happened/\n","32ff1c18b97a4954909cfda476c80c8b":"Vroom's Expectancy Theory: is founded on the idea that people will be motivated when they believe there is a correlation between the effort they put in, the performance they achieve, and the resultant outcomes and rewards. Expectancy: will my effort lead to high performance? Instrumentality: will performance lead to outcomes? Valence: will the outcomes be desirable (of value)? At its most formulaic ... Expectancy x Instrumentality x Valence = Motivation ... which in turn will affect expectancy.\n\nOn screen is a diagram of Vroom's theory.\n\nPorter \u0026 Lawler, in turn, improved on the Expectancy Theory, adding additional factors that affect effort and performance, such as abilities, perceptions, and probability, and the extrinsic or intrinsic nature of rewards that affect satisfaction. It's complex, recognising that motivation is not a simple cause-effect relationship.\n","96bf756b54f829422db76bdacc0a6ff3":"One last theory ... this one specifically about intrinsic motivation.\n\nDaniel Pink considers motivation 1.0 to be basic survival or early man, and motivation 2.0 to be the carrot and stick / reward and punishment approach of early industrialised society's. He proposes that intrinsic motivation is version 3.0, and sets out its 3 components as Autonomy: the need to direct one's own life and work, Mastery: the urge to improve, and Purpose: the desire to contribute to something larger and more important than oneself. These three aspects of intrinsic motivation work together and fuel each other.\n\nOn screen is a Venn diagram of Pink's theory.\n\nhttps://www.mindtools.com/pages/article/autonomy-mastery-purpose.htm","b8736f0bfd9aaa3350c662c717c55786":"2. Guide your colleagues toward mastery. \n\n(Forfeit - Get to know all of your audience and their tech: The combinations of devices and assistive technology your audience use is as diverse as they are.)\nEmpower them with knowledge of the different types of assistive technology and give them opportunities to have a go and familiarise themselves with that technology. Encourage them to meet and observe users of assistive technology, and to use assistive technology to test product features. This could be done as a swarm, for example, each team member taking on a different device each time.\n\n(Forfeit - Beginners don’t need to be experts: It’s OK to learn as you go; there are lots of guidelines and learning resources available.)\nEmpower them with knowledge of the guidelines your organisation adheres to, and an understanding these guidelines provide a baseline, not a checklist.\n\n(Forfeit - Starting is easy getting it right is hard: That’s no different to the rest of what we do, lots of small iterative improvements will keep you moving in a good direction.)\nEmpower them with awareness of your key concerns. For us those fall under the topics of colour, focus and labels. For organisations focused more directly on WCAG, those can easily translate to perception, operation and understanding.\n\n(Forfeit - Shift left: Get teams thinking about accessibility earlier in the process, with pointers the tools and awareness of the aspects that are role relevant.)\nAnd empower them with knowledge of the tools that are most useful for their job role: colour contrast analysers, simulators, linting and other testing tools.\n","3f3186b9b3ff7f338a11854f436f19b5":"3. Let your colleagues have autonomy. \n\n(Forfeit - Engage champions with simple requirements: Make remembering to think and talk about accessibility an inside job.)\nDon't dictate how they should go about things. They know their team and processes and skills best. This is an approach we've evolved to, not planned.\n\nOur champions now have 3 simple things asked of them, none of which require them to be an expert ... yet. We ask them to raise the bar and think about accessibility in their own work, setting an example. We ask them to remind and encourage those around them to do the same. And we ask them to ensure accessibility is talked about whenever its relevant in the conversations and meetings they are already involved in.\n\nAccessibility thinking. No sticks. No carrots.\n\n\n(Forfeit - Change takes time: Change happens one small step after one small step after one small step.)\n\n(Forfeit - Check in and be amazed: Reinforce positive change and support questions and discovery, remind them they can and are making a difference.)\n\n","eedc541fbe73ccbc801e407dcf829a46":"This synergistic approach ... giving colleagues intrinsic purpose: a shared understanding of what to improve and who benefits, empowering them with mastery: knowledge they can use and improve, and giving them autonomy: simple requirements they can shape ... is bringing recognition and reward. Many of our accessibility champions are influencing others within the BBC and the wider industry, having greater success in their careers, and recognition of the impact they are having.\n\nIt's taken us 5 years to evolve to where we are now, and be able to reflect and share this with you. And time is an essential part of the process of change. \n\nIt's taken 5 years to evolve to a point where accessibility no longer feels like a burden or a chore, and instead has become an integral part of the process, something frequently and enthusiastically discussed and embraced.\n\nInclusive accessibility thinking without sticks or carrots.\n"}},"user":{"id":635299,"username":"emmajpr","name":"Emma Pratt Richens","description":"Digital Accessibility Specialist","thumbnail_url":"https://www.gravatar.com/avatar/f3404d92e23ed16f3262e1278d2862cd?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":482837,"present_controls":false,"present_upsizing":true,"present_pointer":false,"present_notes":false,"default_deck_tag_id":null}}};
+</script>
+    <script src="//assets.slid.es/assets/application-da59d4617c18b895d6ba3890b00252d24e6ec39d815b826be1063580baf66b27.js" defer="defer"></script>
+    	<script src="//assets.slid.es/assets/deck-e07ac883c7b4ca9616852e61dd2d368717d88f2774406524b971c32999b6413b.js" defer="defer"></script>
+	
+
+
+  </body>
+</html>

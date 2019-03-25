@@ -1,0 +1,1017 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:21.85pt;
+	margin-left:0in;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:28.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	color:black;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 177.55pt 1.0in 93.15pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:2.4pt;margin-bottom:.0001pt;text-indent:13.45pt;line-height:103%'><span
+style='position:relative;z-index:-1895825408'><span style='left:0px;position:
+absolute;left:-20px;top:-61px;width:466px;height:685px'><img width=466
+height=685
+src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image001.gif"></span></span><b><span
+style='font-size:36.0pt;line-height:103%;font-family:"Times New Roman",serif'>Using
+Scenery and the Parallel DOM to support accessible</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:16.6pt;
+margin-left:31.6pt;text-indent:-.5pt;line-height:103%'><b><span
+style='font-size:36.0pt;line-height:103%;font-family:"Times New Roman",serif'>web
+applications</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Jesse
+Greenberg</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:1.1pt;
+margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+24.0pt;line-height:103%;font-family:"Times New Roman",serif'>(</span><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE'>j<u>esse.</u>g<u>reenber</u>g@<u>colorado.edu</u></span><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>)
+Michael Kauzmann</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:1.1pt;
+margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+24.0pt;line-height:103%;font-family:"Times New Roman",serif'>(</span><u><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE'>michael.kauzmann</span></u><span style='font-size:24.0pt;
+line-height:103%;font-family:"Times New Roman",serif;color:#0000EE'>@<u>colorado.</u>e</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Taliesin
+Smith</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:1.1pt;
+margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+24.0pt;line-height:103%;font-family:"Times New Roman",serif'>(</span><u><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE'>taliesin.smith</span></u><span style='font-size:24.0pt;
+line-height:103%;font-family:"Times New Roman",serif;color:#0000EE'>@<u>colorado.edu</u></span><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Emily
+Moore</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:1.1pt;
+margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span style='font-size:
+24.0pt;line-height:103%;font-family:"Times New Roman",serif'>(</span><u><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE'>emil</span></u><span style='font-size:24.0pt;line-height:103%;
+font-family:"Times New Roman",serif;color:#0000EE'>y<u>.moore</u>@<u>colorado.edu</u></span><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>)</span></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:445.5pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  padding:0in 5.75pt 39.45pt 25.1pt;height:445.5pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Presentation Overview</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  100%'><img width=10 height=10 id="Group 7469"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> Scenery:
+  A library developed by PhET for interactive web graphics.</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:13.0pt;margin-bottom:
+  0in;margin-left:0in;margin-bottom:.0001pt'><img width=10 height=10
+  id="Group 7470"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Capabilities
+  of Scenery for graphics and accessibility </span><img width=10 height=10
+  id="Group 7471"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Demonstrate
+  Scenery usage in PhET simulations </span><img width=10 height=10
+  id="Group 7472"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Demonstrate
+  using Scenery for other graphics</span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:solid black 1.0pt;border-bottom:none;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:4.0pt;margin-left:.5pt;text-align:center;text-indent:-.5pt;
+line-height:98%;border:none;padding:0in'><b><span style='font-size:36.0pt;
+line-height:98%;font-family:"Times New Roman",serif'>PhET Interactive
+Simulations</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:84.55pt;
+margin-left:-14.75pt'><img width=468 height=696
+src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image003.gif"></p>
+
+<div style='border:solid black 1.0pt;border-bottom:none;padding:0in 0in 0in 0in;
+margin-left:114.55pt;margin-right:0in'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;border:none;
+padding:0in'><b><span style='font-size:36.0pt;line-height:107%;font-family:
+"Times New Roman",serif'>PhET</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:526.15pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:526.15pt'>
+  <p class=MsoNormal align=center style='margin-bottom:35.25pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Implementation Overview</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img width=10 height=10 id="Group 7113"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Uses
+  model view controller paradigm</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:6.45pt;margin-bottom:
+  .3pt;margin-left:0in;line-height:100%'><img width=10 height=10 id="Group 7116"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> Model
+  code for physics, state, and physical calculations </span><img width=10
+  height=10 id="Group 7117"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> View
+  code for presenting model information to the user </span><img width=10
+  height=10 id="Group 7118"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> Entire
+  UI uses HTML5</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>renderers (Canvas, SVG,</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>WebGL)</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:49.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img width=11 height=11 id="Group 7119"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image004.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Planets,
+  circuits, balloons, particles</span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:24.2pt;
+  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center'><img
+  width=11 height=11 id="Group 7120"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image004.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Buttons,
+  links, sliders,</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:49.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>menus</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:417.75pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  padding:0in 5.75pt 20.3pt 21.7pt;height:417.75pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Why custom render entire interface?</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:23.05pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img width=10 height=10 id="Group 7428"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> More
+  control over visual rendering</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:42.3pt;margin-bottom:
+  0in;margin-left:23.05pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  width=10 height=47
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image005.gif"
+  align=left hspace=12><img width=10 height=10 id="Group 7429"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Improved
+  platform consistency Better performance Better for developing a project of
+  scaling that uses custom graphics</span></p>
+  </td>
+ </tr>
+ <tr style='height:190.9pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 20.3pt 21.7pt;height:190.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.95pt;
+  margin-left:4.95pt'><b><span style='font-size:36.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>The View: Scenery</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  width=10 height=10 id="Group 7630"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Open
+  source graphics library for HTML5, by PhET</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:288.4pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:288.4pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img width=10 height=10 id="Group 7760"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Scenery
+  is a scene graph implementation</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:38.05pt;margin-bottom:
+  0in;margin-left:0in;margin-bottom:.0001pt'><img width=10 height=10
+  id="Group 7761"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Scene
+  graph is a &quot;tree&quot; like data structure for what is displayed on
+  screen </span><img width=10 height=10 id="Group 7762"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Items
+  in the tree are called &quot;Nodes&quot; and have parentchild relations with
+  other nodes in the graph</span></p>
+  </td>
+ </tr>
+ <tr style='height:320.65pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 0in 25.1pt;height:320.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.95pt;
+  margin-left:4.95pt'><b><span style='font-size:36.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>The View: Scenery</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  width=10 height=10 id="Group 7561"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> &quot;Nodes&quot;
+  have graphical</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>information</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><img width=11 height=85
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image006.gif"
+  align=left hspace=12><span style='font-size:24.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>Image data</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>Shape with fill and
+  stroke</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>Transformation</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.3pt;margin-bottom:
+  0in;margin-left:49.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>(translation, rotation,
+  scale)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:94.15pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:.35pt 5.75pt 0in 25.1pt;height:94.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  width=10 height=10 id="Group 8237"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Scenery
+  converts scene graph into visual display</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:39.0pt;
+margin-left:-14.75pt'><img width=466 height=282 id="Group 8296"
+src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image007.gif"></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:265.15pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  border-bottom:none;padding:0in 5.75pt 11.3pt 25.1pt;height:265.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.95pt;
+  margin-left:4.95pt'><b><span style='font-size:36.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>The View: Scenery</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  width=10 height=10 id="Group 8065"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Scenery
+  supports HTML</span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:19.9pt;
+  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'>Canvas,
+  SVG, and WebGL</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.7pt;margin-bottom:
+  0in;margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  width=10 height=10 id="Group 8066"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> All
+  three of these renderers can be used in a single application</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:94.15pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:94.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:12.3pt;margin-bottom:
+  0in;margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  width=10 height=10 id="Group 8781"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:black;text-decoration:none'>Example: </span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Scener</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y </span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Pla</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>yg</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>round</span></a></p>
+  </td>
+ </tr>
+ <tr style='height:514.5pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:514.5pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Accessibility in traditional Web Graphics</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 7987"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Canvas:</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt;line-height:normal'><img width=11
+  height=48
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image008.gif"
+  align=left hspace=12><span style='font-size:24.0pt;font-family:"Times New Roman",serif'>Sub
+  DOM inside canvas addHitRegion, removeHitRegion, drawFocusIfNeeded</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:27.1pt;
+  margin-left:19.65pt;text-indent:-19.65pt;line-height:102%'><img border=0
+  width=10 height=10 id="Group 7991"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> WebGL:
+  Sub DOM inside Canvas</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 7993"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> SVG:
+  Native markup (title, desc), ARIA enhanced SVG</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:417.75pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  padding:0in 5.75pt 20.3pt 25.1pt;height:417.75pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Issues with these approaches</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 8426"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Recommendation
+  for each renderer is different</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 8427"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Supporting
+  each traditional approach triples cost </span><img border=0 width=10
+  height=10 id="Group 8428"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Experimental
+  technologies have limited support and cannot be used in production code</span></p>
+  </td>
+ </tr>
+ <tr style='height:190.9pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 20.3pt 25.1pt;height:190.9pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:14.95pt;
+  margin-left:6.25pt'><b><span style='font-size:36.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>The Parallel DOM</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:5.65pt;margin-bottom:
+  0in;margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 8708"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Parallel
+  HTML tree in addition to graphics</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:260.65pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:260.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 8900"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Accessible
+  representation for what is displayed</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 8901"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Independent
+  of other scenery graphics rendering</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 8902"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Visually
+  hidden, available for assistive technologies</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 8905"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Leverages
+  HTML and ARIA</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>for best of web
+  accessibility</span></p>
+  </td>
+ </tr>
+ <tr style='height:348.4pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 0in 25.1pt;height:348.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>The Parallel DOM: How it works</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 8644"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Add
+  accessibility information</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>to nodes in scene graph</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><img width=11 height=122
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image009.gif"
+  align=left hspace=12><span style='font-size:24.0pt;line-height:107%;
+  font-family:"Times New Roman",serif'>Tag Name</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>Accessible name</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>Role</span></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:25.95pt;
+  margin-bottom:0in;margin-left:30.0pt;margin-bottom:.0001pt;text-align:center'><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'>Descriptive
+  Content</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:94.15pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:.35pt 5.75pt 0in 25.1pt;height:94.15pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 8894"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Scenery
+  renders HTML tree from scene graph information</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:39.0pt;
+margin-left:-14.75pt'><img border=0 width=466 height=213 id="Group 8938"
+src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image010.gif"></p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:316.9pt'>
+  <td width=465 style='width:348.75pt;border:solid black 1.0pt;border-bottom:
+  none;padding:0in 5.75pt 0in 25.1pt;height:316.9pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Parallel DOM Features</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 8732"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Design
+  accessible HTML for any web graphic</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 8733"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Highly
+  dynamic descriptions with graphics</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:316.15pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:316.15pt'>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 9294"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> All
+  benefits of accessible</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>HTML</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><img border=0 width=11 height=11
+  id="Group 9295"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image004.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Users
+  are comfortable</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:49.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>navigating semantic</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:49.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>HTML</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:30.0pt;margin-bottom:.0001pt'><img border=0 width=11 height=11
+  id="Group 9296"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image004.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Interact
+  with content at</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:43.6pt;margin-bottom:
+  0in;margin-left:30.0pt;margin-bottom:.0001pt;text-indent:19.65pt'><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'>their
+  own pace </span><img border=0 width=11 height=11 id="Group 9297"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image004.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Many
+  navigation strategies to read DOM content</span></p>
+  </td>
+ </tr>
+ <tr style='height:292.9pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 0in 25.1pt;height:292.9pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Parallel DOM Features</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 9382"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Leverage
+  built in DOM</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>interaction from native</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>HTML</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 9383"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Keyboard
+  navigation</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:149.65pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:149.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 9082"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Alternative
+  input (when possible)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 9083"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> </span><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:black;text-decoration:none'>Example: </span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Scener</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Pla</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>yg</span></a><a
+  href="http://localhost:8080/scenery/tests/playground.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>round</span></a></p>
+  </td>
+ </tr>
+ <tr style='height:306.75pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:306.75pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Demonstration of PDOM</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:10.95pt;margin-bottom:
+  0in;margin-left:0in;margin-bottom:.0001pt'><img border=0 width=10 height=10
+  id="Group 8950"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Friction
+  (with visualization of accessible content) </span><img border=0 width=10
+  height=10 id="Group 8951"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Friction
+  (with embedded content only)</span></p>
+  </td>
+ </tr>
+ <tr style='height:445.5pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:445.5pt'>
+  <p class=MsoNormal align=center style='margin-bottom:18.75pt;text-align:center;
+  line-height:98%'><b><span style='font-size:36.0pt;line-height:98%;font-family:
+  "Times New Roman",serif'>Using Scenery for other web graphics</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 9241"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Scenery
+  is free and open source!</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><img
+  border=0 width=10 height=10 id="Group 9242"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Not
+  recommended as a</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>replacement for native</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif'>HTML apps</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 9243"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> It
+  is a powerful tool for graphics interactives, and games where accessibility
+  is built into the framework</span></p>
+  </td>
+ </tr>
+</table>
+
+<div style='border:solid black 1.0pt;border-bottom:none;padding:0in 0in 0in 0in'>
+
+<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
+margin-bottom:4.0pt;margin-left:.5pt;text-align:center;text-indent:-.5pt;
+line-height:98%;border:none;padding:0in'><b><span style='font-size:36.0pt;
+line-height:98%;font-family:"Times New Roman",serif'>Other Scenery examples</span></b></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:121.9pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 25.1pt;height:121.9pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:17.35pt;
+  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center'><img
+  width=10 height=47
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image005.gif"
+  align=left hspace=12><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/shapes-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Accessible Scener</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/shapes-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/shapes-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'> Sha</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/shapes-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>p</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/shapes-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>es</span></a></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:22.7pt;
+  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center'><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Accessible Scener</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'> Gau</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>g</span></a><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>e</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt'><a
+  href="https://phet-dev.colorado.edu/html/jg-tests/csun-2019/gauge-example.html"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Meter</span></a></p>
+  </td>
+ </tr>
+ <tr style='height:487.15pt'>
+  <td width=465 valign=bottom style='width:348.75pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:none;border-right:solid black 1.0pt;
+  padding:0in 5.75pt 0in 25.1pt;height:487.15pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:19.4pt;
+  margin-bottom:14.95pt;margin-left:0in;text-align:center'><b><span
+  style='font-size:36.0pt;line-height:107%;font-family:"Times New Roman",serif'>Conclusions</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  100%'><img border=0 width=10 height=10 id="Group 9099"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> Web
+  content is becoming increasingly graphical and interactive</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:3.05pt;margin-bottom:
+  0in;margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;
+  line-height:100%'><img border=0 width=10 height=10 id="Group 9100"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:100%;font-family:"Times New Roman",serif'> PhET
+  developed Scenery, a free and open source library that can produce state of
+  the art web graphics</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:
+  102%'><img border=0 width=10 height=10 id="Group 9101"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:102%;font-family:"Times New Roman",serif'> Scenery
+  supports state of the art web accessibility</span></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 9102"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> Scenery
+  and its accessibility support has been used extensively by PhET</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.3pt;margin-bottom:0in;
+margin-left:-93.15pt;margin-bottom:.0001pt'>&nbsp;</p>
+
+<table class=TableGrid border=0 cellspacing=0 cellpadding=0 width=465
+ style='width:348.75pt;margin-left:-14.75pt;border-collapse:collapse'>
+ <tr style='height:149.65pt'>
+  <td width=465 valign=top style='width:348.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 14.75pt;height:149.65pt'>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:19.65pt;margin-bottom:.0001pt;text-indent:-19.65pt'><img
+  border=0 width=10 height=10 id="Group 8376"
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image002.gif"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif'> We
+  encourage anyone to use this free, open resource in development of
+  interactives and graphics!</span></p>
+  </td>
+ </tr>
+ <tr style='height:459.4pt'>
+  <td width=465 style='width:348.75pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:none;border-right:solid black 1.0pt;padding:0in 5.75pt 0in 14.75pt;
+  height:459.4pt'>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:9.05pt;
+  margin-bottom:0in;margin-left:0in;margin-bottom:.0001pt;text-align:center'><b><span
+  style='font-size:36.0pt;line-height:107%;font-family:"Times New Roman",serif'>Resources
+  and</span></b></p>
+  <p class=MsoNormal align=center style='margin-top:0in;margin-right:9.0pt;
+  margin-bottom:18.7pt;margin-left:0in;text-align:center'><b><span
+  style='font-size:36.0pt;line-height:107%;font-family:"Times New Roman",serif'>Funders</span></b></p>
+  <p class=MsoNormal style='margin-bottom:21.85pt'><b><span style='font-size:
+  28.0pt;line-height:107%;font-family:"Times New Roman",serif'>Resources</span></b></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.35pt;margin-bottom:.0001pt'><img width=10 height=158
+  src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image011.gif"
+  align=left hspace=12><a href="https://github.com/phetsims/scenery"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>Scener</span></a><a href="https://github.com/phetsims/scenery"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y</span></a><a
+  href="https://github.com/phetsims/scenery"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE'> Re</span></a><a
+  href="https://github.com/phetsims/scenery"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE;
+  text-decoration:none'>p</span></a><a
+  href="https://github.com/phetsims/scenery"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE'>ositor</span></a><a
+  href="https://github.com/phetsims/scenery"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE;
+  text-decoration:none'>y</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.35pt;margin-bottom:.0001pt'><a
+  href="http://phetsims.github.io/scenery/"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE'>Scener</span></a><a
+  href="http://phetsims.github.io/scenery/"><span style='font-size:24.0pt;
+  line-height:107%;font-family:"Times New Roman",serif;color:#0000EE;
+  text-decoration:none'>y</span></a><a href="http://phetsims.github.io/scenery/"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'> Documentation</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.35pt;margin-bottom:.0001pt'><a href="http://phet.colorado.edu/"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>PhET Website</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+  margin-left:10.35pt;margin-bottom:.0001pt'><a
+  href="https://phet.colorado.edu/en/about/accessibility"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>PhET Accessibilit</span></a><a
+  href="https://phet.colorado.edu/en/about/accessibility"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE;text-decoration:none'>y</span></a><a
+  href="https://phet.colorado.edu/en/about/accessibility"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'> Research</span></a></p>
+  <p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:29.2pt;
+  margin-left:10.35pt'><a href="http://bit.ly/phet-w4a-2018"><span
+  style='font-size:24.0pt;line-height:107%;font-family:"Times New Roman",serif;
+  color:#0000EE'>This slide deck</span></a></p>
+  <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><b><span
+  style='font-size:28.0pt;line-height:107%;font-family:"Times New Roman",serif'>Funders</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>The
+National Science</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Foundation
+(DRL-1503439,</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>DRL-1621363,
+DRL-</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>1814220)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>The
+Hewlett Foundation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+30.2pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>University
+of Colorado</span></p>
+
+<h1>Contact Us</h1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.5pt;margin-bottom:21.8pt;
+margin-left:0in;text-indent:30.0pt;line-height:103%'><span style='position:
+relative;z-index:-1895818240'><span style='left:0px;position:absolute;
+left:-20px;top:-340px;width:466px;height:823px'><img width=466 height=823
+src="Using%20Scenery%20and%20the%20Parallel%20DOM%20to%20support%20accessible%20web%20applications_files/image012.gif"></span></span><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE'>j<u>esse.</u>g<u>reenber</u>g@<u>colorado.edu michael.kauzmann</u>@<u>colorado.e
+taliesin.smith</u>@<u>colorado.edu emil</u>y<u>.moore</u>@<u>colorado.edu </u></span><b><span
+style='font-size:28.0pt;line-height:103%;font-family:"Times New Roman",serif'>Get
+Involved!</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:36.85pt;margin-bottom:
+1.0pt;margin-left:29.75pt;text-indent:-.5pt;line-height:103%'><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Twitter:
+@PhETSims github: </span><a href="https://github.com/phetsims"><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE;text-decoration:none'>@p</span></a><a
+href="https://github.com/phetsims"><span style='font-size:24.0pt;line-height:
+103%;font-family:"Times New Roman",serif;color:#0000EE'>hetsims </span></a><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif'>Facebook:
+@PhETSims </span><a href="https://phet.colorado.edu/blog"><span
+style='font-size:24.0pt;line-height:103%;font-family:"Times New Roman",serif;
+color:#0000EE;text-decoration:none'>p</span></a><a
+href="https://phet.colorado.edu/blog"><span style='font-size:24.0pt;line-height:
+103%;font-family:"Times New Roman",serif;color:#0000EE'>het.colorado.edu/blo</span></a><a
+href="https://phet.colorado.edu/blog"><span style='font-size:24.0pt;line-height:
+103%;font-family:"Times New Roman",serif;color:#0000EE;text-decoration:none'>g</span></a></p>
+
+</div>
+
+</body>
+
+</html>

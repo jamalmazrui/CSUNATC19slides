@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Writing User Stories to Test WCAG 2.1 Success Criteria</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+<link rel="stylesheet" href="css/custom.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <section>
+                    <h1>Writing User Stories to Test WCAG 2.1 Success Criteria</h1>
+					<p>
+						<small>CSUN - March 13th 2019<br>Presented by <a href="https://rleisinger.github.io">Ryan Leisinger</a> / <a href="http://twitter.com/ryanleisinger">@ryanleisinger</a></small>
+					</p>
+                </section>
+
+
+                <section>
+                    <div style="background-color: rgba(0, 0, 0, 1); color: #fff; padding: 20px;">
+				    <h1>As a (user),<br> I want (a feature)<br> so that (value)</h1>
+				    </div>
+                </section>
+                    </section>
+										<section>
+	                    <h1>Introduction</h1>
+	                     <section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;">
+												 Ryan Leisinger<br>
+												 Washington State Accessibility Champion<br>
+												 Co-Author and Architect of
+												 <a href="https://ocio.wa.gov/policy/accessibility">WA State’s Accessibility Policy #188</a>
+	                       </section>
+												 <section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;">
+													 Policy #188 lives as a Technology Policy in the Office of the Chief Information Officer<br>
+  															 	  <p>
+  	                                 <a href="https://ocio.wa.gov/policy/technology-policies-and-standards">OCIO Policy #101</a><br>
+  	                                 State Agencies, Boards, Commissions & Higher Edu<br>
+  	                                 Recommended for Legislative and Judiciary
+
+												 </section>
+											 </section>
+
+											 <section>
+												 <h1>Policy #188</h1>
+												 <section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;">
+													 <h2>Intent</h2>
+													 The State’s Policy connects WA State IT, services and digital communications with the State’s
+													 obligation under Title II of the Americans with Disability Act to not discriminate
+													 against people with disabilities.
+												 </section>
+												 <section>
+													 <h2>Accessible services for</h2>
+													 For WA State 65,000 State Employees<br>
+													 7.4 million citizens
+												 </section>
+	 					</section>
+<section>
+                <!-- Agile Slide -->
+								  <h1>Agile</h1>
+                <section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;text-align: left">
+								I am also...<br>
+                Scrum Master and agile coach
+								<p>
+								Scrum for more than writing code
+								<ul>
+								<li>Business Intelligence and Data Warehousing </li>
+								<li>Procurement and Contracts</li>
+								<li>Change Management</li>
+								</ul>
+                </section>
+								<section>
+									<h2>Agile is...</h2>
+									<ul>
+										<li>Flexible</li>
+										<li>Collaborative</li>
+										<li>Iterative</li>
+									</ul>
+								</section>
+							<section>
+								<h2>Agile, the enemy of Accessibility</h2>
+								Rush to production, push to release customer value
+							</section>
+							<section>
+								<h2>Use Agile to Drive Accessibility</h2>
+							</section>
+							<section>
+								<h1>User Stories</h1>
+
+“As a (user), I want (a feature) so that (value)”<br>
+- replace -<br>
+Classic waterfall "system shall" type requirements
+</section>
+<section>
+	<h1>Requirements & Tests</h1>
+	Test are requirements and requirements are testing
+</section>
+<section>
+	<h1>Common Guidelines for User Stories</h1>
+	<ul>
+	<li>Bridge Tech and User Value</li>
+	<li>Understand the users</li>
+	<li>Think as a user</li>
+</section>
+<section>
+	<h1>Empathy</h1>
+	the ability to understand and share the feelings of another.
+</section>
+</section>
+<section>
+	<h1>WCAG User Stories</h1>
+	<section>
+	“As a (user), I want (a feature) so that (value)”<br>
+</section>
+<section>
+	<h2>WCAG Layers</h2>
+	<ul>
+		<li>Principles -  perceivable, operable, understandable, and robust</li>
+
+<li>Guidelines - basic goals  to make content more accessible - not testable</li>
+<li>Success Criteria - testable success criteria & more</li>
+<ul></section>
+<section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;text-align: left">
+<h2>WCAG</h2>
+	1. Perceivable
+	Information and user interface components must be presentable to users in ways they can perceive.
+</section>
+<section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;text-align: left">
+	Guideline 1.1 Text Alternatives<br>
+	Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+</section>
+<section>
+	Success Criteria<br>
+	<a href="https://www.w3.org/TR/WCAG21/#non-text-content">Success Criterion 1.1.1 Non-text Content</a><br>
+	<a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html">Understanding</a> > <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html#benefits">Benefits</a>
+</section>
+</section>
+	
+<section>
+	<h1>WCAG User Stories</h1>
+	<section>
+	“As a (Benefits), I want (Success Criteria) so that (Value that relates to your product)”<br>
+</section>
+	
+<section>
+	<h1>Sucess Criteria for Stories</h1>
+<section>
+	User stories aren't testable<br>
+	Behavior Driven Development (BDD) Criteria are testable<br>
+</section>
+<section style="background-color: rgba(0, 0, 0, 0.85); color: #fff; padding: 20px; margin: 20px;text-align: left">
+	GIVEN Exact context<br>
+WHEN Action/Event<br>
+THEN Outcomes<br>
+AND/EXCEPT More of the same…<br>
+	</section>
+	<section>
+	GIVEN a non-text element exists<br>
+	WHEN a user's browser or AT focus in on the non-text elements<br>
+	THEN text alternative that serves the equivalent purpose are available
+</section>
+</section>
+<section>
+	<h1>Reuse and Overuse</h1>
+	Reusable - Absolutely!<br>
+	Danger of overuse...
+</section>
+<section>
+	<h1>Definition Of Done</h1>
+	 an agreed upon list of the activities necessary to get a product increment to a done state<br>
+	 Great for automated testing<br>
+	 <b>Not a substitue for User Stories!</b>
+</section>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+    <!--
+-->
+</html>
