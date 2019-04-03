@@ -1,0 +1,1674 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Accessibility Document</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:black;}
+h1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:28.8pt;
+	font-size:24.0pt;
+	font-family:"Cambria",serif;
+	color:black;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	color:black;}
+p.Para1, li.Para1, div.Para1
+	{mso-style-name:"Para 1";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:black;
+	font-weight:bold;}
+p.Para2, li.Para2, div.Para2
+	{mso-style-name:"Para 2";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:black;}
+p.Para3, li.Para3, div.Para3
+	{mso-style-name:"Para 3";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:blue;
+	text-decoration:underline;}
+p.Para4, li.Para4, div.Para4
+	{mso-style-name:"Para 4";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:12.0pt;
+	font-family:"Cambria",serif;
+	color:blue;
+	text-decoration:underline;}
+span.0Text
+	{mso-style-name:"0 Text";
+	font-weight:bold;}
+span.1Text
+	{mso-style-name:"1 Text";
+	color:black;
+	text-decoration:none;}
+span.2Text
+	{mso-style-name:"2 Text";
+	color:blue;
+	text-decoration:underline;}
+p.0Block, li.0Block, div.0Block
+	{mso-style-name:"0 Block";
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.4pt;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Segoe UI",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<h1 style='margin-top:8.0pt;margin-right:0in;margin-bottom:8.0pt;margin-left:
+0in'><span lang=EN>Table of Contents</span></h1>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN><a href="#p1">ACCESSIBILITY HEURISTICS,
+V1.4</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">10 GENERAL RULES OF
+THUMB FOR ACCESSIBLE DESIGN</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:48.0pt'><span lang=EN><a href="#p1">HEURISTICS</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">INTERACTION METHODS AND MODALITIES</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">Users can efficiently
+interact with the system using the input method of their choosing (i.e. mouse,
+keyboard, touch, etc.).</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">NAVIGATION AND WAYFINDING</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">STRUCTURE AND SEMANTICS</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">ERROR PREVENTION AND
+STATES</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">Interactive controls have
+persistent, meaningful instructions to help prevent mistakes, and provide users
+with clear error states which indicate what the problems are - and how to fix
+them - whenever errors are returned.</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">CONTRAST AND LEGIBILITY</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">LANGUAGE AND READABILITY</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">PREDICTABILITY AND
+CONSISTENCY</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">TIMING AND PRESERVATION</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">MOVEMENT AND FLASHING</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:1.0in'><span lang=EN><a href="#p1">VISUAL AND AUDITORY
+ALTERNATIVES</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN><a href="#p1">CONTACT INFO</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN><a href="#p1">wireframe-example.pdf</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Deque Wireframes</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Site Map</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Blog Taxonomies</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Header</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Footer</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Homepage Directions</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Homepage Directions and
+Dynamic Content</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Products Landing</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p2">Products Individual</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">About &gt; Overview</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">About &gt; Our Story</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Service Landing</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Service Individual</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Persona Landing</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Training Landing /
+Events</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Instructor Lead Training</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Instructor Lead
+Training: Single</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Blog - Listing /
+Individual</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:24.0pt'><span lang=EN><a href="#p1">Get Accessibility Help</a></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in;page-break-before:always'><a name=p1></a><span lang=EN><img
+border=0 width=625 height=350 id="index-1_1.png"
+src="Design%20Accessibility%20Heuristics%20Handout_files/image001.jpg"
+alt="index-1_1.png"></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><img width=297 height=297
+src="Design%20Accessibility%20Heuristics%20Handout_files/image002.jpg"
+alt="index-1_2.jpg"><br clear=ALL>
+</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>ACCESSIBILITY&nbsp;HEURISTICS,&nbsp;V1.4&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>10&nbsp;GENERAL&nbsp;RULES
+OF&nbsp;THUMB&nbsp;FOR&nbsp;ACCESSIBLE&nbsp;DESIGN&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>CONTACT&nbsp;INFO&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>HEURISTICS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>DENIS BOUDREAU&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>INTERACTION METHODS&nbsp;AND
+MODALITIES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Principal&nbsp;a11y&nbsp;consultant&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can&nbsp;efficiently&nbsp;interact&nbsp;with
+the system&nbsp;using&nbsp;the input&nbsp;method&nbsp;of&nbsp;</span></p>
+
+<p class=Para4 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>db@deque.com&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>their&nbsp;choosing&nbsp;(i.e.&nbsp;mouse,&nbsp;keyboard,&nbsp;touch,&nbsp;etc.).&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>@dboudreau&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>NAVIGATION&nbsp;AND&nbsp;WAYFINDING&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>APARNA&nbsp;PASI&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can
+easily&nbsp;navigate,&nbsp;find&nbsp;content,&nbsp;and&nbsp;determine&nbsp;where
+they&nbsp;are at Accessibility&nbsp;team&nbsp;lead&nbsp;</span></p>
+
+<p class=Para4 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Aparna.pasi@deque.com&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>all&nbsp;times&nbsp;within the
+system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>@satyaaparnap&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>STRUCTURE AND&nbsp;SEMANTICS&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>PAST CONTRIBUTORS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can&nbsp;make sense
+of&nbsp;the structure of&nbsp;the content&nbsp;on&nbsp;each page&nbsp;and
+Caitlin&nbsp;Geier&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>understand&nbsp;how&nbsp;to
+operate&nbsp;within&nbsp;the system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>@caitlingeier&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>ERROR PREVENTION AND&nbsp;STATES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Interactive&nbsp;controls&nbsp;have
+persistent,&nbsp;meaningful&nbsp;instructions&nbsp;to help prevent&nbsp;mistakes,&nbsp;and&nbsp;provide
+users&nbsp;with clear&nbsp;error&nbsp;states&nbsp;which
+indicate&nbsp;what&nbsp;the problems&nbsp;are&nbsp;&nbsp;and&nbsp;how&nbsp;to
+fix&nbsp;them&nbsp;&nbsp;whenever&nbsp;errors are&nbsp;returned.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>CONTRAST&nbsp;AND&nbsp;LEGIBILITY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Text&nbsp;and&nbsp;other&nbsp;meaningful&nbsp;information&nbsp;can&nbsp;be
+easily&nbsp;distinguished&nbsp;and read&nbsp;by&nbsp;users&nbsp;of&nbsp;the system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>LANGUAGE AND&nbsp;READABILITY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Content&nbsp;on the&nbsp;page&nbsp;can
+easily&nbsp;be&nbsp;read&nbsp;and&nbsp;understood&nbsp;by&nbsp;users&nbsp;of&nbsp;the
+system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>PREDICTABILITY&nbsp;AND CONSISTENCY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>The&nbsp;purpose
+of&nbsp;each&nbsp;element&nbsp;is&nbsp;predictable,&nbsp;and&nbsp;how&nbsp;each
+element relates&nbsp;to&nbsp;the&nbsp;system&nbsp;as&nbsp;a
+whole&nbsp;is&nbsp;clear&nbsp;and&nbsp;meaningful,&nbsp;to&nbsp;avoid confusion
+for&nbsp;the users.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>TIMING&nbsp;AND&nbsp;PRESERVATION&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;are given enough&nbsp;time to
+complete&nbsp;their&nbsp;tasks&nbsp;and&nbsp;do not&nbsp;lose
+information&nbsp;if&nbsp;their&nbsp;time&nbsp;(i.e.&nbsp;a
+session)&nbsp;runs&nbsp;out.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>MOVEMENT&nbsp;AND&nbsp;FLASHING&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Elements&nbsp;on&nbsp;the page
+that&nbsp;move,&nbsp;flash,&nbsp;or&nbsp;animate in other&nbsp;ways&nbsp;can be
+stopped,&nbsp;and&nbsp;do
+not&nbsp;distract&nbsp;or&nbsp;harm&nbsp;the&nbsp;users.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>VISUAL&nbsp;AND&nbsp;AUDITORY&nbsp;ALTERNATIVES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Purely&nbsp;visual&nbsp;or&nbsp;auditory&nbsp;content&nbsp;that&nbsp;conveys&nbsp;information&nbsp;has&nbsp;text
+based&nbsp;alternatives&nbsp;for&nbsp;users&nbsp;who
+can’t&nbsp;see&nbsp;or&nbsp;hear.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><a name=p2></a><span lang=EN>Deque -&nbsp;Wireframes - v3</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Products Individual&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>1&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>2&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>3&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>4&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>5&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>6&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>7&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>8&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>9&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>10</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>11</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>12</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>13</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>14</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>15</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>16</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>17</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>18</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>19</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>20</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>21</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>22</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>23</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>24&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>1&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>2&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>3&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>4&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>5&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>6&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>7&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>8&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>9&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>10</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>11</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>12</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>13</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>14</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>15</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>16</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>17</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>18</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>19</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>20</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>21</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>22</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>23</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>24&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>7.0&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>1.&nbsp;&nbsp;Primary Messaging&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>A&nbsp;brief introductory description of
+the product to reenforce <span class=0Text>HEADER&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>How WorldSpace&nbsp;Attest Works&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>that users have arrived on the right
+page. If possible a narrated video is a compelling way to give users an
+understanding of what a tool looks like, how it works and it's benefit.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Overview&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Services &nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Tools &nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Training&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Demo and pricing calls to action. Based
+on our previous Testing Integration&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>experience designing pages that sell
+software to developers, trying a demo and learning about pricing are the two
+most <span class=0Text>Automated Testing&nbsp;</span></span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Manual Guided Testing&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Monitoring &amp; Reporting&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Urgent Remediation&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Open Source Toolkit&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Overview&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Browser Extension&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>acted upon buttons.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace&nbsp;Attest&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace&nbsp;Assure&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace Comply&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Amaze&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Axe&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>2.&nbsp;&nbsp;Customer Logos&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Screenshot&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Reporting &amp; Issue&nbsp;Tracking&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Companies that use said product.
+Establishes credibility and scale.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace&nbsp;Attest&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Customization&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>3.&nbsp;&nbsp;Problems Solved&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Security&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>An automated testing tool for both front
+and back-The common problems that a given product solves.&nbsp;Appeals end
+developers.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>to users who arrive on the page thinking
+more about what they're trying to accomplish than their role (designer vs <span
+class=0Text>1.0&nbsp;</span></span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Screenshot or&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>developer, etc...)&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Based on a powerful and low-impact
+JavaScript rules library that runs <span class=0Text>narrated video demo.&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Donec ullamcorper nulla non metus auctor
+fringilla. Praesent commodo cursus magna, vel on your local development server
+in the same browser as your <span class=0Text>4.&nbsp;&nbsp;Lifecycle Fit&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>functional or unit tests.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>scelerisque nisl consectetur
+et.&nbsp;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+vestibulum.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>An infographic depicting where a product
+fits within a typical development sprint or life cycle.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Try It Now&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Pricing&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>8.0&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>5.&nbsp;&nbsp;Role Fit&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>A&nbsp;breakdown of common roles that are
+a good fit for the given product.&nbsp;Appeals to users who have been tasked
+with Case Study&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>finding a solution but are unsure of what
+problems specifically need solving or where in the life cycle the product
+should fit. More suited towards managers than developers.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Morbi leo risus, porta ac consectetur ac,
+vestibulum at eros. Donec&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span class=0Text><span lang=EN style='font-weight:normal'>&quot;Morbi
+leo risus, porta ac consectetur ac, </span></span><span lang=EN>TRUSTED
+BY&nbsp;THE WORLDS MOST TRAFFICKED WEBSITES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>sed odio dui. Fusce dapibus, tellus ac
+cursus commodo, tortor mauris vestibulum at eros. Donec sed odio dui. Fusce <span
+class=0Text>6.&nbsp;&nbsp;Shift Left&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>condimentum nibh, ut fermentum massa
+justo sit amet risus. Nullam id A&nbsp;call out describing how Deque (and this
+product) helps you dapibus, tellus ac cursus commodo, tortor mauris Shift Left
+and why it's more effective than addressing dolor id nibh ultricies vehicula ut
+id elit.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>2.0&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>accessibility after the fact.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>condimentum nibh, ut fermentum massa
+justo sit amet risus.&quot;&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>7.&nbsp;&nbsp;How it Works&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>120&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>102&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>74&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>A&nbsp;dynamic section that walks a user
+through how the product works with screenshots, diagrams and
+descriptions.&nbsp;Appeals&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>-- Client Name, Company&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>to users who don't want to watch a video
+(in masthead) but STAT&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>STAT&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>3.0&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>STAT&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>want to get a better idea of the product
+before they try a demo.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Problems WorldSpace&nbsp;Attest
+Solves&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>8.&nbsp;&nbsp;Case Study&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Read More&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Add credibility by showcasing an example
+of where the product was used within an organization and the outcomes.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>9.&nbsp;&nbsp;Differentiators&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>9.0&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>10.&nbsp;&nbsp;Primary Call to&nbsp;Action&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Why Use Deque&nbsp;Tools?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Slow, Manual&nbsp;Testing&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Looking up&nbsp;Accessibility Fixes&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Bugs&nbsp;After Releases&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Give the user three ways to express
+interest. Use the pricing calculator, start a demo or contact Deque for more
+Automated tests flags accessibility errors Solutions to accessibility problems
+are&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Easily find and fix 50% of
+accessibility&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>information.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>during the development without
+manual&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>presented directly within reports.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>errors before development is
+complete.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>effort.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>11.&nbsp;&nbsp;Guided Navigation&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>If a user has scrolled past the final
+call to action they are likely unsure if this tools is right for them. Offer
+three ways to learn more and find (or confirm) the right solution.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>No False Positives&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>By Developers, For Developers&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Enterprise Secure&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>12.&nbsp;&nbsp;Integrations (logos)&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Our tools are built by developers, for
+developers.&nbsp;They are accessibility tools by accessibility experts. We
+understand Logos of the platforms that Deque products integrate with.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>the needs of modern web development
+workflows and have built our tools accordingly.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>New&nbsp;Tool Learning Curves&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>False Positives&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Bugs&nbsp;After Releases&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Integrates with your existing testing and
+Built to ensure there are no false positives.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Easily find and fix 50% of
+accessibility&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Learn more about how we&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>tracking tools such as JIRA,
+HP&nbsp;ALM,&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Every flag raised is an issue to be&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>errors before development is
+complete.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>build our tools »&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Selenium, Cucumber QUnit and more.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>corrected.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>12&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Integrates into the environment of your
+choice <span class=0Text>4.0&nbsp;</span></span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Where does WordSpace Fit in the
+Development Cycle <span class=0Text>17 / 37&nbsp;</span></span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>BACKLOG&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>DESIGN&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>DEVELOP&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>TEST&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>RELEASE&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>WORLDSPACE&nbsp;ATTEST&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>10&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace&nbsp;Attest is perfect for
+automated testing while new code is being written.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Interested in
+WorldSpace&nbsp;Attest?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Here's how you can learn more.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>5.0&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Who is WorldSpace&nbsp;Attest For?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Pricing&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Try It Now&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Contact Us&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>11&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>FRONT-END DEVELOPERS&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>BACK-END DEVELOPERS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Use the WorldSpace&nbsp;Attest browser
+extension to run a Use the WorldSpace&nbsp;Attest browser extension to run a
+Not Sure What&nbsp;Tool to Use?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>quick accessibility test anytime you'd
+like.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>quick accessibility test anytime you'd
+like.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>We have three ways to find out exactly
+what you need to become accessible.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Should I be Using a&nbsp;Tool?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Tool Questionnaire&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Reach Out&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Sometimes a tool is not the best place to
+Answer these five questions and we'll make We'd love to discuss your needs and
+make&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>COMPONENT DEVELOPERS&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>TEST ENGINEERS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>start. Knowing more about accessibility
+or a recommendation for what tool you should tailored recommendation. Contact
+us via&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Use the WorldSpace&nbsp;Attest browser
+extension to run a Use the WorldSpace&nbsp;Attest browser extension to run a
+what you have to fix might actually be more consider.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>phone or e-mail.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>effective long term.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>quick accessibility test anytime you'd
+like.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>quick accessibility test anytime you'd
+like.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Do I Need a Tool?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Get Started&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Contact Us&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>6.0&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>WorldSpace&nbsp;Attest
+Helps&nbsp;You&nbsp;<span class=0Text>Shift Left</span> In the past addressing
+accessibility was typically left to the very end of an iteration. We've found
+that this is the most time consuming, most expensive and least reliable
+approach. Shifting the focus accessibility left (upstream) into smaller, more
+frequent work, reduces the time and cost of accessibility while also reducing
+errors.&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>More&nbsp;About Shift Left&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>ROI Calculator&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Creator&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Ross Johnson&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>CONTINUED ON&nbsp;ADJACENT PANE&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Modified&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Thu Oct 19 2017&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><a name=p3></a><span lang=EN>Web&nbsp;Accessibility&nbsp;Quick&nbsp;Checklist&nbsp;for&nbsp;Designers,&nbsp;v0.4&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>No.&nbsp;&nbsp;Heuristic&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Statement&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Checkpoints&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>Rating&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>&#9733;&nbsp;&nbsp;&#10004;&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>&#10006;&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span class=0Text><span lang=EN>N/A</span></span><span
+lang=EN>&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>1&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>INTERACTION&nbsp;METHODS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can&nbsp;efficiently&nbsp;interact&nbsp;with&nbsp;the&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;any&nbsp;of&nbsp;the&nbsp;interactions&nbsp;designed&nbsp;to&nbsp;be&nbsp;mouse&nbsp;specific?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>AND&nbsp;MODALITIES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>system&nbsp;using&nbsp;the&nbsp;input&nbsp;method&nbsp;of&nbsp;their&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;every&nbsp;functionality&nbsp;designed&nbsp;to&nbsp;be&nbsp;ful&nbsp;y&nbsp;keyboard&nbsp;accessible?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>choosing&nbsp;(i.e.&nbsp;mouse,&nbsp;keyboard,&nbsp;touch,&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;features&nbsp;designed&nbsp;to&nbsp;be&nbsp;ful&nbsp;y&nbsp;functional&nbsp;using&nbsp;touch&nbsp;screens?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>etc.).&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;the&nbsp;design&nbsp;interactions&nbsp;realistic&nbsp;from&nbsp;a&nbsp;tabbing,&nbsp;touch&nbsp;or&nbsp;voice&nbsp;perspective?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;the&nbsp;design&nbsp;interactions&nbsp;be&nbsp;operated&nbsp;through&nbsp;voice&nbsp;commands?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;the&nbsp;number&nbsp;of&nbsp;tab&nbsp;stops&nbsp;limited&nbsp;by&nbsp;combining&nbsp;adjacent&nbsp;links?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;target&nbsp;areas&nbsp;and&nbsp;calls&nbsp;to&nbsp;action&nbsp;set&nbsp;to&nbsp;be&nbsp;at&nbsp;least&nbsp;44x44&nbsp;pixels?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>2&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>NAVIGATION&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can&nbsp;easily&nbsp;navigate,&nbsp;find&nbsp;content,&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;there&nbsp;a&nbsp;clear,&nbsp;visible&nbsp;indicator&nbsp;set&nbsp;on&nbsp;all&nbsp;active&nbsp;elements&nbsp;as&nbsp;they&nbsp;receive&nbsp;focus?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>WAYFINDING&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>and&nbsp;determine&nbsp;where&nbsp;they&nbsp;are&nbsp;at&nbsp;all&nbsp;times&nbsp;&nbsp;Does&nbsp;the&nbsp;page&nbsp;have&nbsp;meaningful&nbsp;title&nbsp;text,&nbsp;with&nbsp;page-specific&nbsp;information&nbsp;going&nbsp;first?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>within&nbsp;the&nbsp;system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;the&nbsp;page&nbsp;title&nbsp;element&nbsp;and&nbsp;H1&nbsp;the&nbsp;same&nbsp;or&nbsp;similar?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Does&nbsp;the&nbsp;page&nbsp;have&nbsp;meaningful&nbsp;headings&nbsp;for&nbsp;each&nbsp;major&nbsp;section?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;the&nbsp;links’&nbsp;purpose&nbsp;be&nbsp;defined&nbsp;from&nbsp;link&nbsp;text&nbsp;alone,&nbsp;or&nbsp;their&nbsp;immediate&nbsp;context?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;a&nbsp;“skip&nbsp;link”&nbsp;provided&nbsp;as&nbsp;the&nbsp;very&nbsp;top&nbsp;of&nbsp;the&nbsp;page,&nbsp;and&nbsp;is&nbsp;it&nbsp;revealed&nbsp;on&nbsp;focus?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Does&nbsp;the&nbsp;organization&nbsp;of&nbsp;navigational&nbsp;elements&nbsp;facilitate&nbsp;wayfinding?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>3&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>STRUCTURE&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;can&nbsp;make&nbsp;sense&nbsp;of&nbsp;the&nbsp;structure&nbsp;of&nbsp;&nbsp;Is&nbsp;content&nbsp;that&nbsp;looks&nbsp;like&nbsp;headings&nbsp;defined&nbsp;as&nbsp;such?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>SEMANTICS&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>the&nbsp;content&nbsp;on&nbsp;each&nbsp;page&nbsp;and&nbsp;understand&nbsp;&nbsp;Is&nbsp;the&nbsp;heading&nbsp;structure&nbsp;hierarchy&nbsp;skipping&nbsp;any&nbsp;levels?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>how&nbsp;to&nbsp;operate&nbsp;within&nbsp;the&nbsp;system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;information&nbsp;conveyed&nbsp;through&nbsp;sensory&nbsp;characteristics&nbsp;also&nbsp;supported&nbsp;in&nbsp;text?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;navigation&nbsp;mechanisms&nbsp;structured&nbsp;using&nbsp;lists?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;data&nbsp;tables&nbsp;clearly&nbsp;assigned&nbsp;header&nbsp;columns&nbsp;and/or&nbsp;rows?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Do&nbsp;groupings&nbsp;of&nbsp;form&nbsp;elements&nbsp;share&nbsp;a&nbsp;common&nbsp;group&nbsp;label?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;all&nbsp;form&nbsp;controls&nbsp;assigned&nbsp;a&nbsp;visible,&nbsp;meaningful&nbsp;text&nbsp;label?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>4&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span class=0Text><span lang=EN>ERROR&nbsp;PREVENTION&nbsp;AND&nbsp;&nbsp;</span></span><span
+lang=EN>Interactive&nbsp;controls&nbsp;have&nbsp;persistent,
+Are&nbsp;labels&nbsp;and&nbsp;instructions&nbsp;worded&nbsp;in&nbsp;text,&nbsp;to&nbsp;provide&nbsp;users&nbsp;with&nbsp;adequate&nbsp;support?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>STATES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>meaningful&nbsp;instructions&nbsp;to&nbsp;help&nbsp;prevent&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;labels&nbsp;and&nbsp;instructions&nbsp;displayed&nbsp;in&nbsp;close&nbsp;visual&nbsp;proximity&nbsp;to&nbsp;their&nbsp;controls?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>mistakes,&nbsp;and&nbsp;provide&nbsp;users&nbsp;with&nbsp;clear&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;form&nbsp;errors&nbsp;indicated&nbsp;in&nbsp;ways&nbsp;that&nbsp;don’t&nbsp;rely&nbsp;on&nbsp;sensory&nbsp;cues&nbsp;alone?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>error&nbsp;states&nbsp;which&nbsp;indicate&nbsp;what&nbsp;the&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;persistent,&nbsp;visible&nbsp;labels&nbsp;specified&nbsp;on&nbsp;all&nbsp;form&nbsp;controls?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>problems&nbsp;are&nbsp;-&nbsp;and&nbsp;how&nbsp;to&nbsp;fix&nbsp;them&nbsp;-</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;required&nbsp;fields&nbsp;identified&nbsp;as&nbsp;such&nbsp;in&nbsp;the&nbsp;label&nbsp;text?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>whenever&nbsp;errors&nbsp;are&nbsp;returned.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;inline&nbsp;error&nbsp;messages&nbsp;provided,&nbsp;with&nbsp;suggestion&nbsp;on&nbsp;how&nbsp;to&nbsp;fix&nbsp;them?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;users&nbsp;expected&nbsp;to&nbsp;remember&nbsp;data&nbsp;from&nbsp;one&nbsp;page&nbsp;to&nbsp;another?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>5&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>CONTRAST&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Text&nbsp;and&nbsp;other&nbsp;meaningful&nbsp;information&nbsp;can&nbsp;&nbsp;Is&nbsp;information&nbsp;conveyed&nbsp;by&nbsp;means&nbsp;other&nbsp;than&nbsp;just&nbsp;color&nbsp;alone?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>LEGIBILITY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>be&nbsp;easily&nbsp;distinguished&nbsp;and&nbsp;read&nbsp;by&nbsp;users&nbsp;&nbsp;Is&nbsp;the&nbsp;foreground/background&nbsp;contrast&nbsp;ratio&nbsp;of&nbsp;text&nbsp;at&nbsp;least&nbsp;4.5:1&nbsp;(3:1&nbsp;for&nbsp;large&nbsp;text)?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>of&nbsp;the&nbsp;system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;link&nbsp;text&nbsp;copy&nbsp;assigned&nbsp;a&nbsp;contrast&nbsp;of&nbsp;at&nbsp;least&nbsp;3:1&nbsp;against&nbsp;its&nbsp;surrounding&nbsp;text?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;the&nbsp;foreground/background&nbsp;contrast&nbsp;ratio&nbsp;of&nbsp;meaningful&nbsp;graphics&nbsp;at&nbsp;least&nbsp;3:1?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;the&nbsp;design&nbsp;exempt&nbsp;of&nbsp;images&nbsp;with&nbsp;embedded&nbsp;text&nbsp;in&nbsp;them?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;line-spacing&nbsp;set&nbsp;to&nbsp;at&nbsp;least&nbsp;1.5&nbsp;in&nbsp;paragraphs,&nbsp;and&nbsp;twice&nbsp;as&nbsp;much&nbsp;between&nbsp;them?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;the&nbsp;selected&nbsp;typefaces&nbsp;easy&nbsp;to&nbsp;read&nbsp;and&nbsp;do&nbsp;they&nbsp;render&nbsp;properly&nbsp;on&nbsp;mobile?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>6&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>LANGUAGE&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Content&nbsp;on&nbsp;the&nbsp;page&nbsp;can&nbsp;easily&nbsp;be&nbsp;read&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;changes&nbsp;in&nbsp;language&nbsp;within&nbsp;the&nbsp;page&nbsp;specified&nbsp;for&nbsp;assistive&nbsp;technologies?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>READABILITY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>and&nbsp;understood&nbsp;by&nbsp;users&nbsp;of&nbsp;the&nbsp;system.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;content&nbsp;designed&nbsp;using&nbsp;multiple&nbsp;levels&nbsp;of&nbsp;headings&nbsp;and&nbsp;subheadings?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;content&nbsp;designed&nbsp;in&nbsp;short&nbsp;blocks&nbsp;of&nbsp;text&nbsp;that&nbsp;are&nbsp;easier&nbsp;to&nbsp;manage&nbsp;cognitively?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;headings&nbsp;and&nbsp;form&nbsp;labels&nbsp;worded&nbsp;so&nbsp;they&nbsp;are&nbsp;meaningful&nbsp;to&nbsp;users?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;important&nbsp;points&nbsp;formatted&nbsp;into&nbsp;lists&nbsp;that&nbsp;are&nbsp;easy&nbsp;to&nbsp;scan&nbsp;visually?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;the&nbsp;content&nbsp;made&nbsp;easier&nbsp;to&nbsp;understand&nbsp;by&nbsp;leveraging&nbsp;plain&nbsp;language&nbsp;principles?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;sufficient&nbsp;padding&nbsp;and&nbsp;leading&nbsp;provided&nbsp;to&nbsp;make&nbsp;content&nbsp;easier&nbsp;to&nbsp;read?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>7&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>PREDICTABILITY&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>The&nbsp;purpose&nbsp;of&nbsp;each&nbsp;element&nbsp;is&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;users&nbsp;informed&nbsp;when&nbsp;setting&nbsp;focus&nbsp;on&nbsp;a&nbsp;control&nbsp;triggers&nbsp;a&nbsp;change&nbsp;of&nbsp;context?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>CONSISTENCY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>predictable,&nbsp;and&nbsp;how&nbsp;each&nbsp;element&nbsp;relates&nbsp;&nbsp;Are&nbsp;users&nbsp;informed&nbsp;when&nbsp;providing&nbsp;input&nbsp;triggers&nbsp;a&nbsp;change&nbsp;of&nbsp;context?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>to&nbsp;the&nbsp;system&nbsp;as&nbsp;a&nbsp;whole&nbsp;is&nbsp;clear&nbsp;and&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;repeated&nbsp;navigation&nbsp;patterns&nbsp;consistently&nbsp;presented&nbsp;throughout&nbsp;the&nbsp;interfaces?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>meaningful,&nbsp;to&nbsp;avoid&nbsp;confusion&nbsp;for&nbsp;the&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;recurrent&nbsp;functionalities&nbsp;consistently&nbsp;identified&nbsp;throughout&nbsp;the&nbsp;interfaces?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>users.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Does&nbsp;the&nbsp;design&nbsp;support&nbsp;both&nbsp;portrait&nbsp;and&nbsp;landscape&nbsp;orientations?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;functionalities&nbsp;and&nbsp;features&nbsp;designed&nbsp;to&nbsp;be&nbsp;easily&nbsp;discoverable?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Does&nbsp;the&nbsp;design&nbsp;minimize&nbsp;the&nbsp;number&nbsp;of&nbsp;steps&nbsp;required&nbsp;to&nbsp;complete&nbsp;an&nbsp;action?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>8&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>TIMING&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Users&nbsp;are&nbsp;given&nbsp;enough&nbsp;time&nbsp;to&nbsp;complete&nbsp;&nbsp;Are&nbsp;users&nbsp;provided&nbsp;with&nbsp;a&nbsp;mechanism&nbsp;to&nbsp;ask&nbsp;for&nbsp;time&nbsp;extensions&nbsp;ahead&nbsp;of&nbsp;time?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>PRESERVATION&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>tasks&nbsp;and&nbsp;do&nbsp;not&nbsp;lose&nbsp;information&nbsp;if&nbsp;their
+Are&nbsp;upcoming&nbsp;session&nbsp;timeouts&nbsp;clearly&nbsp;identified&nbsp;as&nbsp;such&nbsp;in&nbsp;the&nbsp;design?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>time&nbsp;(i.e.&nbsp;a&nbsp;session)&nbsp;runs&nbsp;out.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;users&nbsp;turn&nbsp;off,&nbsp;adjust&nbsp;or&nbsp;extend&nbsp;time&nbsp;limits&nbsp;when&nbsp;sessions&nbsp;are&nbsp;about&nbsp;to&nbsp;run&nbsp;out?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Does&nbsp;the&nbsp;design&nbsp;offer&nbsp;options&nbsp;to&nbsp;postpone&nbsp;or&nbsp;suppress&nbsp;interruptions?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;users&nbsp;request&nbsp;content&nbsp;updates,&nbsp;instead&nbsp;of&nbsp;content&nbsp;being&nbsp;updated&nbsp;automatical&nbsp;y?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;there&nbsp;a&nbsp;mechanism&nbsp;to&nbsp;al&nbsp;ow&nbsp;data&nbsp;recovery&nbsp;after&nbsp;users&nbsp;re-authenticate?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;users&nbsp;save&nbsp;data&nbsp;while&nbsp;filing&nbsp;out&nbsp;forms,&nbsp;so&nbsp;it&nbsp;can&nbsp;be&nbsp;used&nbsp;after&nbsp;re-authentication?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>9&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>MOVEMENT&nbsp;AND&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Elements&nbsp;on&nbsp;the&nbsp;page&nbsp;that&nbsp;move,&nbsp;flash,&nbsp;or&nbsp;&nbsp;Can&nbsp;moving&nbsp;or&nbsp;animated&nbsp;content&nbsp;be&nbsp;paused,&nbsp;stopped,&nbsp;or&nbsp;hidden?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>FLASHING&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>animate&nbsp;in&nbsp;other&nbsp;ways&nbsp;can&nbsp;be&nbsp;stopped,&nbsp;and&nbsp;&nbsp;Can&nbsp;auto-updated&nbsp;content&nbsp;be&nbsp;ful&nbsp;y&nbsp;control&nbsp;ed&nbsp;by&nbsp;the&nbsp;users?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>do&nbsp;not&nbsp;distract&nbsp;or&nbsp;harm&nbsp;the&nbsp;users.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Can&nbsp;the&nbsp;rate&nbsp;at&nbsp;which&nbsp;content&nbsp;is&nbsp;auto-updated&nbsp;be&nbsp;control&nbsp;ed&nbsp;by&nbsp;the&nbsp;user?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;video&nbsp;and&nbsp;audio&nbsp;files&nbsp;not&nbsp;set&nbsp;to&nbsp;auto-play?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;audio&nbsp;volume&nbsp;adjustable&nbsp;via&nbsp;a&nbsp;visible&nbsp;control?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;there&nbsp;any&nbsp;flashing&nbsp;or&nbsp;blinking&nbsp;effects&nbsp;faster&nbsp;than&nbsp;3&nbsp;times&nbsp;per&nbsp;second?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;users&nbsp;required&nbsp;to&nbsp;react&nbsp;quickly&nbsp;to&nbsp;information&nbsp;or&nbsp;user&nbsp;interface&nbsp;features?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>10&nbsp;&nbsp;VISUAL&nbsp;AND&nbsp;AUDITORY&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Purely&nbsp;visual&nbsp;or&nbsp;auditory&nbsp;content&nbsp;that&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;informative&nbsp;images&nbsp;provided&nbsp;with&nbsp;meaningful&nbsp;alt&nbsp;text&nbsp;describing&nbsp;their&nbsp;content?&nbsp;</span></p>
+
+<p class=Para1 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>ALTERNATIVES&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>conveys&nbsp;information&nbsp;has&nbsp;text-based&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;active&nbsp;images&nbsp;provided&nbsp;with&nbsp;meaningful&nbsp;alt&nbsp;text&nbsp;describing&nbsp;their&nbsp;purpose?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>alternatives&nbsp;for&nbsp;users&nbsp;who&nbsp;can’t&nbsp;see&nbsp;or&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;decorative&nbsp;images&nbsp;identified&nbsp;so&nbsp;they&nbsp;can&nbsp;be&nbsp;ignored&nbsp;by&nbsp;assistive&nbsp;technologies?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>hear.&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;complex&nbsp;images&nbsp;given&nbsp;alt&nbsp;text&nbsp;and&nbsp;an&nbsp;extended&nbsp;full&nbsp;text&nbsp;description?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Is&nbsp;a&nbsp;transcript&nbsp;placeholder&nbsp;designed&nbsp;for&nbsp;audio-only&nbsp;and&nbsp;video-only&nbsp;content?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;synchronized&nbsp;captions&nbsp;provided&nbsp;for&nbsp;pre-recorded&nbsp;videos?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><span lang=EN>Are&nbsp;audio&nbsp;description&nbsp;tracks&nbsp;provided&nbsp;for&nbsp;pre-recorded&nbsp;videos?&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0in;margin-bottom:
+12.0pt;margin-left:0in'><a name=outline></a><span lang=EN>&nbsp;</span></p>
+
+<h1 style='margin-top:8.0pt;margin-right:0in;margin-bottom:8.0pt;margin-left:
+0in;page-break-before:always'><span lang=EN>Document Outline</span></h1>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.8in;text-indent:-.25in'><span lang=EN style='font-family:Symbol;
+text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN><a href="#p1"><span style='color:blue'>ACCESSIBILITY
+HEURISTICS, V1.4</span></a></span><span class=1Text><span lang=EN> </span></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New";
+text-decoration:none'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>10 GENERAL RULES OF THUMB FOR
+ACCESSIBLE DESIGN</span></a></span><span class=1Text><span lang=EN> </span></span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.3in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN><a
+href="#p1"><span class=2Text>HEURISTICS</span></a> </span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>INTERACTION METHODS AND MODALITIES</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>Users can efficiently interact
+with the system using the input method of their choosing (i.e. mouse, keyboard,
+touch, etc.). </span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>NAVIGATION AND WAYFINDING</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>STRUCTURE AND SEMANTICS</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>ERROR PREVENTION AND STATES</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>Interactive controls have
+persistent, meaningful instructions to help prevent mistakes, and provide users
+with clear error states which indicate what the problems are - and how to fix
+them - whenever errors are returned. </span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>CONTRAST AND LEGIBILITY</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>LANGUAGE AND READABILITY</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>PREDICTABILITY AND CONSISTENCY</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>TIMING AND PRESERVATION</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>MOVEMENT AND FLASHING</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.55in;text-indent:-.25in'><span lang=EN style='font-family:Wingdings;
+text-decoration:none'>§<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+lang=EN><a href="#p1"><span style='color:blue'>VISUAL AND AUDITORY ALTERNATIVES</span></a></span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.8in;text-indent:-.25in'><span lang=EN style='font-family:Symbol;
+text-decoration:none'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN><a href="#p1"><span style='color:blue'>CONTACT INFO</span></a></span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:.8in;text-indent:-.25in'><span lang=EN style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN>wireframe-example.pdf </span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Deque
+Wireframes</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Site
+Map</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Blog
+Taxonomies</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Header</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Footer</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Homepage
+Directions</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Homepage
+Directions and Dynamic Content</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Products
+Landing</span></p>
+
+<p class=Para3 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New";
+text-decoration:none'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+lang=EN><a href="#p2"><span style='color:blue'>Products Individual</span></a></span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>About
+&gt; Overview</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>About
+&gt; Our Story</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Service
+Landing</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Service
+Individual</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Persona
+Landing</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Training
+Landing / Events</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Instructor
+Lead Training</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Instructor
+Lead Training: Single</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Blog
+- Listing / Individual</span></p>
+
+<p class=Para2 style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:1.05in;text-indent:-.25in'><span lang=EN style='font-family:"Courier New"'>o<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span lang=EN>Get
+Accessibility Help</span></p>
+
+<p class=0Block style='margin-top:12.0pt;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in'><span lang=EN>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
